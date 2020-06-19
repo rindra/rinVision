@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>💎 Left icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.330171,0.10144705 C10.2027104,-0.0247620846 9.98495144,-0.0345457384 9.84673321,0.0795968898 L4.6439902,4.36646788 C4.50577196,4.48061051 4.27366964,4.48745907 4.12893168,4.38212173 L1.69348725,2.61225875 C1.5484233,2.50692141 1.33457622,2.53235891 1.21852506,2.66900394 L0.582525586,3.41745346 C0.466474426,3.55409849 0.473646127,3.77096949 0.598824906,3.89978759 L4.31604787,7.72258727 C4.44090067,7.85107926 4.64529414,7.85107926 4.77047292,7.72226115 L11.0408214,1.26244064 C11.1656742,1.13394865 11.1637183,0.925556826 11.0362576,0.799347691 L10.330171,0.10144705 Z" id="path-1"></path>
+    </defs>
+    <g id="Home-page-spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Specs/Individual-pages/Package---Complete-Navigator" transform="translate(-609.000000, -2753.000000)">
+            <g id="mocks/Packages/Complete-Navigator---Home-page" transform="translate(440.000000, 433.000000)">
+                <g id="Component/Company-updates-card" transform="translate(16.000000, 2017.000000)">
+                    <g id="🔶-Component-2" transform="translate(0.000000, 191.000000)">
+                        <g id="💎-Left-icon" transform="translate(153.000000, 112.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="🎨-Color/White" mask="url(#mask-2)" fill="#038096">
+                                <g transform="translate(-3.000000, -5.000000)" id="Rectangle">
+                                    <rect x="0" y="0" width="18" height="18"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

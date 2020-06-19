@@ -1,0 +1,83 @@
+._top_incentive() {
+  [data-type=top_incentive] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .bg {
+      position: absolute;
+      overflow: hidden;
+      width: 175vh;
+      height: 175vh;
+      top: -158vh;
+      border-radius: 200vh;
+      .gradient {
+        margin: 0 0 0 58vh;
+        width: 105vw;
+        height: 100%;
+      }
+    }
+    .container {
+      position: relative;
+      width: 100vw;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      //      margin: 0 0 2vh 0;
+      .greetings {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .description {
+          font-size: 2vh;
+          line-height: 2.5vh;
+          font-family: "Roboto Regular";
+          text-align: center;
+          color: #1D1E20;
+          .dollars {
+            font-size: 2.5vh;
+            .actual {
+              font-family: "Roboto Light";
+              font-size: 6vh;
+            }
+          }
+          .label {
+            font-size: 1.8vh;
+            padding: 1vh 0 0 0;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .wallet {
+        width: 12vh;
+        height: 12vh;
+        margin: -15vh 0 0 0;
+        background-image: url(images/home/wallet.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .label_milestone_wrapper {
+      position: absolute;
+      left: 1.5vh;
+      top: 20vh;
+      display: flex;
+      flex-direction: column;
+      .label_milestone {
+        font-family: 'Roboto Bold';
+        font-size: 2vh;
+        margin-bottom: 0.5vh;
+        text-transform: uppercase;
+        color: #626b7a;
+      }
+      .milestone_reward {
+        font-size: 1.8vh;
+        color: #626b7a;
+      }
+    }
+    .container_web_points {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<script id=community_top_left_right_hotspot_template type=text/x-handlebars-template>
+  <div class=bg>
+    <div class=gradient style="background:{{color}}"></div>
+  </div>
+  <div class="community_top_container">
+    <div class="stats_box">
+      <div class="left">
+        <div class="running_image" style="background-image:url({{image}})"></div>
+      </div>
+      <div class="right">
+        <div class="current_date">{{date_updated}}</div>
+        <div class="stats_wrapper">
+          <div class="numbers_box">
+            <div class="actual_numbers">{{amount_fsa}}</div>
+            <div class="numbers_label">{{label_store_credit}}</div>
+          </div>
+          <div class="numbers_box">
+            <div class="actual_numbers">{{caption_store_credit}}</div>
+            <div class="numbers_label">{{amount_store_credit}}</div>
+          </div>
+        </div>
+        <div class="steps_contribution">{{{label_plan_status}}}</div>
+      </div>
+    </div>
+    <div class="create_post_box">
+      <div class=hotspot_avatar>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+      </div>
+      <div class="create_post_wrapper">
+        <div class="create_post">Create a post</div>
+      </div>
+      <div class="take_photo_wrapper">
+        <div class="photo_camera"></div>
+      </div>
+    </div>
+  </div>
+</script>

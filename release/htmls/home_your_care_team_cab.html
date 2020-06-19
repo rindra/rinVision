@@ -1,0 +1,31 @@
+<script id=home_your_care_team_cab_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class="group">
+    <div class=title_cab>{{title}}</div>
+    <div class="content">
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="wrapper">
+        <div class="name">{{description}}</div>
+        <div class="description">{{label_fsa}}</div>
+      </div>
+    </div>
+    <div class="footer_cab">
+      <div class="cta_cab">{{cta}}</div>
+    </div>
+  </div>
+  {{else}}
+  <div class="group_web_aside">
+    <div class="title_wrapper">
+      <div class="title_web">{{title}}</div>
+      <div class="right_arrow"></div>
+    </div>
+    <div class="content">
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="wrapper">
+        <div class="name">{{description}}</div>
+        <div class="description">{{label_fsa}}</div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</script>

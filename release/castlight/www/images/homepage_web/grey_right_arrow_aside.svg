@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="20px" viewBox="0 0 10 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="603.095238 601 611.47619 610.386667 612 611 611.47619 611.613333 603.095238 621 602 619.773333 609.833333 611 602 602.226667"></polygon>
+    </defs>
+    <g id="design-specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="store-credit" transform="translate(-602.000000, -601.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#626B7A" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

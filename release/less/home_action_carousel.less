@@ -1,0 +1,93 @@
+._home_action_carousel() {
+  [data-type=home_action_carousel] {
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .title {
+      font-family: 'Open Sans Semi';
+      position: absolute;
+      margin: 1vh 0 0 2vh;
+      font-size: 1.9vh;
+      color: #ffffff;
+      z-index: 1;
+    }
+    .description {
+      position: absolute;
+      margin: 6vh 0 0 2vh;
+      line-height: 2.7vh;
+      width: 15vh;
+      font-size: 1.8vh;
+      color: #ffffff;
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 27vh;
+        .program {
+          position: relative;
+          display: flex;
+          width: 75vw;
+          height: 27vh;
+          background: #ffffff;
+          border-radius: 1vh;
+          overflow: hidden;
+          //box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+        }
+        .image {
+          flex: .3;
+          height: 100%;
+          background-size: cover;
+        }
+        .action_box {
+          flex: .7;
+        }
+        .program_title {
+          display: flex;
+          align-items: center;
+          color: #717C8E;
+          font-size: 1.6vh;
+          height: 5vh;
+          margin: 0 0 0 2vh;
+        }
+        .program_subtitle {
+          font-family: "Roboto Light";
+          color: #1D1E20;
+          font-size: 2.4vh;
+          margin: 0 0 0 2vh;
+          width: 21vh;
+        }
+        .program_description {
+          display: flex;
+          align-items: center;
+          height: 8vh;
+          color: #717C8E;
+          font-size: 1.6vh;
+          margin: 0 0 0 2vh;
+          line-height: 2vh;
+          width: 20vh;
+        }
+        .program_cta {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          color: #006DFF;
+          font-size: 1.7vh;
+          height: 5vh;
+          margin: 0 2vh 0 0;
+        }
+      }
+    }
+    .slide {
+      width: 100vw;
+      height: 27vh;
+      box-sizing: border-box;
+      //border: 2px solid #ccc;
+    }
+  }
+}

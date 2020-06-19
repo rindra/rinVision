@@ -1,0 +1,38 @@
+<script id=community_message_live_template type=text/x-handlebars-template>
+  <div class="message_container" data-style={{label_plan_status}} data-post={{label_one_title}} data-avatar={{avatar_override}}>
+    <div class="message_top">
+      <div class="avatar_box">
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+      </div>
+      <div class="message_info">
+        {{#if is_business}}
+        <div class="persona_name"><b>{{company}}</b> shared a post <span></span><b>{{title}}</b></div>
+        {{else}}
+        <div class="persona_name"><b>{{username}}</b> shared a post <span></span><b>{{title}}</b></div>
+        {{/if}}
+        <div class="persona_location"><span>{{label_fsa}}</span> <span>{{caption_fsa}}</span></div>
+      </div>
+    </div>
+    <div class="message_description">{{description}}</div>
+    {{#if is_image}}
+    <div class="message_photo">
+      <img src="{{image}}"></img>
+    </div>
+    {{/if}}
+    <div class="likes_and_comments">
+      <div class="likes_icon icon"></div>
+      <div class="likes_number">{{amount_fsa}} {{label_store_credit}}</div>
+      <div class="comments_icon icon"></div>
+      <div class="comments_number">{{caption_store_credit}} {{amount_store_credit}}</div>
+    </div>
+    <div class="see_more">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</script>

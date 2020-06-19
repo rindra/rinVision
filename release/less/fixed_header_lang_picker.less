@@ -1,0 +1,114 @@
+._fixed_header_lang_picker() {
+  [data-type=fixed_header_lang_picker] {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0;
+    .header {
+      border-bottom: 1px solid #DADADA;
+      background-color: #ffffff;
+      .nav {
+        display: flex;
+        height: 8vh;
+        border-bottom: 1px solid #ebebeb;
+        padding: 0 0 1vh 0;
+        .cancel,
+        .space,
+        .done {
+          display: flex;
+          align-items: flex-end;
+          flex: .2;
+        }
+        .done {
+          justify-content: flex-end;
+          padding: 0 2vh 0 0;
+        }
+        .cancel {
+          padding: 0 0 0 2vh;
+        }
+        .title {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          height: auto;
+          font-size: 2.4vh;
+          color: #120107;
+          flex: .8;
+          padding: 0 2vh 0 0;
+          &.hasDone {
+            padding: 0;
+          }
+        }
+      }
+      .time {
+        display: flex;
+        .arrow {
+          display: flex;
+          width: 10%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 5vh;
+          background-size: 50% 33%;
+        }
+        .left {
+          background-image: url(images/intro_email/left-arrow.svg);
+        }
+        .right {
+          background-image: url(images/intro_email/grey-right-arrow.svg);
+        }
+        .date {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .label {
+      text-transform: uppercase;
+      font-size: 1.5vh;
+      color: #626B7A;
+      padding: 2vh 2vh 0 2vh;
+    }
+    .question {
+      color: #1D1E20;
+      font-size: 3.5vh;
+      font-family: 'Roboto Light';
+      padding: 0 2vh 0 2vh;
+    }
+    .answers {
+      padding: 4vh 0 0 2vh;
+      .answer {
+        display: flex;
+        height: 6vh;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #DADADA;
+        .text {
+          font-size: 1.8vh;
+        }
+        &.on {
+          color: #006DFF;
+          .check {
+            display: block;
+          }
+        }
+      }
+      .answer:last-child {
+        margin: 0 0 50.65vh 0;
+      }
+    }
+    .check {
+      display: none;
+      width: 3vh;
+      height: 3vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(images/home/blue_check.svg);
+      background-size: 50% 50%;
+      margin: 0 2vh 0 0;
+    }
+  }
+}

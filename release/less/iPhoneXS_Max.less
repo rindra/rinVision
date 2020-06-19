@@ -1,0 +1,619 @@
+._iphoneXS_Max() {
+  @iphoneXS_Max: ~"only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3)";
+  @media @iphoneXS_Max {
+    #home {
+      .home_wrapper {
+        .logo_box {
+          height: 34vh;
+        }
+        .why_box {
+          height: 10vh;
+        }
+        .configurator_box,
+        .language_box {
+          align-items: flex-start;
+        }
+      }
+      .chat_window_container {
+        .slide {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    #configurator {
+      nav {
+        div:first-child {
+          margin-top: 3vh;
+        }
+        .back {
+          top: 4vh;
+          left: 2vh;
+          .button {
+            width: 11vh;
+            margin-top: .5vh;
+            padding: .8vh 0;
+          }
+        }
+      }
+      .personas {
+        .persona {
+          .email {
+            font-size: 1.9vh;
+          }
+          .button {
+            width: 7.5vh;
+          }
+        }
+      }
+      .progress {
+        .box {
+          width: 88vw;
+          .button-box {
+            width: auto;
+          }
+        }
+      }
+    }
+    #onboarding {
+      .carousel {
+        .box {
+          .slide {
+            hgroup {
+              .group {
+                width: 38vh;
+                .title {
+                  font-size: 2.7vh;
+                }
+                .message {
+                  font-size: 2.1vh;
+                }
+              }
+            }
+            &[data-slide="doctors"] {
+              .doctors {
+                .group {
+                  .doctor_box {
+                    .doctor {
+                      width: 38vh;
+                    }
+                  }
+                }
+              }
+            }
+            &[data-slide="goals"] {
+              .goals {
+                .group {
+                  width: 38vh;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #homepage[data-module=homepage] {
+      .home_wrapper {
+        header {
+          height: 10vh;
+          .logo {
+            margin: 4vh 0 1vh 0;
+          }
+          .left,
+          .title,
+          .right {
+            margin-bottom: .5vh;
+          }
+        }
+        main {
+          height: 80vh;
+          [data-type="top_nav_pcorp"] {
+            .container {
+              .activity_points.stretch {
+                height: 17vh;
+              }
+              .activity_points.incentive {
+                .middle b {
+                  font-size: 2.1vh;
+                }
+                .learn_topnav_box {
+                  bottom: 3.5vh;
+                  padding: .8vh 5vh;
+                }
+              }
+            }
+          }
+          [data-type="how_it_works_incentive"] {
+            .intro_container {
+              .title_box {
+                height: 10vh;
+                .title {
+                  margin-top: 4vh;
+                }
+              }
+              .blue_exit {
+                top: 5.5vh;
+              }
+              .description_box {
+                .description_title,
+                .description_subtitle {
+                  width: 75vw;
+                }
+              }
+              .button_box {
+                .button {
+                  width: 30vh;
+                }
+              }
+            }
+          }
+          [data-type="ways_to_earn_top"] {
+            .bg {
+              width: 165vh;
+            }
+          }
+          [data-type="program_top"] {
+            .exit_box {
+              bottom: 23vh;
+              width: 20vw;
+            }
+            .wellbeing_container {
+              left: 3vh;
+            }
+            .outer_container {
+              .steps_goals_box {
+                .step_goal {
+                  .goal_multiplier {
+                    font-size: 1.6vh;
+                  }
+                }
+              }
+              .container_calendar {
+                .wrapper {
+                  margin-right: 1.8vh;
+                }
+              }
+              .container_activity {
+                .group {
+                  width: 94vw;
+                }
+              }
+            }
+          }
+          [data-type="full_screen_hidden_card"] {
+            display: flex;
+            align-items: center;
+            img {
+              width: 414px;
+              height: 736px;
+            }
+          }
+          [data-type="button_only"] {
+            &.hide {
+              display: none;
+            }
+          }
+          [data-type="bieber"] {
+            .carousel {
+              .box {
+                height: 100vh;
+                align-items: center;
+                .slide {
+                  width: 414px;
+                  height: 736px;
+                }
+              }
+            }
+          }
+          [data-type="daily_activities_cab"] {
+            .layers {
+              .layer {
+                width: 60vw;
+                .program {
+                  width: 60vw;
+                }
+              }
+            }
+          }
+          [data-type="separators"] {
+            .group {
+              .title {
+                height: 4vh;
+              }
+            }
+          }
+          [data-type="core_entry"] {
+            .group {
+              .top {
+                .slider_box {
+                  .slider {
+                    width: 25vh;
+                    .bg {
+                      width: 25vh;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          [data-type="personalized_for_you_cab"] {
+            .layers {
+              .layer {
+                width: 84vw;
+                .program {
+                  width: 84vw;
+                  .description {
+                    width: 75vw;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="blog_content"] {
+            .container_blog {
+              .exit_box {
+                top: 5vh;
+                width: 20vw;
+              }
+            }
+          }
+          [data-type="plan_status_details"] {
+            .plan_status_container {
+              .popup_header {
+                .wrapper {
+                  height: 8vh;
+                }
+              }
+              .scrollable_content {
+                .description_coverage ul p {
+                  width: 40vh;
+                }
+              }
+            }
+          }
+          [data-type="benefit_details"] {
+            .exit_box {
+              top: 5vh;
+              width: 20vw;
+            }
+          }
+          [data-type="program_action"] {
+            .group {
+              .action_box {
+                .wrapper {
+                  .title_action {
+                    font-size: 2.2vh;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="top_header"] {
+            .wrapper {
+              height: 8vh;
+            }
+          }
+          [data-type="home_recent_claims_cab"] {
+            .group {
+              .container {
+                .circle_wrapper {
+                  height: 22vh;
+                  .circle {
+                    height: 20vh;
+                    width: 20vh;
+                    margin-left: 2vh;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="top_image_nav"] {
+            .bg {
+              width: 165vh;
+            }
+            .container {
+              .rsvp {
+                .button {
+                  width: 12vh;
+                }
+              }
+            }
+            .exit_box {
+              top: 5vh;
+              width: 20vw;
+            }
+          }
+          [data-type="interactive_survey"] {
+            .survey_container {
+              .message {
+                font-size: 2.8vh;
+              }
+            }
+          }
+          [data-type="interesting_reads_one_story"] {
+            .group {
+              .action_box {
+                .icon {
+                  margin: 1.5vh;
+                }
+                .wrapper {
+                  width: 70vw;
+                  height: 13vh;
+                  .subtitle_all_stories {
+                    font-size: 2vh;
+                    margin-bottom: 1vh;
+                  }
+                  .title_action {
+                    font-size: 2.1vh;
+                  }
+                  .sub_title_story {
+                    font-size: 1.8vh;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="spring_challenge"] {
+            display: flex;
+            align-items: center;
+            .challenge_container {
+              width: 414px;
+              height: 736px;
+              .section {
+                &.countdown {
+                  .avatar_box {
+                    top: 16vh;
+                    .user {
+                      font-size: 3vh;
+                    }
+                  }
+                }
+                &.pending_members {
+                  .wrapper {
+                    .captain {
+                      font-size: 2vh;
+                    }
+                  }
+                }
+                &.team_progress {
+                  .captain_box {
+                    margin-left: 14.5vh;
+                  }
+                }
+                &.captain_profile {
+                  .avatar_box {
+                    top: 9.5vh;
+                    .user {
+                      font-size: 2.2vh;
+                    }
+                    .user,
+                    .user_department,
+                    .user_location {
+                      margin-bottom: .5vh;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          [data-type="intro_community_live"] {
+            .intro_container {
+              top: 72.5px;
+              width: 414px;
+              height: 736px;
+              .section {
+                &.intro_community {
+                  .intro_top {
+                    .company_name {
+                      width: 70vw;
+                    }
+                  }
+                }
+                &.personalized_experience {
+                  .live_cards_wrapper {
+                    .upload_picture_box {
+                      top: 13vh;
+                      .right_content {
+                        .upload_photo_title {
+                          font-size: 2vh;
+                        }
+                        .upload_photo_text {
+                          font-size: 1.8vh;
+                        }
+                      }
+                    }
+                    .office_location_box {
+                      top: 28.5vh;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          [data-type="community_interests_slide"] {
+            .section {
+              &.personalized_experience {
+                img {
+                  position: absolute;
+                  top: 7vh;
+                }
+              }
+            }
+          }
+          [data-type="community_carousel"] {
+            height: 31vh;
+            .static {
+              .dots {
+                top: 27vh;
+              }
+            }
+            .layers {
+              .layer {
+                height: 24vh;
+                .program {
+                  height: 24vh;
+                  .image {
+                    height: 24vh;
+                  }
+                  .title {
+                    font-size: 2.5vh;
+                  }
+                  .post_box {
+                    top: 17vh;
+                  }
+                }
+                .cta {
+                  top: 26vh;
+                }
+              }
+            }
+          }
+          [data-type="community_top_left_right_hotspot"] {
+            .bg {
+              width: 165vh;
+            }
+            .community_top_container {
+              .stats_box {
+                .right {
+                  .stats_wrapper {
+                    width: 28vh;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="full_screen_overflow_hidden_image"] {
+            img {
+              margin-top: 72.5px;
+            }
+            .hotspot_back {
+              height: 17vh;
+            }
+          }
+          [data-type="community_message_live"] {
+            .message_container {
+              .message_info {
+                .persona_name {
+                  font-size: 2vh;
+                }
+                .persona_location {
+                  font-size: 1.7vh;
+                }
+              }
+              .message_description {
+                font-size: 2.2vh;
+              }
+              .see_more {
+                width: 6vh;
+              }
+            }
+          }
+          [data-type="autosuggest"] {
+            top: 15vh;
+          }
+          [data-type="three_things_you_should_know"] {
+            .layers {
+              .layer {
+                .program {
+                  .program_description {
+                    width: 56vw;
+                  }
+                }
+              }
+            }
+          }
+          [data-type="find_pcp_providers"] {
+            .group {
+              .layers {
+                .layer {
+                  .box_quality {
+                    .hospital_quality_box {
+                      .clinical_quality {
+                        font-size: 1.7vh;
+                      }
+                    }
+                    .box_ratings {
+                      .amount_ratings {
+                        font-size: 1.6vh;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          [data-type="find_pcp_carousel"] {
+            .layers {
+              .layer {
+                .program {
+                  .action_box {
+                    .program_box {
+                      width: 52vw;
+                      .program_title {
+                        font-size: 2.2vh;
+                      }
+                      .program_description {
+                        width: 50vw;
+                        font-size: 1.8vh;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        footer {
+          .tabs {
+            height: 10vh;
+          }
+        }
+      }
+    }
+    #homepage {
+      &[data-homepage-tab="blog"],
+      &[data-homepage-tab="bieber"],
+      &[data-homepage-tab="stories"] {
+        .home_wrapper {
+          main {
+            height: 100vh;
+          }
+        }
+      }
+      &[data-homepage-tab="find_care"],
+      &[data-homepage-tab="sr"] {
+        .home_wrapper {
+          header {
+            height: 15vh;
+          }
+          main {
+            height: 75vh;
+          }
+        }
+      }
+      &[data-homepage-tab="community"] {
+        .home_wrapper {
+          main {
+            [data-type="ios_popup"] {
+              .container {
+                position: relative;
+                img {
+                  position: absolute;
+                  bottom: 0;
+                  height: 85%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &[data-homepage-tab="community"].show_once {
+        .home_wrapper {
+          main {
+            height: 100vh;
+          }
+        }
+      }
+    }
+  }
+}

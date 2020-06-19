@@ -1,0 +1,16 @@
+<script id=countdown_top_template type=text/x-handlebars-template>
+  <div class="countdown_container">
+    <div class="countdown_title">{{title}}</div>
+    <div class="countdown_time">{{label_store_credit}} : {{amount_store_credit}} : {{label_plan_status}} : {{label_one_sub_title}}</div>
+    <div class="countdown_labels"><span>{{caption_store_credit}}</span> <span>{{date_updated}}</span> <span>{{label_one_title}}</span> <span>{{label_one_caption}}</span></div>
+    <div class=avatar_box>
+    {{#if photo}}
+      <div class=avatar style="background-image:url({{photo}})"></div>
+    {{else}}
+      <div class=avatar>{{initials}}</div>
+    {{/if}}
+    </div>
+    <div class="user">{{username}}</div>
+    <div class="people_joined">{{description}}</div>
+  </div>
+</script>

@@ -1,0 +1,31 @@
+<script id=home_plan_status_cab_template type=text/x-handlebars-template>
+
+  {{#if is_mobile}}
+  <div class="group">
+    <div class="title_top">
+      <div class="title_cab">{{title}}</div>
+      <div class="updated_date_cab">{{date_updated}}</div>
+    </div>
+    <div class="description">{{{description}}}</div>
+    <div class="progress_bar">
+      <div class="deductible_box">
+        <div class="deductible" style="width:{{points}}"></div>
+      </div>
+    </div>
+    <div class="label_box">
+      <div>{{amount_fsa}}</div>
+    </div>
+  </div>
+  {{else}}
+  <div class="group_web_aside">
+    <div class="title_wrapper">
+      <div class="title_web">{{title}}</div>
+      <div class="right_arrow"></div>
+    </div>
+    <div class="description_web">{{{description}}}</div>
+    <div class="date">
+      <div class="updated">{{date_updated}}</div>
+    </div>
+  </div>
+  {{/if}}
+</script>

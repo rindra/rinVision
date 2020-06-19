@@ -1,0 +1,32 @@
+<script id=separators_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class=group data-dots="{{label_fsa}}" data-info="{{label_plan_status}}">
+    <div class=title>{{title}}</div>
+    {{#if cta}}
+    <div class=cta>{{cta}}</div>
+    {{else}}
+    <div class=dots>
+      <div class=dot></div>
+      <div class=dot></div>
+      <div class=dot></div>
+    </div>
+    {{/if}}
+    <div class="info_icon_box">
+      <div class="info_icon"></div>
+      <div class="info_label">Why?</div>
+    </div>
+    <div class="rewards_info_popup">
+      <div class="rewards_details">{{{label_one_title}}}
+        <!-- <div class="exit_icon_box">
+            <div class="exit_icon"></div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="group_web">
+    <div class="section_title">{{title}}</div>
+    <div class="cta_web"><span></span>{{caption_fsa}}</div>
+  </div>
+  {{/if}}
+</script>

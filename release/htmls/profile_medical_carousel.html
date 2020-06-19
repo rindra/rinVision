@@ -1,0 +1,49 @@
+<script id=profile_medical_carousel_template type=text/x-handlebars-template>
+  <div class=static>
+    <div class="dots">
+      {{#each carousel}}
+      <div class="dot"></div>
+      {{/each}}
+    </div>
+  </div>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer>
+      <div class=card>
+        <div class=action_box>
+          <div class=header_wrapper>
+            <div class=image style='background-image:url({{image}})'></div>
+            <div class=card_title>{{title}}</div>
+          </div>
+          <div class=card_subtitle>{{subtitle}}</div>
+          <div class=phone>{{phone}}</div>
+          <div class=member_title>{{cta}}</div>
+          <div class=member_name>{{description}}</div>
+
+          <div class=wrapper>
+            <div class=left_column>
+              <div class=effective_date>{{cta_color}}</div>
+              <div class=coverage>{{address_line_one}}</div>
+              <div class=group>{{group_title}}</div>
+            </div>
+
+            <div class=right_column>
+              <div class=date>{{distance}}</div>
+              <div class=coverage_info>{{address_line_two}}</div>
+              <div class=group_number>{{group_number}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide data-slide={{name}}></div>
+      {{/each}}
+    </div>
+  </div>
+</script>

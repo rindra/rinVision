@@ -1,0 +1,19 @@
+<script id=fixed_header_lang_picker_template type=text/x-handlebars-template>
+  <div class=header>
+    <div class=nav>
+      <div class="cta cancel">Cancel</div>
+      <div class='title hasDone'>{{title}}</div>
+      <div class="cta done">Done</div>
+    </div>    
+    <div class=label>{{label_fsa}}</div>
+    <div class=question>{{description}}</div>
+    <div class=answers>
+      {{#each list}}
+      <div class=answer>
+        <div class=text>{{this}}</div>
+        <div class=check></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</script>

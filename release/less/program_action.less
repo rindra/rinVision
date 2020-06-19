@@ -1,0 +1,357 @@
+._program_action() {
+  [data-type=program_action] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    .group {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      width: 100vh;
+      &[data-incentive="incentive"] {
+        border-radius: 0.75vh;
+        width: 95vw;
+        margin: 1vh 0;
+        .action_box {
+          .wrapper {
+            flex: .6;
+            border-bottom: none;
+            .title_action {
+              font-size: 2.1vh;
+              font-family: "Roboto Medium";
+            }
+          }
+          .program_points {
+            display: flex;
+            justify-content: flex-end;
+            flex: .2;
+            margin-right: 3vh;
+            font-size: 1.8vh;
+            color: #717c8e;
+          }
+        }
+      }
+      .action_box {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        // border-bottom: 1px solid #ECE7E7;
+        .icon {
+          width: 6.5vh;
+          height: 6.5vh;
+          margin: 2vh 1vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          flex: .2;
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 1px solid #ECE7E7;
+          height: 11vh;
+          flex: .8;
+          .subtitle_all_stories {
+            display: none;
+          }
+          .title_action {
+            font-size: 2.5vh;
+            margin-bottom: .5vh;
+          }
+          .description {
+            color: #717C8E;
+            font-size: 2vh;
+          }
+          .phone_icon_box {
+            display: none;
+          }
+        }
+        .program_points {
+          display: none;
+        }
+      }
+      &[data-contact="call"] {
+        .action_box {
+          .wrapper {
+            .phone_icon_box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              position: absolute;
+              right: 4vh;
+              .phone_icon {
+                width: 3vh;
+                height: 3vh;
+                margin-bottom: .5vh;
+                background-image: url(images/home/phone2.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+              .call_label {
+                font-size: 1.8vh;
+                text-transform: uppercase;
+                color: #006DFF;
+              }
+            }
+          }
+        }
+      }
+    }
+    .group_benefits {
+      display: flex;
+      padding: 20px;
+      width: 256px;
+      height: 40px;
+      .icon {
+        width: 44px;
+        height: 44px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        .title_action {
+          margin-bottom: 3px;
+          font-size: 18px;
+          color: #282C37;
+        }
+        .description {
+          font-size: 14px;
+          color: #626B7A;
+        }
+      }
+    }
+    .group_benefits:hover {
+      cursor: pointer;
+      background-color: #F6F7FA;
+    }
+    .activities_wrapper {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 409px;
+      .activity_box {
+        display: flex;
+        align-items: stretch;
+        width: 791px;
+        .program_top_card,
+        .program_separator_card,
+        .program_at_a_glance_card,
+        .program_activity_card {
+          display: none;
+        }
+        &[data-type="program_top"] {
+          .program_top_card {
+            display: flex;
+            flex-direction: column;
+            .program_image {
+              display: block;
+              width: 791px;
+              height: 140px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin-bottom: 20px;
+            }
+            .program_title_box {
+              display: flex;
+              justify-content: space-between;
+              .program_title {
+                font-size: 28px;
+                font-weight: bold;
+                color: #282C37;
+              }
+              .program_cta {
+                width: 180px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: #006dff;
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+              }
+              .program_cta:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        &[data-type="separators"] {
+          .program_separator_card {
+            display: flex;
+            justify-content: flex-start;
+            width: 791px;
+            margin: 40px 0 20px 0;
+            .program_separator {
+              font-size: 14px;
+              font-weight: bold;
+              color: #626B7A;
+            }
+          }
+        }
+        &[data-type="program_at_a_glance"] {
+          .program_at_a_glance_card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 791px;
+            .at_a_glance_description,
+            ul li {
+              font-size: 16px;
+              color: #282C37;
+            }
+            .at_a_glance_description {
+              margin: 0 0 10px 40px;
+            }
+            .more_details,
+            .less_details {
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              color: #0062FF;
+              span {
+                display: inline-block;
+                width: 12px;
+                height: 7px;
+                margin-right: 6px;
+                background-image: url(images/homepage_web/read_more_arrow.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+            }
+            .more_details,
+            .less_details:hover {
+              cursor: pointer;
+            }
+            .more_details {
+              &.hide {
+                visibility: hidden;
+              }
+            }
+            .collapse {
+              display: none;
+            }
+            .collapse.active {
+              display: block;
+              .less_details {
+                span {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+            ul {
+              margin-bottom: 30px;
+            }
+            ul li {
+              margin: 0 0 5px 58px;
+            }
+            .at_a_glance_title,
+            .at_a_glance_info {
+              display: flex;
+              justify-content: flex-start;
+              width: 791px;
+              font-size: 14px;
+            }
+            .at_a_glance_title {
+              margin-bottom: 15px;
+              font-weight: bold;
+              color: #626B7A;
+              text-transform: uppercase;
+            }
+            .at_a_glance_info {
+              margin-bottom: 40px;
+              font-size: 16px;
+              color: #282C37;
+            }
+          }
+        }
+        &[data-type="program_activity"] {
+          margin-bottom: 25px;
+          .program_activity_card {
+            display: flex;
+            flex-direction: column;
+            width: 791px;
+            border: 1px solid #dadada;
+            border-radius: 8px;
+            padding: 20px 0 20px 20px;
+            .activity_type {
+              margin-bottom: 15px;
+              font-size: 12px;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: #626B7A;
+            }
+            .activity_title {
+              margin-bottom: 10px;
+              font-size: 16px;
+              font-weight: bold;
+              color: #282C37;
+            }
+            .activity_description {
+              font-size: 14px;
+              color: #282C37;
+            }
+            .cta_button_box {
+              display: none;
+              &.action {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 20px;
+                .cta_button {
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  padding: 5px 10px;
+                  border: 1px solid #006dff;
+                  color: #006dff;
+                  border-radius: 50px;
+                }
+                .cta_button:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      .activity_box:nth-last-child(2) {
+        display: none;
+      }
+      .activity_box:last-child {
+        display: none;
+      }
+    }
+    &.active {
+      .group_benefits {
+        background-color: #F6F7FA;
+      }
+      .activities_wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  [data-story="story"] {
+    .wrapper {
+      height: 14vh;
+      .subtitle_all_stories {
+        display: none;
+      }
+    }
+    .icon {
+      width: 10.5vh;
+      height: 10.5vh;
+      margin: 2vh;
+    }
+  }
+}

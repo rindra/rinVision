@@ -1,0 +1,112 @@
+._profile_medical_carousel() {
+  [data-type=profile_medical_carousel] {
+    margin: 2vh 0 0 0;
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .static {
+      position: absolute;
+      width: 95vw;
+      height: 29vh;
+      margin: 0 0 0 1.5vh;
+      border-radius: .5vh;
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 27vh;
+        .card {
+          position: relative;
+          width: 75vw;
+          height: 27vh;
+          background: #ffffff;
+          border-radius: 1vh;
+          overflow: hidden;
+        }
+        .image {
+          width: 12vh;
+          height: 2vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .action_box {
+          position: relative;
+          margin: 0 2vh;
+        }
+        .header_wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 4vh;
+        }
+        .card_title {
+          color: #717C8E;
+          font-size: 1.6vh;
+        }
+        .card_subtitle,
+        .member_name {
+          font-family: "Open Sans Semi";
+          font-size: 1.8vh;
+          font-weight: bold;
+        }
+        .phone {
+          color: #036fff;
+          margin-bottom: 1vh;
+        }
+        .member_title {
+          font-size: 1.5vh;
+        }
+        .member_name {
+          border-bottom: 1px solid #ECE7E7;
+          margin-bottom: 1vh;
+          padding-bottom: 1vh;
+        }
+        .wrapper {
+          display: flex;
+          justify-content: flex-start;
+        }
+        .left_column {
+          width: 25vh;
+        }
+        .effective_date,
+        .coverage,
+        .group,
+        .date,
+        .coverage_info,
+        .group_number {
+          margin-bottom: 1vh;
+          font-size: 1.5vh;
+        }
+      }
+    }
+    .dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 28vh;
+    }
+    .dot {
+      border-radius: 100px;
+      margin-right: 1vh;
+      width: 1vh;
+      height: 1vh;
+      background-color: #CCCCCC;
+    }
+    .grey_dot {
+      background-color: #717C8E;
+    }
+    .slide {
+      width: 100vw;
+      height: 25vh;
+      box-sizing: border-box;
+      //border: 2px solid #ccc;
+    }
+  }
+}

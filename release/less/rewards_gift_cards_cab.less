@@ -1,0 +1,113 @@
+._rewards_gift_cards_cab() {
+  [data-type=rewards_gift_cards_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      box-shadow: 0 4px 39px -12px rgba(0,0,0,0.2);
+      .top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 2vh;
+        .points {
+          font-size: 3vh;
+          font-weight: bold;
+        }
+        .label {
+          font-size: 2vh;
+          margin-right: 2.5vh;
+        }
+        .title_cab {
+          font-size: 2.2vh;
+          margin: 0 15vh 0 0;
+        }
+        .history {
+          font-size: 2vh;
+          color: #006DFF;
+        }
+      }
+      .filters {
+        display: flex;
+        border-top: 1px solid #e6e8e9;
+        margin: 0 0 2vh 2vh;
+        padding-top: 2vh;
+        .filter:first-child {
+          margin-left: 0;
+        }
+        .filter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1vh 1.5vh;
+          height: 3vh;
+          margin: 1vh;
+          color: #151617;
+          text-transform: uppercase;
+          font-size: 2vh;
+          border: 1px solid #C4D2E4;
+          border-radius: 4px;
+        }
+      }
+      .layers_gifts {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+        .layer_gift {
+          display: flex;
+          flex-direction: column;
+          width: 42vw;
+          height: 35vh;
+          margin: 0 0 2vh 2vh;
+          box-shadow: 0 0 10px #d2d4d7;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        .image {
+          width: 100%;
+          height: 22vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          height: 13vh;
+          .title_gift {
+            width: 28vw;
+            color: #1c1d1f;
+            margin: 1vh 0 1vh 2vh;
+            font-size: 2.2vh;
+            font-weight: bold;
+          }
+          .points {
+            font-size: 2vh;
+            margin: 1vh 2vh;
+            color: #626b79;
+          }
+        }
+      }
+    }
+  }
+  [data-id="home_rewards_gift_cards_att"] {
+    .group {
+      [data-gift-id="rewards_habitat_gift_card"] {
+        .wrapper {
+          .title_gift {
+            width: 40vw;
+          }
+        }
+      }
+      .top {
+        .title_cab {
+          margin: 0 6vh 0 0;
+        }
+        .history {
+          font-size: 1.8vh;
+          color: #1d1e20;
+        }
+      }
+    }
+  }
+}

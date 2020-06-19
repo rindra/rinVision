@@ -1,0 +1,97 @@
+<section id="configurator" class="main" data-module=configurator>
+  <script id=configurator_template type=text/x-handlebars-template>
+    <nav>
+      <div>Configurator
+        <p class=version></p>
+      </div>
+      <div class=back data-action=back>
+        <div class="button blank">Back</div>
+      </div>
+    </nav>
+    <div class=personas>
+      {{#each personas}}
+      <div class=persona data-email="{{email}}" data-info-product="{{info_product}}" data-info-description="{{info_description}}">
+        <div class=email>{{email}}</div>
+        <div class="button blank" data-action=info>Info</div>
+        <div class="button blank" data-action=download>Download
+          <div class=i_dot data-i-dot-color=blank></div>
+        </div>
+        <div class="button blank" data-action=delete>Delete</div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="progress">
+      <div class=box>
+        <div class=images data-status=why>
+          <div class=label>Downloading Why Castlight? images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=core>
+          <div class=label>Downloading core images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=stream>
+          <div class=label>Downloading home stream images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=search>
+          <div class=label>Downloading search images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=epilogue>
+          <div class=label>Downloading epilogue images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=carousel>
+          <div class=label>Downloading carousel images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=images data-status=flow>
+          <div class=label>Downloading flow images</div>
+          <div class=sep></div>
+          <div class=status></div>
+        </div>
+        <div class=button-box>
+          <div class="button blue" data-action=complete>Done</div>
+        </div>
+      </div>
+    </div>
+    <div class=info_box>
+      <div class=box>
+        <div class=label>PRODUCT</div>
+        <div class=product></div>
+        <div class=label>DESCRIPTION</div>
+        <div class=description></div>
+        <div class=button-box>
+          <div class="button blue" data-action=info_complete>Done</div>
+        </div>
+      </div>
+    </div>
+    <div class=version_box>
+      <div class=box>
+        <div class="label label_version"></div>        
+        <div class="label label_msg">New app available!</div>        
+        <div class="label label_description">Please update for<br>optimal experience</div>        
+        <div class=button-box>
+          <div class="link" data-action=not_now>I will update later</div>
+          <div class="button blue" data-action=update_now>Update now</div>
+        </div>
+      </div>
+    </div>
+    <div class=error_box>
+      <div class=box>
+        <div class=label>ERROR</div>        
+        <div class=description></div>
+        <div class=button-box>
+          <div class="button blue" data-action=error_ok>Done</div>
+        </div>
+      </div>
+    </div>
+  </script>
+</section>

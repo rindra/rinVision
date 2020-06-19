@@ -1,0 +1,19 @@
+<script id=ways_to_earn_top_template type=text/x-handlebars-template>
+  <div class=bg>
+    <div class=gradient></div>
+  </div>
+  <div class="box">
+    {{#if incentive_status}}
+    <div class="points_earned">${{points}}<span class=m>/${{total}}</span></div>
+    <div class="points_label">{{label_store_credit}}</div>
+    {{else}}
+    <div class="points_earned">{{points}}</div>
+    <div class="points_label">{{caption_fsa}}</div>
+    <!-- <div class="points_date">{{amount_fsa}}</div> -->
+    <div class="redeem_points_box">
+      <div class="cta_text">{{cta}}</div>
+    </div>
+    {{/if}}
+  </div>
+  <div class="gift_box"></div>
+</script>

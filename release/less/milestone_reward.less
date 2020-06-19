@@ -1,0 +1,30 @@
+._milestone_reward() {
+  [data-type="milestone_reward"] {
+    margin: 0;
+  }
+  [data-type="milestone_reward"] ~ [data-type="milestone_reward"] {
+    margin: 4vh 0 0 0;
+  }
+  [data-type=milestone_reward] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .group {
+      background: none;
+      .milestone_title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        .milestone_reward {
+          color: #626b7a;
+          font-size: 2vh;
+          font-weight: bold;
+          margin-left: 0.5vh;
+        }
+        .checkmark {
+          display: none;
+        }
+      }
+    }
+  }
+}

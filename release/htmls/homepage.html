@@ -1,0 +1,95 @@
+<section id=homepage class="main" data-module=homepage data-homepage-previous-tab data-homepage-tab=home data-bieber-name data-package data-top>
+  <script id=homepage_template type=text/x-handlebars-template>
+
+    <div class="home_wrapper">
+      <header style='background-color:{{config.skin.header_background_color}};'>
+        <div class=logo style="background-image:url({{config.skin.logo}})"></div>
+        <div class=new_notification>
+          <div class=hotspot></div>
+          <div class=number></div>
+        </div>
+        <div class=comm>
+          <div class=icon></div>          
+        </div>
+        <div class=search>
+          <div class=search-box>
+            <div class=icon></div>
+            <div class=input>
+              <input type=text placeholder="Condition, procedure or specialty" style='color:{{config.skin.header_text_color}}'>
+            </div>
+          </div>
+          <div class=location>
+            <div class=pin></div>
+            <div class=zip>{{config.skin.persona.state}}</div>
+          </div>
+        </div>
+        <div class=arrow></div>
+
+        <div class=left>
+          <div class=icon_left></div>
+        </div>
+        <div class=title style='color:{{config.skin.header_text_color}}'>{{tab}}</div>
+        <div class=question></div>
+        <div class=right>
+          <div class=icon_i></div>
+        </div>
+
+        <div class=settings-box>
+          <div class=settings></div>
+        </div>
+        <div class=logout></div>
+        <div class=popup>
+          <div class=box>Well done! You've earned a reward!
+            <br>Check your email for more information.</div>
+        </div>
+      </header>
+      <main data-time={{config.skin.persona.time}}>
+        {{#if config.skin.persona.home_progress}}
+        <div class=ffw></div>
+        {{/if}}
+      </main>
+      @@include('homepage_footer.html')
+      @@include('homepage_popup.html')
+      @@include('high_touch.html')      
+    </div>
+
+    <!-- CASTLIGHT COMPLETE WEB VERSION -->
+
+    <div class="container_web">
+      <header style='background-color:{{config.skin.header_background_color}}'>
+        <div class="logo_box">
+          <div class=logo_web style="background-image:url({{config.skin.logo}})"></div>
+        </div>
+        <div class="search_and_categories">
+          <div class="tabs_web" style='color:{{config.skin.header_text_color}}'>
+            <div class="home tab_web on" data-name="home">home</div>
+            <div class="find_care tab_web" data-name="find_care">find care</div>
+            <div class="claims tab_web" data-name="claims">claims</div>
+            <div class="plan tab_web" data-name="plan">plan details</div>
+            <div class="benefits tab_web" data-name="benefits">benefits</div>
+            <div class="notifications tab_web" data-name="notifications"></div>
+            <div class="more tab_web" data-name="more">more
+              <div class="dropdown"></div>
+            </div>
+          </div>
+          <div class="search_box">
+            <form>
+                <input type=text placeholder="Search for doctors, services, conditions, or medicines">
+            </form>
+            <div class="search_button">search</div>
+          </div>
+        </div>
+      </header>
+      <div class="title_web_box">
+        <div class=title_web></div>
+      </div>
+      <div class="web_content_box">
+        <aside data-time={{config.skin.persona.time}}></aside>
+        <main data-time={{config.skin.persona.time}}></main>
+      </div>
+      <footer data-time={{config.skin.persona.time}}></footer>
+      @@include('homepage_web_footer.html')
+    </div>
+
+  </script>
+</section>

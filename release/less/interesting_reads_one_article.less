@@ -1,0 +1,115 @@
+._interesting_reads_one_article() {
+  [data-type=interesting_reads_one_article] {
+    display: flex;
+    justify-content: center;
+    &.no_margin {
+      margin: 0;
+    }
+    .group {
+      flex-direction: column;
+      .top {
+        display: flex;
+        flex-direction: column;
+        .image {
+          width: 100%;
+          height: 20vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .topic {
+          height: 4vh;
+          color: #1c1d1f;
+          margin: 1vh 0 0 2vh;
+          font-size: 2.5vh;
+        }
+        .label_info {
+          height: 2vh;
+          font-size: 2vh;
+          margin: 2vh 0 0 2vh;
+          color: #626b79;
+        }
+      }
+      .footer_cab {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6vh;
+        .cta_cab {
+          display: flex;
+          align-items: center;
+          font-size: 2vh;
+          height: 6vh;
+          margin-right: 2vh;
+          color: #006DFF;
+        }
+      }
+    }
+    .container_articles {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1200px;
+      height: 200px;
+      .box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 366px;
+        height: 150px;
+        .image {
+          width: 130px;
+          height: 150px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .info_box {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          left: 113px;
+          width: 220px;
+          height: 120px;
+          padding: 17px 15px;
+          background-color: #FFFFFF;
+          border: 1px solid #DADADA;
+          border-radius: 8px;
+          overflow: hidden;
+          transition: max-height 500ms linear;
+          max-height: 50px;
+          .label {
+            font-size: 2.2vh;
+            margin-bottom: 1vh;
+          }
+          .info {
+            width: 200px;
+            font-size: 18px;
+            color: #282C37;
+            line-height: 24px;
+          }
+          .details {
+            display: none;
+          }
+        }
+      }
+      .box:hover {
+        cursor: pointer;
+        .info_box {
+          box-shadow: 0 10px 20px 0 rgba(0,0,0,.1), 0 6px 6px 0 rgba(0,0,0,.2);
+          max-height: 200px;
+          .info {
+            color: #006dff;
+            margin-bottom: 7px;
+          }
+          .details {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            color: #626b7a;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

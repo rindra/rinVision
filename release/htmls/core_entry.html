@@ -1,0 +1,31 @@
+<script id=core_entry_template type=text/x-handlebars-template>
+  <div class=group data-activity-category={{category}}>
+    <div class=top>
+      <div class=left>
+        <div class=title>{{title}}</div>
+        <div class=description>{{description}}</div>
+        <div class=slider_box>
+          <div class=slider>
+            <div class=bg>
+              <div class=bar style="background-color:{{color}}"></div>
+            </div>
+            <div class=circle></div>
+          </div>
+          <div class=amount style="color:{{color}}"></div>
+        </div>
+        <div class=label></div>
+      </div>
+      <div class=right>
+        <div class=sep></div>
+        <div class=video>
+          <video src="images/emojis/{{caption_fsa}}" playsinline webkit-playsinline></video>
+        </div>
+        <div class=total style="color:{{color}}"></div>
+        <div class=total_label>{{amount_fsa}}</div>
+      </div>
+    </div>
+    <div class=bottom>
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+</script>

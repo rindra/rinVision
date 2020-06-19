@@ -1,0 +1,77 @@
+._insurance_card_dynamic() {
+  [data-type=insurance_card_dynamic] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      border-radius: .75vh;
+      .action_box {
+        margin: 2vh;
+        .header_wrapper {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1vh;
+          .image {
+            width: 16vh;
+            height: 3vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .card_label {
+            color: #626b79;
+            font-size: 1.8vh;
+          }
+        }
+        .card_subtitle {
+          font-size: 2vh;
+          font-weight: bold;
+          margin-bottom: 1vh;
+        }
+        .phone {
+          color: #006dff;
+          margin-bottom: 2vh;
+          font-size: 2vh;
+        }
+        .user_info {
+          display: flex;
+          justify-content: space-between;
+          .right {
+            margin-left: 5vh;
+          }
+          .member_title,
+          .number_title {
+            margin-bottom: .5vh;
+          }
+          .member_name,
+          .member_number {
+            font-weight: bold;
+          }
+        }
+        .grey_border {
+          width: 88vw;
+          height: 1px;
+          margin: 2vh 0;
+          background-color: #e6e8e9;
+        }
+        .left,
+        .right {
+          display: flex;
+          flex-direction: column;
+          font-size: 2vh;
+          color: #1c1d1f;
+          .insurance_details {
+            margin-bottom: .5vh;
+          }
+        }
+        .insurance_info {
+          display: flex;
+          justify-content: space-between;
+          .right {
+            margin-right: 5vh;
+          }
+        }
+      }
+    }
+  }
+}

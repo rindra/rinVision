@@ -1,0 +1,64 @@
+._autosuggest() {
+  [data-type=autosuggest] {
+    position: absolute;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    top: 12vh;
+    font-family: "Open Sans Semi";
+    font-size: 1.8vh;
+    z-index: 1;
+    .autosuggest {
+      margin: 0 0 0 2vh;
+      .item {
+        margin: 2vh 0 0 0;
+        .trigger {
+          color: #717C8E;
+          text-transform: capitalize;
+        }
+        .copy {
+          color: #000000;
+        }
+      }
+    }
+    .matches {
+      margin: 2vh 0 0 2vh;
+      border-top: 1px solid #ECE7E7;
+      .item {
+        margin: 2vh 0 0 0;
+      }
+    }
+    .recommendations {
+      margin: 2vh 0 0 2vh;
+      border-top: 1px solid #ECE7E7;
+      .label {
+        text-transform: uppercase;
+        color: #717c8e;
+        margin: 2vh 0 0 0;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        margin: 2vh 0 0 0;
+        .icon {
+          width: 4vh;
+          height: 4vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .info {
+          margin: 0 0 0 1vh;
+          .title {
+            margin: 0;
+            height: auto;
+          }
+          .subtitle {
+            font-size: 1.6vh;
+            color: #717c8e;
+          }
+        }
+      }
+    }
+  }
+}

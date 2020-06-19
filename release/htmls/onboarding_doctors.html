@@ -1,0 +1,31 @@
+<div class=slide data-slide=doctors data-cta="All done!">
+  {{#each config.skin.onboarding}}
+  {{#equal this this.type "doctors"}}
+  <hgroup>
+    <div class=group>
+      <div class=title>{{title}}</div>
+      <div class=message>{{description}}</div>
+    </div>
+  </hgroup>
+  <div class=doctors>
+    <div class=group>
+      {{#each doctors}}
+      <div class=doctor_box>
+        <div class=doctor>
+          <div class=info>
+            <div class=name>{{name}}</div>
+            <div class=description>{{description}}</div>
+          </div>
+          <div class=check></div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/equal}}
+  {{/each}}
+  <div class=white_g></div>
+  <div class=button_box>
+    <div class=button data-name=next style="background-color:{{config.skin.button_background_color}}; color:{{config.skin.button_text_color}}">Next</div>
+  </div>
+</div>

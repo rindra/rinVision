@@ -1,0 +1,77 @@
+._home_recent_claims_new() {
+  [data-type=home_recent_claims_new] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+    }
+    .title {
+      justify-content: space-between;
+      margin-right: 2vh;
+    }
+    .action_box:last-child {
+      .wrapper {
+        border: none;
+      }
+    }
+    .wrapper {
+      margin-left: 2vh;
+      border-bottom: 1px solid #ECE7E7;
+    }
+    .box {
+      display: flex;
+      justify-content: space-between;
+      margin: 2vh 2vh 1vh 0;
+      .name,
+      .amount {
+        font-size: 2.4vh;
+      }
+    }
+    .subtitle,
+    .description {
+      font-size: 1.8vh;
+      color: #717C8E;
+      // margin: 0 0 1vh 0;
+    }
+    .subtitle {
+      margin-bottom: 1vh;
+    }
+    .description {
+      margin-bottom: 2vh;
+    }
+    .prescriptions {
+      display: none;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      // margin-top: 9vh;
+    }
+    .cta {
+      margin: 2vh;
+    }
+  }
+  [data-savings=true] {
+    .prescriptions {
+      display: flex;
+      align-items: center;
+      margin: 0 2vh;
+      background-color: #fcfbbb;
+      border-radius: 10px;
+      .star {
+        width: 6vh;
+        height: 6vh;
+        margin: 1vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .info {
+        font-size: 1.8vh;
+        margin-left: 1vh;
+        width: 40vh;
+      }
+    }
+  }
+}

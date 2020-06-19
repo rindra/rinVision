@@ -1,0 +1,37 @@
+._tmp_image_with_report_option() {
+  [data-type=tmp_image_with_report_option] {
+    margin: 0;
+    .container {
+      width: 100vw;
+      &.hidden{
+        display: none;
+      }
+    }
+    [data-report="no_report"] {
+      .hotspot_more {
+        display: none;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    .hotspot_more {
+      background: rgba(0, 0, 0, 0);
+      width: 10vh;
+      height: 9vh;
+      position: absolute;
+      right: 0;
+    }
+  }
+  [data-id="social_post_new_parents"],
+  [data-id="social_post_challenge_team_photos"],
+  [data-id="social_post_event"],
+  [data-id="social_weekly_stats_temp"],
+  [data-id="social_favorite_snack_start_temp"],
+  [data-id="social_article_one_temp"],
+  [data-id="social_article_drinking_water_temp"],
+  [data-id="social_favorite_snack_end_temp"] {
+    margin-bottom: 2vh;
+  }
+}

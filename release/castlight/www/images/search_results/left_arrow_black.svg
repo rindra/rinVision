@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Back Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0.261759062,10.543034 L2.0250468e-13,10.281275 L10.281275,2.22044605e-14 L12.6044489,2.32317397 L4.38458888,10.543034 L12.6044489,18.7628941 L10.281275,21.0860681 L2.0250468e-13,10.8047931 L0.261759062,10.543034 Z" id="Back-Arrow" fill="#120107"></path>
+    </g>
+</svg>

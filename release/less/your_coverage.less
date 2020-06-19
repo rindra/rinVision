@@ -1,0 +1,64 @@
+._your_coverage() {
+  [data-type=your_coverage] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      display: flex;
+    }
+    .title {
+      margin-bottom: 2vh;
+    }
+    .description,
+    .subtitle {
+      width: 33vh;
+    }
+    .description {
+      font-size: 2.3vh;
+      color: #1D1E20;
+    }
+    .percent {
+      font-size: 5.2vh;
+      margin: 0 2vh;
+    }
+    .subtitle {
+      font-size: 2vh;
+      color: #717C8E;
+      margin-top: 2vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cta {
+      margin: 0 2vh 2vh 2vh;
+    }
+  }
+  [data-standard=true] {
+    .percent,
+    .subtitle {
+      display: none;
+    }
+    .description {
+      width: 85vw;
+      margin-left: 2vh;
+    }
+  }
+  [data-style="updated"] {
+    .title {
+      display: none;
+    }
+    .description {
+      font-size: 2.1vh;
+      line-height: 2.8vh;
+      color: #717c8e;
+      margin: 2vh;
+    }
+  }
+}

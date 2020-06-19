@@ -1,0 +1,17 @@
+<script id=search_results_resources_and_benefits_template type=text/x-handlebars-template>
+  <div class=group data-style="{{label_fsa}}">
+    <div class="title">{{title}}</div>
+    {{#each carousel}}
+      <div class=action_box data-name="{{name}}">
+        <div class=icon style="background-image:url({{image}})"></div>
+        <div class=wrapper>
+          <div class=title_action>{{title}}</div>
+          <div class=subtitle>{{subtitle}}</div>
+        </div>
+      </div>
+    {{/each}}
+    <div class=footer>
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+</script>

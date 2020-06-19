@@ -1,0 +1,146 @@
+._top_social() {
+  [data-type=top_social] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .container {
+      width: 100vw;
+      overflow: hidden;
+      height: 35vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      //background-image: url(https://dl.dropboxusercontent.com/s/pps18rcfwnyb1r3/home_dash_start.jpg?dl=0);
+      //background-color: #ffffff;
+      //      background-image: linear-gradient(180deg, #000000, #fecd32);
+    }
+    .logo_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5.5vh 0 0 0;
+      height: 3.5vh;
+    }
+    .logo {
+      width: 21vh;
+      height: 6vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .tabs_box {
+      display: flex;
+      justify-content: center;
+      margin: 2.5vh 0 0 0;
+    }
+    .tabs {
+      display: flex;
+      width: 35vh;
+      border-radius: 1vh;
+      overflow: hidden;
+    }
+    .tab {
+      color: #ffffff;
+      font-family: 'Roboto Regular';
+      font-size: 2.1vh;
+      flex: .5;
+      display: flex;
+      height: 4vh;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, .3);
+      &.active {
+        color: #3a2dc8;
+        font-family: 'Roboto Bold';
+        background-color: #ffffff;
+      }
+    }
+    .svg_box {
+      display: flex;
+      height: 10vh;
+      margin: 3vh 5vh 0 5vh;
+      color: #ffffff;
+    }
+    .total_steps {
+      position: relative;
+      width: 16vh;
+      height: 13vh;
+      svg {
+        width: 16vh;
+        height: 13vh;
+//        padding: 1vh 0 0 0;
+      }
+    }
+    .label {
+      font-family: 'Roboto Bold';
+    }
+    .caption {
+      opacity: .5;
+    }
+    .steps {
+      position: absolute;
+      width: 100%;
+      height: 13vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      .group {
+        display: block;
+        width: auto;
+        background: none;
+        border-radius: 0px;
+        .label {
+          font-size: 2vh;
+          text-align: center;
+        }
+        .caption {
+          font-size: 1.5vh;
+          text-align: center;
+        }
+      }
+    }
+    .company {
+      .label {
+        font-size: 2.5vh;
+      }
+      .caption {
+        font-size: 2vh;
+      }
+    }
+    .stats {
+      display: flex;
+      margin: 3vh 0 0 0;
+      .calories,
+      .users {
+        margin: 0 0 0 3vh;
+      }
+      .label {
+        font-size: 2vh;
+      }
+      .caption {
+        font-size: 1.5vh;
+        text-align: center;
+      }
+      .icon {
+        width: 2vh;
+        height: 2vh;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    [data-icon-name=pin] {
+      background-image: url(images/home/pin.svg);
+    }
+    [data-icon-name=flame] {
+      background-image: url(images/home/flame.svg);
+    }
+    [data-icon-name=time] {
+      background-image: url(images/home/time.svg);
+    }
+  }
+}

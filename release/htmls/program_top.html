@@ -1,0 +1,115 @@
+<script id=program_top_template type=text/x-handlebars-template>
+  <div class=circle>
+    <div class=image style='background-image:url({{image}})'></div>
+  </div>
+  <div class="exit_box">
+    <div class="exit"></div>
+  </div>
+  {{#if is_wellbeing}}
+  <div class="wellbeing_container">
+    <div class="description">{{description}}</div>
+    <div class="name">{{title}}</div>
+  </div>
+  {{else}}
+  <div class="container">
+    <div class="program_name">
+      <div class="name">{{title}}</div>
+    </div>
+  </div>
+  {{/if}}
+  <div class="outer_container" data-status="{{status}}" data-calendar="{{calendar}}" data-program="{{caption_fsa}}">
+    <div class="container_points">
+      <div class="points">{{program_points}}<span>pts</span></div>
+      <div class="description_points">{{label_fsa}}</div>
+    </div>
+    <div class="steps_goals_box">
+      <div class="step_goal one">
+        <div class="goal">{{label_one_title}}</div>
+        <div class="goal_line"></div>
+        <div class="goal_multiplier">X3 GOAL</div>
+      </div>
+      <div class="step_goal two">
+        <div class="goal">{{label_one_sub_title}}</div>
+        <div class="goal_line"></div>
+        <div class="goal_multiplier">X2 GOAL</div>
+      </div>
+      <div class="step_goal three">
+        <div class="goal">{{label_one_caption}}</div>
+        <div class="goal_line"></div>
+        <div class="goal_multiplier">GOAL</div>
+      </div>
+    </div>
+    <div class="grey_line"></div>
+    <div class="container_calendar">
+      <div class="wrapper">
+        <div class="checkmark_box transparent">
+          <div class="grey_circle"></div>
+        </div>
+        <div class="day">{{before_4}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="checkmark_box">
+          <div class="white_checkmark"></div>
+        </div>
+        <div class="day">{{before_3}}</div>
+      </div>
+      <div class="wrapper record">
+        <div class="checkmark_box">
+          <div class="white_checkmark"></div>
+        </div>
+        <div class="day">{{before_2}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="checkmark_box transparent">
+          <div class="grey_circle"></div>
+        </div>
+        <div class="day">{{before_1}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="checkmark_box active">
+          <div class="white_checkmark"></div>
+        </div>
+        <div class="today">{{today}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="white_circle"></div>
+        <div class="day">{{after_1}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="white_circle"></div>
+        <div class="day">{{after_2}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="white_circle"></div>
+        <div class="day">{{after_3}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="white_circle"></div>
+        <div class="day">{{after_4}}</div>
+      </div>
+    </div>
+    <div class="today_pointer">
+      <div class="triangle"></div>
+      <div class="cover"></div>
+      <div class="date">Today, {{date}}</div>
+    </div>
+    <div class="wellbeing_steps_box">
+      <div class="wellbeing_steps">{{label_two_title}} <span>{{label_two_caption}}</span></div>
+      <div class="wellbeing_pts">+{{label_two_sub_title}}</div>
+    </div>
+    <div class="container_activity">
+      {{#each carousel}}
+      <div class="group">
+        <div class="activity_wrapper">
+          <div class="checked_title">{{title}}</div>
+          <div class="wrapper_activity">
+            <div class="points_activity">{{points}} pts</div>
+            <div class="checkmark"></div>
+          </div>
+        </div>
+      </div>
+      <div class="activity_border"></div>
+      {{/each}}
+    </div>
+  </div>
+</script>

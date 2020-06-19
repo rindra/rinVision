@@ -1,0 +1,18 @@
+<script id=community_interests_slide_template type=text/x-handlebars-template>
+  <div class="section personalized_experience">
+    <div class="live_cards_wrapper">
+      <div class="upload_picture_box">
+        <div class=avatar_box>
+          {{#if photo}}
+          <div class=avatar style="background-image:url({{photo}})"></div>
+          {{else}}
+          <div class=avatar>{{initials}}</div>
+          {{/if}}
+          <div class="greetings">Hi {{first_name}}!</div>
+          <div class="greetings_subtitle">{{label_one_title}}</div>
+        </div>
+      </div>
+    </div>
+    <img src="images/social_feed/community_onboarding_3.png"></img>
+  </div>
+</script>

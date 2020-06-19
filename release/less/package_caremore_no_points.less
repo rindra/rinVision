@@ -1,0 +1,51 @@
+._package_caremore_no_points() {
+  [data-package="package_caremore_no_points"] {
+    main {
+      [data-type=top_nav_cab] {
+        .container {
+          .activity_points {
+            display: none;
+          }
+        }
+      }
+    }
+    footer .tabs {
+      [data-name=community] {
+        display: none;
+      }
+      [data-name=notifications] {
+        display: flex;
+      }
+    }
+    &[data-homepage-tab=home] {
+      header {
+        .new_notification {
+          display: none;
+        }
+        .comm {
+          display: flex;
+          .icon {
+            position: absolute;
+            width: 7vh;
+            height: 5vh;
+            top: 3vh;
+            right: 0;
+            background-repeat: no-repeat;
+            background-image: url(images/home/comm.svg);
+            background-size: contain;
+          }
+        }
+      }
+      [data-type=top_nav_cab] {
+        .bg {
+          top: -160vh;
+        }
+      }
+      footer {
+        .healthyblue {
+          display: block;
+        }
+      }
+    }
+  }
+}

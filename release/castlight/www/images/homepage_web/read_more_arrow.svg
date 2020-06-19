@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Desktop icon/right arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.673828125 0.75 5.83007813 5.90625 6.15234375 6.24316406 5.83007813 6.58007812 0.673828125 11.7363281 1.13686838e-13 11.0625 4.81933594 6.24316406 1.13686838e-13 1.42382812"></polygon>
+    </defs>
+    <g id="Mocks---templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MVP---at-a-glance-only---zero-state" transform="translate(-529.000000, -867.000000)">
+            <g id="Component/Benefits/At-a-Glance" transform="translate(528.000000, 487.000000)">
+                <g id="Expand-Copy" transform="translate(1.000000, 370.000000)">
+                    <g id="Desktop-icon/right-arrow" transform="translate(6.000000, 13.500000) rotate(90.000000) translate(-6.000000, -13.500000) translate(2.500000, 7.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#607785" xlink:href="#path-1"></use>
+                        <g id="🎨-Color/White" mask="url(#mask-2)" fill="#006DFF">
+                            <g transform="translate(-6.000000, -3.000000)" id="Rectangle">
+                                <rect x="0" y="0" width="18" height="18"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

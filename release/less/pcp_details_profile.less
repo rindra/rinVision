@@ -1,0 +1,47 @@
+._pcp_details_profile() {
+  [data-type=pcp_details_profile] {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .group {
+      flex-direction: column;
+    }
+    .wrapper {
+      display: flex;
+      margin: 0 2vh;
+      padding: 1vh 0;
+      align-items: center;
+      border-bottom: 1px solid #ECE7E7;
+    }
+    .wrapper:last-child {
+      border: 0 none;
+    }
+    .image {
+      height: 8vh;
+      // width: 8vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      left: -1vh;
+      flex: 1;
+    }
+    .name,
+    .info {
+      font-size: 1.5vh;
+    }
+    .name {
+      flex: 1;
+      font-weight: bold;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+    }
+    .cta {
+      position: relative;
+      top: 1vh;
+    }
+  }
+}

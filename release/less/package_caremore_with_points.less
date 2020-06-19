@@ -1,0 +1,45 @@
+._package_caremore_with_points() {
+  [data-package="package_caremore_with_points"] {
+    main {
+      [data-type=top_nav_cab] {
+        //        .activity_points {
+        //          visibility: hidden;
+        //          height: 4vh;
+        //        }
+      }
+    }
+    footer .tabs {
+      [data-name=community] {
+        display: none;
+      }
+      [data-name=notifications] {
+        display: flex;
+      }
+    }
+    &[data-homepage-tab=home] {
+      header {
+        .new_notification {
+          display: none;
+        }
+        .comm {
+          display: flex;
+          .icon {
+            position: absolute;
+            width: 7vh;
+            height: 5vh;
+            top: 3vh;
+            right: 0;
+            background-repeat: no-repeat;
+            background-image: url(images/home/comm.svg);
+            background-size: contain;
+          }
+        }
+      }
+      footer {
+        .healthyblue {
+          display: block;
+        }
+      }
+    }
+  }
+}

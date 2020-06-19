@@ -1,0 +1,79 @@
+._program_activity() {
+  [data-type=program_activity] {
+    display: flex;
+    justify-content: center;
+    // pointer-events: none;
+    .group {
+      flex-direction: column;
+      border-radius: .75vh;
+      // pointer-events: auto;
+      .label_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .label {
+          font-size: 1.9vh;
+          color: #626B7A;
+          margin: 2vh 2vh 1vh 2vh;
+        }
+        .checkmark {
+          display: none;
+        }
+      }
+      .topic {
+        font-size: 2.4vh;
+        font-weight: bold;
+        color: #1D1E20;
+        margin: 0 2vh 1vh 2vh;
+      }
+      .description {
+        font-size: 2vh;
+        color: #626B7A;
+        margin: 0 2vh 2vh 2vh;
+      }
+      .cta_button_box {
+        display: none;
+        &.action {
+          display: flex;
+          justify-content: flex-end;
+          margin: 0 2vh 2vh 0;
+          .cta_button {
+            font-size: 2vh;
+            text-transform: uppercase;
+            padding: 1vh 2vh;
+            border: 1px solid #006dff;
+            color: #006dff;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+    [data-status="complete"] {
+      .group {
+        // pointer-events: none;
+        .label_wrapper {
+          .checkmark {
+            display: block;
+            margin: 1vh 2vh 0 0;
+            width: 3vh;
+            height: 3vh;
+            background-image: url(images/programs/green_checkmark.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        // .topic {
+        //   text-decoration: line-through;
+        // }
+      }
+    }
+    [data-cta="show"] {
+      .group {
+        .cta_wrapper {
+          display: flex;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+._hsa_balance_cab() {
+  [data-type=hsa_balance_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      align-items: center;
+      .image {
+        width: 10vh;
+        height: 9vh;
+        margin: 0 2vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .info {
+        padding: 0 2vh 0 0;
+        font-size: 2vh;
+        color: #717c8e;
+      }
+    }
+    .group_web {
+      width: 100%;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+        .image {
+          width: 45px;
+          height: 45px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .info {
+          width: 290px;
+          font-size: 14px;
+          line-height: 20px;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .group_web:hover {
+      cursor: pointer;
+      .container {
+        background-color: #F6F7FA;
+        .right_arrow {
+          background-image: url(images/homepage_web/blue_right_arrow_aside.svg);
+        }
+      }
+    }
+  }
+  [data-id=tip_emergency_room_cab] {
+    margin: 0;
+    .group {
+      width: 100vw;
+      border-radius: 0;
+      border-bottom: 1px solid #dadada;
+    }
+  }
+}

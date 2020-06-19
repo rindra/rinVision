@@ -1,0 +1,11 @@
+{
+  "username": "rinatjiff",
+  "paths": {
+    "paths_id": "original",
+    "central": "jiff-navigator",
+    "prod": "jiff-prod",
+    "release": "release",
+    "base": "http://jiff-navigator-db.herokuapp.com/",
+    "dropbox": "https://dl.dropboxusercontent.com/"
+  }
+}

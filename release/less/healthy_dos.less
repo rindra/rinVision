@@ -1,0 +1,130 @@
+._healthy_dos() {
+  [data-type=healthy_dos] {
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 95vw;
+      border-radius: .5vh;
+      overflow: hidden;
+      height: 28vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      //background-image: url(https://dl.dropboxusercontent.com/s/rk1h53k7z705z3o/home_todo_jan.png?dl=0);
+      background-color: #ffffff;
+      .arrow_box {
+        display: flex;
+        justify-content: center;
+      }
+      .arrow {
+        width: 0;
+        height: 0;
+        border-left: 1.7vh solid transparent;
+        border-right: 1.7vh solid transparent;
+        border-top: 1.3vh solid;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2vh 0 0 0;
+      }
+      .title {
+        color: #000000;
+        font-family: 'Roboto Bold';
+        font-size: 2.5vh;
+        height: auto;
+      }
+      .completed {
+        color: #717C8E;
+        margin: 0 2vh 0 0;
+        font-size: 1.7vh;
+      }
+      .icon_box {
+        flex: .2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon,
+        .icon_complete {
+          width: 5vh;
+          height: 5vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .icon_complete {
+          display: none;
+        }
+      }
+      .bottom {
+        margin: 0.5vh 0 0 2.5vh;
+        overflow: hidden;
+        height: 14vh;
+        .card {
+          width: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          padding: 2vh 0 0 0;
+          margin: 2vh 0 0 0;
+          border-top: 2px solid #ede8e8;
+        }
+        .card:first-child {
+          border: 0 none;
+        }
+        .title {
+          font-family: 'Roboto Regular';
+          font-size: 2.1vh;
+          margin: 0;
+          color: #36373a;
+        }
+        [data-status=complete] {
+          display: none;
+        }
+      }
+      .points_box {
+        display: flex;
+        color: #717c8d;
+        font-size: 1.8vh;
+        margin: 0 2.5vh 0 0;
+        .icon {
+          width: 2.3vh;
+          height: 2.3vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(images/benefits/star.svg)
+        }
+        span {
+          font-family: 'Roboto Bold';
+        }
+      }
+      .cta_box {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .cta {
+        margin: 2vh 2vh 0 0;
+      }
+      [data-points="0"] {
+        .points,
+        .icon {
+          display: none;
+        }
+      }
+    }
+    [data-tasks-left="0"] {
+      .bottom {
+        display: none;
+      }
+      height: 14vh;
+    }
+    [data-tasks-left="1"] {
+      .bottom {
+        height: 7vh;
+      }
+      height: 20vh;
+    }
+    [data-visible=false] {
+      display: none;
+    }
+  }
+}

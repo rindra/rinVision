@@ -1,0 +1,436 @@
+._program_top() {
+  [data-type=program_top] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 95vh;
+      height: 28vh;
+      border-radius: 0 0 100vh 100vh;
+      overflow: hidden;
+      .image {
+        width: 100vw;
+        height: 28vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .exit_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 4vh;
+      height: 6vh;
+      width: 16vw;
+      .exit {
+        width: 5vh;
+        height: 5vh;
+        margin: 2vh;
+        background-image: url(images/programs/back_arrow_benefits.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .container {
+      position: relative;
+      bottom: 1vh;
+      width: 100vw;
+      .program_name {
+        display: flex;
+        align-items: center;
+        margin: -3vh 2vh 0 2vh;
+        box-shadow: 0px 8px 15px #d9d9d9;
+        background: #ffffff;
+        border-radius: .75vh;
+        height: 10vh;
+        .name {
+          font-family: 'Roboto Light';
+          font-size: 3vh;
+          margin-left: 2vh;
+        }
+      }
+    }
+    .wellbeing_container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 14vh;
+      left: 4vh;
+      .description {
+        font-size: 2vh;
+        text-transform: uppercase;
+        margin-bottom: 1vh;
+        color: #fff;
+      }
+      .name {
+        font-size: 3vh;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+    .outer_container {
+      width: 100vw;
+    }
+    .container_points,
+    .grey_line,
+    .container_calendar,
+    .today_pointer,
+    .container_activity,
+    .steps_goals_box,
+    .wellbeing_steps_box {
+      display: none;
+    }
+    [data-status="completed"] {
+      .container_points {
+        display: flex;
+        align-items: baseline;
+        height: 7vh;
+        width: 100vw;
+        margin-top: 3vh;
+        .points {
+          margin-left: 2vh;
+          font-size: 5vh;
+          color: #1D1E20;
+          span {
+            font-size: 2.5vh;
+            margin-left: 1vh;
+            font-weight: normal;
+          }
+        }
+        .description_points {
+          font-size: 2vh;
+          margin-left: 2vh;
+          color: #626b7a;
+        }
+      }
+      .grey_line {
+        display: block;
+        position: absolute;
+        top: 50vh;
+        width: 100vw;
+        height: 1px;
+        background-color: #DADADA;
+      }
+      .container_calendar {
+        display: flex;
+        justify-content: flex-start;
+        height: 10vh;
+        position: relative;
+        left: -2vh;
+        margin-top: 3vh;
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 3vh;
+          width: 4vh;
+          .grey_circle,
+          .checkmark_box,
+          .white_circle {
+            width: 4vh;
+            height: 4vh;
+          }
+          .grey_circle {
+            background-color: #c2c3ca;
+            border-radius: 100px;
+            opacity: .5;
+          }
+          .checkmark_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00C388;
+            border-radius: 100px;
+            opacity: .5;
+            .white_checkmark {
+              width: 2.5vh;
+              height: 2.5vh;
+              background-image: url(images/programs/white_checkmark.svg);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+            &.transparent {
+              background-color: transparent;
+            }
+          }
+          .checkmark_box.active {
+            opacity: 1;
+          }
+          .today {
+            font-size: 2.8vh;
+            font-weight: bold;
+            color: #1d1e20;
+            margin-top: 1vh;
+          }
+          .day {
+            font-size: 2.2vh;
+            color: #626b7a;
+            margin-top: 1vh;
+          }
+        }
+      }
+      .today_pointer {
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-top: 1px solid #DADADA;
+        .triangle {
+          position: absolute;
+          bottom: 3.5vh;
+          width: 2vh;
+          height: 2vh;
+          border: 1px solid #DADADA;
+          background-color: #FFFFFF;
+          transform: rotate(45deg);
+        }
+        .cover {
+          position: absolute;
+          bottom: 3vh;
+          width: 4vh;
+          height: 2vh;
+          background-color: #FFFFFF;
+        }
+        .date {
+          margin-top: 1.5vh;
+          font-size: 2vh;
+          color: #626b7a;
+        }
+      }
+      .container_activity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh 2vh 0 2vh;
+        .group {
+          display: flex;
+          flex-direction: column;
+          width: 90vw;
+          .activity_wrapper {
+            display: flex;
+            justify-content: space-between;
+            .checked_title {
+              margin-bottom: 3vh;
+              // text-decoration: line-through;
+            }
+            .checked_title,
+            .points_activity {
+              font-size: 2.4vh;
+              font-weight: bold;
+              color: #1d1e20;
+            }
+            .wrapper_activity {
+              display: flex;
+              margin-bottom: 3vh;
+              .points_activity {
+                margin-right: 1vh;
+              }
+              .checkmark {
+                width: 3vh;
+                height: 3vh;
+                margin-left: 1vh;
+                background-image: url(images/programs/green_checkmark.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+        .activity_border {
+          width: 95vw;
+          height: 1px;
+          margin: 0 0 3vh 5vw;
+          background-color: #dadada;
+        }
+      }
+      .container_activity {
+        .activity_border:last-child {
+          display: none;
+        }
+      }
+    }
+    [data-status="completed"] {
+      &[data-program="get_active"],
+      &[data-program="sleep_well"],
+      &[data-program="eat_smart"] {
+        .steps_goals_box {
+          display: flex;
+          flex-direction: column;
+          .step_goal {
+            display: flex;
+            align-items: center;
+            .goal {
+              margin: 2vh;
+              font-size: 2vh;
+              color: #626b7a;
+            }
+            .goal_line {
+              width: 85vw;
+              height: 1px;
+              background-color: #E7E9ED;
+            }
+            .goal_multiplier {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 20vw;
+              height: 3vh;
+              margin-right: 2vh;
+              font-size: 1.7vh;
+              background-color: #E7E9ED;
+              color: #626B7A;
+            }
+          }
+        }
+        .grey_line {
+          top: 65.5vh;
+          background-color: #E7E9ED;
+        }
+        .container_calendar {
+          height: auto;
+          bottom: 4vh;
+          margin-top: 0;
+          .wrapper {
+            .checkmark_box {
+              align-items: flex-end;
+              height: 14vh;
+              background-color: #09BDC9;
+              .white_checkmark {
+                padding-bottom: 1vh;
+              }
+              &.transparent {
+                background-color: transparent;
+              }
+            }
+            .white_circle {
+              height: 14vh;
+            }
+          }
+          .wrapper {
+            &.record {
+              position: relative;
+              bottom: 4vh;
+              .checkmark_box {
+                height: 18vh;
+              }
+            }
+          }
+        }
+        .today_pointer {
+          bottom: 6vh;
+          .date {
+            margin: 2vh 0 1vh 0;
+          }
+        }
+        .wellbeing_steps_box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 5vh;
+          width: 100vw;
+          .wellbeing_steps {
+            font-size: 4vh;
+            margin-bottom: 2vh;
+            span {
+              font-size: 2vh;
+            }
+          }
+          .wellbeing_pts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16vw;
+            height: 3vh;
+            font-size: 1.9vh;
+            background-color: #2ECC71;
+            border-radius: 100px;
+            color: #fff;
+          }
+        }
+        .container_activity {
+          display: none;
+        }
+      }
+      &[data-program="sleep_well"],
+      &[data-program="eat_smart"] {
+        .steps_goals_box {
+          .step_goal.one,
+          .step_goal.two {
+            display: none;
+          }
+          .step_goal {
+            .goal {
+              width: 12vw;
+            }
+          }
+        }
+        .grey_line {
+          top: 63.5vh;
+        }
+        .container_calendar {
+          margin-top: 3vh;
+          .wrapper {
+            .checkmark_box {
+              background-color: #673EBD;
+            }
+          }
+        }
+      }
+      &[data-program="eat_smart"] {
+        .grey_line {
+          top: 64vh;
+        }
+        .container_calendar {
+          .wrapper {
+            .checkmark_box {
+              background-color: #FF3358;
+            }
+          }
+        }
+      }
+    }
+    [data-calendar="no_calendar"] {
+      .container_calendar,
+      .today_pointer,
+      .grey_line {
+        display: none;
+      }
+    }
+  }
+  [data-id="sleep_well_program_top"] {
+    .circle {
+      height: 36vh;
+      border-radius: 0;
+      .image {
+        height: 36vh;
+      }
+    }
+  }
+  [data-id="eat_smart_program_top"] {
+    .circle {
+      height: 34vh;
+      border-radius: 0;
+      .image {
+        height: 34vh;
+      }
+    }
+  }
+  [data-activity=true] {
+    background-color: #FFFFFF;
+  }
+}

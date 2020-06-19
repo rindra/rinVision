@@ -1,0 +1,97 @@
+._profile_rewards_summary() {
+  [data-type=profile_rewards_summary] {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Regular";
+    width: 100vw;
+    .group {
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .date {
+      margin-right: 2vh;
+      font-size: 1.8vh;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .inner_box {
+      display: flex;
+      width: 49vh;
+      margin-top: 1vh;
+    }
+    .image {
+      width: 6vh;
+      height: 6vh;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 1vh;
+    }
+    .date,
+    .subtitle {
+      color: #717C8E;
+      font-size: 1.8vh;
+    }
+    .points_balance,
+    .points_spent,
+    .points_earned {
+      color: #1D1E20;
+    }
+    .subtitle {
+      position: relative;
+    }
+    .box_points_balance .subtitle {
+      bottom: .6vh;
+    }
+    .box_points_spent .subtitle {
+      top: .4vh;
+    }
+    .box_points_earned .subtitle {
+      top: .4vh;
+    }
+    .points_balance {
+      font-size: 5.4vh;
+    }
+    .points_spent,
+    .points_earned {
+      font-size: 2.6vh;
+    }
+    .box_points_balance,
+    .box_points_spent,
+    .box_points_earned {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1vh;
+    }
+    .box_points_balance {
+      flex: .4;
+    }
+    .box_points_spent,
+    .box_points_earned {
+      margin-top: 2.3vh;
+      text-align: right;
+      border-left: 1px solid #DDDDDD;
+      flex: .3;
+    }
+    .box_points_spent {
+      margin-right: 2vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .cta {
+      position: relative;
+      top: .5vh;
+      margin: 3vh 2vh 3vh 0;
+    }
+  }
+}

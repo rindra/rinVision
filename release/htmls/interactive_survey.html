@@ -1,0 +1,33 @@
+<script id=interactive_survey_template type=text/x-handlebars-template>
+  <div class="survey_container">
+    {{#each carousel}}
+    <div class="group" data-name={{name}}>
+      <div class="progress_wrapper">
+        <div class="progress_bar">
+          <div class="deductible_box">
+            <div class="deductible"></div>
+          </div>
+        </div>
+        <div class="done">Done</div>
+      </div>
+      <div class="survey_topic">{{title}}</div>
+      <div class="question">{{description}}</div>
+      <div class="pick">Pick one answer</div>
+      <div class="answers_wrapper">
+        {{#each list}}
+        <div class="answer_box">
+          <div class="answer">{{this}}</div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="button_box">
+        <div class="button">{{cta}}</div>
+      </div>
+    </div>
+    {{/each}}
+    <div class="completed_message">
+      <div class="checkmark"></div>
+      <div class="message">Thanks for completing the survey</div>
+    </div>
+  </div>
+</script>

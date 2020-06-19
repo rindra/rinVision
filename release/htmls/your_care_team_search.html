@@ -1,0 +1,85 @@
+<!-- script id=your_care_team_search_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="top">
+      <div class="doctor_info">
+        <div class="doctor_icon" style="background-image:url({{image}})"></div>
+        <div class="doctor_specialty_box">
+          <div class="doctor_name">{{title}}</div>
+          <div class="department">{{description}}</div>
+        </div>
+      </div>
+      <div class="distance">{{caption_fsa}}</div>
+    </div>
+    <div class="bottom">
+      <div class="office_address">
+        <div class="address">{{label_one_title}}</div>
+        <div class="address">{{label_one_sub_title}}</div>
+      </div>
+      <div class="estimate_box">
+        <div class="price">{{amount_fsa}}</div>
+        <div class="price_label">{{label_store_credit}}</div>
+      </div>
+    </div>
+  </div>
+</script -->
+
+
+<script id=your_care_team_search_template type=text/x-handlebars-template>
+  <div class=layers>
+  <div class="container_updated">
+    
+
+  <div class="doctor" data-name="{{name}}"> 
+    <div class="top">
+      <div class="doctor_info">
+        <div class="doctor_icon" style="background-image:url({{image}})"></div>
+        <div class="doctor_specialty_box">
+          <div class="doctor_name">{{title}}</div>
+          <div class="department">{{description}}</div>
+        </div>
+      </div>
+      <div class="distance">{{caption_fsa}}</div>
+    </div>
+    <div class="bottom">
+      <div class="office_address">
+        <div class="address">{{{label_one_title}}}</div>
+        <div class="address">{{{location}}}</div> 
+      </div>
+      <div class="estimate_box">
+        <div class="price">{{amount_fsa}}</div>
+        <div class="price_label">{{label_store_credit}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="box_quality">
+    <div class="box_network">
+      {{#if network}}
+      <div class="network">{{network}}</div>
+       {{/if}}
+      {{#if is_livepopup}}
+      <div class="hospital_quality_box">
+        <div class="quality_icon"></div>
+        <div class="clinical_quality">{{label_two_title}}</div>
+        <div class="hospital_info_popup">
+          <div class="hospital_details">{{{status}}}
+            <div class="exit_icon_box">
+              <div class="exit_icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{else}}
+      <div class="address_line_two"> </div>
+      {{/if}}
+    </div>              
+    <div class="box_ratings">
+      <div class="flat">
+        <div class="star" style="background-image:url(images/search_results/orange_star.svg)"></div>
+        <div class="rating">{{amount_providers}}</div>
+      </div>
+      <div class="amount_ratings">{{phone}}</div>
+    </div>
+  </div>
+  </div>
+  </div>
+</script>

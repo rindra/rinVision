@@ -1,0 +1,24 @@
+<div class=slide data-slide=address data-cta="Okay">
+  {{#each config.skin.onboarding}}
+  {{#equal this this.type "address"}}
+  <hgroup>
+    <div class=group>
+      <div class=title>{{title}}</div>
+      <div class=message>{{description}}</div>
+    </div>
+  </hgroup>
+  {{/equal}}
+  {{/each}}
+  <div class=input>
+    <input type=text placeholder="{{config.skin.persona.street}}" />
+  </div>
+  <div class=input>
+    <input type=text placeholder="{{config.skin.persona.state}}" />
+  </div>
+  <div class=input>
+    <input type=text placeholder="{{config.skin.persona.zip}}" />
+  </div>
+  <div class=button_box>
+    <div class=button data-name=get_started>Okay</div>
+  </div>
+</div>

@@ -1,0 +1,558 @@
+._top_nav_pcorp() {
+  [data-type=top_nav_pcorp] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .bg {
+      position: absolute;
+      overflow: hidden;
+      width: 125vw;
+      height: 20vh;
+      // top: -156vh;
+      // border-radius: 200vh;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      .gradient {
+        // margin: 0 0 0 58vh;
+        // width: 105vw;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .container {
+      position: relative;
+      width: 100vw;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      //      margin: 0 0 2vh 0;
+      .greetings {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        .avatar_box {
+          display: flex;
+          justify-content: center;
+          flex: .15;
+          .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vh;
+            margin: 2vh;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 5vh;
+            // box-shadow: 0 0 20px #dedede;
+            background-size: cover;
+            color: #FFFFFF;
+            background-color: #282C37;
+          }
+        }
+        .description {
+          flex: .85;
+          font-size: 2vh;
+          line-height: 2.5vh;
+          font-family: "Roboto Regular";
+          color: #ffffff;
+          span:nth-child(2) {
+            font-weight: bold;
+          }
+        }
+      }
+      .activity_points {
+        display: flex;
+        background: #ffffff;
+        border-radius: .75vh;
+        margin: -1vh 2vh 2vh 2vh;
+        height: 10vh;
+        .left,
+        .right {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
+        .left {
+          .label {
+            font-size: 2vh;
+          }
+        }
+        .right {
+          justify-content: flex-end;
+          //        border-left: .15vh solid #f2f2f2;
+          .box {
+            margin: 0 2vh 0 0;
+          }
+        }
+        .box {
+          margin: 0 0 0 2vh;
+        }
+        .label {
+          color: #6e7684;
+          font-size: 1.5vh;
+        }
+        .activities,
+        .points {
+          color: #1c1d1f;
+          font-size: 2.5vh;
+        }
+        .view_rewards {
+          font-size: 1.6vh;
+          color: #006dff;
+        }
+        &.incentive {
+          //          background-image: url(images/home/stars_bg.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          .left {
+            flex: .2;
+          }
+          .middle {
+            display: flex;
+            align-items: center;
+            flex: .7;
+            .box {
+              margin: 0;
+            }
+            .label {
+              font-size: 2vh;
+              // line-height: 2.5vh;
+              color: #626B7A;
+            }
+            b {
+              font-weight: normal;
+              font-family: 'Roboto Bold';
+              font-size: 2.2vh;
+              color: #1D1E20;
+              margin-bottom: 1vh;
+            }
+          }
+          .right {
+            flex: .1;
+            .left_arrow {
+              width: 2vh;
+              height: 3vh;
+              background-image: url(images/home/left_arrow_shortcuts.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+          .learn_topnav_box {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 4vh;
+            right: 4vh;
+            border: 1px solid #006dff;
+            border-radius: 50px;
+            padding: 1vh 5vh;
+            font-family: "Roboto Medium";
+            .cta_text {
+              font-size: 1.7vh;
+              color: #006dff;
+              text-transform: uppercase;
+            }
+          }
+          .wallet {
+            width: 6vh;
+            height: 6vh;
+            background-image: url(images/home/gift.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        &.stretch {
+          height: 16vh;
+          .left {
+            .box {
+              .wallet {
+                width: 9vh;
+                height: 9vh;
+                margin-bottom: 3vh;
+                //background-image: url(images/home/new_rewards_icon.svg);
+              }
+            }
+          }
+          .middle {
+            flex: .75;
+            .box {
+              margin-bottom: 2.5vh;
+            }
+          }
+          .right {
+            display: none;
+          }
+        }
+        &.points_only {
+          margin: 0 2vh 0 2vh;
+          height: 7vh;
+          .view_rewards {
+            display: none;
+          }
+        }
+        &.with_points {
+          .title {
+            display: flex;
+            align-items: center;
+            height: 3vh;
+            margin: 1vh 0 0 0;
+          }
+          .label {
+            font-size: 2vh;
+            margin: 2.5vh 0 1vh 0;
+            color: #006dff;
+            text-transform: capitalize;
+          }
+          .value_total {
+            .b {
+              font-family: 'Roboto Medium';
+              font-size: 3vh;
+            }
+            .static {
+              font-size: 2vh;
+            }
+          }
+          .vline {
+            position: absolute;
+            top: 6vh;
+            left: 0;
+            height: 6vh;
+            background-color: #DADADA;
+            width: .1vh;
+          }
+          .left {
+            display: block;
+            flex: .5;
+            .title {
+              // font-family: 'Roboto Medium';
+              font-size: 2vh;
+              font-weight: bold;
+              color: #626B7A;
+              text-transform: uppercase;
+            }
+          }
+          .right {
+            position: relative;
+            display: block;
+            flex: .5;
+            .title {
+              justify-content: flex-end;
+              font-family: 'Roboto Regular';
+              font-size: 1.6vh;
+              color: #626B7A;
+            }
+            .label,
+            .value_total {
+              margin-left:2vh;
+            }
+          }
+        }
+        &.points_only {
+          height: 9vh;
+          .left {
+            .box {
+              color: #626b7a;
+              .label {
+                font-size: 2vh;
+                margin: 2vh 0 0 0;
+              }
+              .title_points {
+                margin: .5vh 0 2vh 0;
+                font-size: 1.8vh;
+              }
+            }
+          }
+          .right {
+            display: flex;
+            align-items: center;
+            height: 9vh;
+            .box {
+              .value_total {
+                .static {
+                  font-size: 2.4vh;
+                  margin-left: .5vh;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .card_web_wrapper {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      .bg {
+        position: absolute;
+        overflow: hidden;
+        width: 420px;
+        height: 140px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        .gradient {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .container {
+        position: relative;
+        width: 384px;
+        overflow: hidden;
+        .greetings {
+          height: 144px;
+          .avatar_box {
+            margin-bottom: 16px;
+            .avatar {
+              height: 48px;
+              width: 48px;
+              margin: 20px;
+              font-family: "Lato Light";
+              font-size: 22px;
+              box-shadow: 0 0 10px #bab9be;
+            }
+          }
+          .description span:first-child {
+            font-size: 24px;
+          }
+          .description span:nth-child(2) {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .description {
+            margin-bottom: 16px;
+            font-size: 14px;
+            font-family: "Lato Regular";
+            line-height: 24px;
+          }
+        }
+        .activity_points_web {
+          display: flex;
+          align-items: center;
+          height: 100px;
+          width: 100%;
+          .left,
+          .right {
+            flex: .5;
+            display: flex;
+            align-items: center;
+            height: 100%;
+          }
+          .left {
+            .label {
+              font-size: 2vh;
+            }
+          }
+          .right {
+            justify-content: flex-end;
+            //        border-left: .15vh solid #f2f2f2;
+            .box {
+              margin: 0 2vh 0 0;
+            }
+          }
+          .box {
+            margin: 0 0 0 2vh;
+          }
+          .label {
+            color: #6e7684;
+            font-size: 1.5vh;
+          }
+          .activities,
+          .points {
+            color: #1c1d1f;
+            font-size: 2.5vh;
+          }
+          .view_rewards {
+            font-size: 1.6vh;
+            color: #006dff;
+          }
+          &.incentive {
+            //          background-image: url(images/home/stars_bg.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            .left {
+              flex: .2;
+            }
+            .middle {
+              display: flex;
+              align-items: center;
+              flex: .7;
+              .box {
+                margin: 0;
+              }
+            }
+            .right {
+              flex: .1;
+              .left_arrow {
+                width: 2vh;
+                height: 3vh;
+                background-image: url(images/home/left_arrow_shortcuts.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+            .learn_topnav_box {
+              display: none;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              bottom: 4vh;
+              right: 4vh;
+              border: 1px solid #006dff;
+              border-radius: 50px;
+              padding: 1vh 5vh;
+              font-family: "Roboto Medium";
+              .cta_text {
+                font-size: 1.7vh;
+                color: #006dff;
+                text-transform: uppercase;
+              }
+            }
+            .wallet {
+              width: 6vh;
+              height: 6vh;
+              background-image: url(images/home/wallet.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+          &.stretch_web {
+            width: auto;
+            justify-content: space-between;
+            padding: 0 20px;
+            .left_web {
+              .box {
+                margin: 0;
+                .wallet {
+                  width: 52px;
+                  height: 72px;
+                  background-image: url(images/home/new_rewards_icon.svg);
+                }
+              }
+            }
+            .middle_web {
+              width: 260px;
+              .box {
+                margin: 0;
+                .label {
+                  font-size: 14px;
+                  color: #626b7a;
+                  b {
+                    font-family: 'Roboto Bold';
+                    font-size: 16px;
+                    margin-bottom: 6px;
+                    color: #1D1E20;
+                  }
+                }
+              }
+            }
+          }
+          &.points_only {
+            margin: 0 2vh 0 2vh;
+            height: 7vh;
+            .view_rewards {
+              display: none;
+            }
+          }
+          &.with_points {
+            .title {
+              display: flex;
+              align-items: center;
+              height: 3vh;
+              margin: 1vh 0 0 0;
+            }
+            .label {
+              color: #626B7A;
+              font-size: 1.8vh;
+              text-transform: capitalize;
+              margin: 2.5vh 0 0 0;
+            }
+            .value_total {
+              .b {
+                font-family: 'Roboto Medium';
+                font-size: 3vh;
+              }
+              .static {
+                font-size: 2vh;
+              }
+            }
+            .vline {
+              position: absolute;
+              top: 6vh;
+              left: 0;
+              height: 6vh;
+              background-color: #DADADA;
+              width: .1vh;
+            }
+            .left {
+              display: block;
+              flex: .5;
+              .title {
+                font-family: 'Roboto Medium';
+                font-size: 2vh;
+                color: #626B7A;
+                text-transform: uppercase;
+              }
+            }
+            .right {
+              position: relative;
+              display: block;
+              flex: .5;
+              .title {
+                justify-content: flex-end;
+                font-family: 'Roboto Regular';
+                font-size: 1.6vh;
+                color: #626B7A;
+              }
+              .label,
+              .value_total {
+                margin-left:2vh;
+              }
+            }
+          }
+          &.points_only {
+            height: 9vh;
+            .left {
+              .box {
+                color: #626b7a;
+                .label {
+                  font-size: 2vh;
+                  margin: 2vh 0 0 0;
+                }
+                .title_points {
+                  margin: .5vh 0 2vh 0;
+                  font-size: 1.8vh;
+                }
+              }
+            }
+            .right {
+              display: flex;
+              align-items: center;
+              height: 9vh;
+              .box {
+                .value_total {
+                  .static {
+                    font-size: 2.4vh;
+                    margin-left: .5vh;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .activity_points_web:hover {
+          cursor: pointer;
+          background-color: #F6F7FA;
+          .right_arrow {
+            background-image: url(images/homepage_web/blue_right_arrow_aside.svg);
+          }
+        }
+      }
+    }
+  }
+}

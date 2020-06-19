@@ -1,0 +1,56 @@
+._plan_status_spending() {
+  [data-type=plan_status_spending] {
+    .spending_title {
+      font-size: 2.2vh;
+      color: #717c8e;
+      margin: 2vh 2vh 2vh 3.5vh;
+    }
+    .spending_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f2f2f2;
+      .group {
+        display: flex;
+        flex-direction: column;
+        .plan_status {
+          font-size: 2.4vh;
+          font-weight: bold;
+          color: #1c1d1f;
+          margin: 2vh 2vh 0 2vh;
+        }
+        .sub_title {
+          font-size: 2vh;
+          color: #1c1d1f;
+          margin: 1vh 2vh 1vh 2vh;
+        }
+        .cost_breakdown {
+          display: flex;
+          justify-content: space-between;
+          margin: 2vh;
+          font-size: 2vh;
+          color: #717c8e;
+        }
+        .plan_status_border {
+          width: 95vw;
+          height: 1px;
+          margin-left: 2vh;
+          background-color: #dadada;
+        }
+      }
+    }
+    .family_picture {
+      display: flex;
+      justify-content: flex-start;
+      margin: 3vh 0 2vh 0;
+      .picture {
+        height: 10vh;
+        width: 20vh;
+        background-image: url(images/plan_status/plan_status_footer.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

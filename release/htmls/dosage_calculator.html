@@ -1,0 +1,20 @@
+<script id=dosage_calculator_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="title">{{title}}</div>
+    {{#each carousel}}
+    <div class="options">
+      <div class="box">
+        <div class="name">{{title}}</div>
+        <div class="dropdown"></div>
+      </div>
+      <select>
+        <option>{{distance}}</option>
+        <option>{{address_line_one}}</option>
+        <option>{{address_line_two}}</option>
+      </select>
+    </div>
+    {{/each}}
+    <div class="supply">{{caption_fsa}}</div>
+    <div class="days">{{amount_fsa}}</div>
+  </div>
+</script>

@@ -1,0 +1,44 @@
+._todo_nav() {
+  [data-type=todo_nav] {
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 95vw;
+      border-radius: .5vh;
+      overflow: hidden;
+      //height: 10vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      //            background-image: url(https://dl.dropboxusercontent.com/s/kqmbxe4pu468j1x/todo_subnav.png?dl=0);
+      .tri {
+        display: none;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+      .completed {
+        font-size: 2.4vh;
+        color: #202122;
+      }
+      .history {
+        font-size: 2.4vh;
+        color: #1473fa;
+      }
+      .bottom {
+        //display: flex;
+        display: none;
+        align-items: center;
+        font-size: 2.1vh;
+        color: #8d95a4;
+        height: 5vh;
+        border-radius: 1vh;
+        background-color: #dee0e6;
+        margin: 2vh 0 0 0;
+        .box {
+          margin: 0 0 0 1.5vh;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<script id=autosuggest_template type=text/x-handlebars-template>
+  <div class=autosuggest>
+    {{#each autosuggest}}
+    <div class=item>{{{this}}}</div>
+    {{/each}}
+  </div>
+  <div class=matches>
+    {{#each matches}}
+    <div class=item>{{this}}</div>
+    {{/each}}
+  </div>
+  <div class=recommendations>
+    <div class=label>recommendations</div>
+    {{#each recommendations}}
+    <div class=item>
+      <div class=icon style='background-image:url({{this.image}})'></div>
+      <div class=info>
+        <div class=title>{{this.title}}</div>
+        <div class=subtitle>{{this.subtitle}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</script>

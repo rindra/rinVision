@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Back Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Leaderboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leaderboard_teamselect" transform="translate(-342.000000, -411.000000)" fill="#FFFFFF">
+            <g id="Waiting-Room" transform="translate(-143.000000, -171.000000)">
+                <g id="Team-info" transform="translate(148.000000, 549.000000)">
+                    <path d="M337.085186,39.7271329 L337,39.6419753 L343.646415,32.9977553 L344.980188,34.3310887 L339.582362,39.7271329 L344.980188,45.1231771 L343.646415,46.4565105 L337,39.8122905 L337.085186,39.7271329 Z" id="Back-Arrow" transform="translate(340.990094, 39.727133) scale(-1, 1) translate(-340.990094, -39.727133) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

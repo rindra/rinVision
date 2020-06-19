@@ -1,0 +1,54 @@
+._dosage_calculator() {
+  [data-type=dosage_calculator] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      height: 35vh;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      margin-left: 2vh;
+      select {
+        -webkit-appearance: none;
+        width: 87vw;
+        font-size: 2vh;
+        border: none;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ECE7E7;
+        margin-right: 3vh;
+      }
+    }
+    .box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .dropdown {
+      width: 2vh;
+      height: 1vh;
+      position: relative;
+      top: 7vh;
+      right: 3vh;
+      background-image: url('images/find_care/dropdown.jpg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .name {
+      margin: 2vh 0;
+      font-size: 1.8vh;
+      color: #717C8E;
+    }
+    .supply {
+      font-size: 2vh;
+      margin: 2vh 0 1vh 2vh;
+      color: #717C8E;
+    }
+    .days {
+      font-size: 2.2vh;
+      margin-left: 2vh;
+    }
+  }
+}

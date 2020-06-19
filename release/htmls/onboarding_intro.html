@@ -1,0 +1,21 @@
+<div class=slide data-slide=intro>
+  {{#each config.skin.onboarding}} 
+    {{#equal this this.type "intro"}}
+    <div class=bg style="background-image: url({{image}});"></div>
+    <div class=description style='color:{{@root.config.skin.onboarding_text_color}}'>{{{description}}}</div>
+      {{#each check_items}}
+      <div class=list>
+        <div class=item>
+          <div class=group>
+            <div class=dot style='background-color:{{@root.config.skin.onboarding_text_color}}'></div>
+          </div>
+          <div class=copy style='color:{{@root.config.skin.onboarding_text_color}}'>{{this}}</div>
+        </div>
+      </div>
+      {{/each}} 
+    {{/equal}} 
+  {{/each}}
+  <div class=button_box>
+    <div class=button data-name=next style="background-color:{{config.skin.button_background_color}}; color:{{config.skin.button_text_color}}">Next</div>
+  </div>  
+</div>

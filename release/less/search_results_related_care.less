@@ -1,0 +1,36 @@
+._search_results_related_care() {
+  [data-type=search_results_related_care] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+    }
+    .layers {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      .doctor {
+        display: flex;
+        align-items: center;
+        height: 6vh;
+        margin: 0 2vh;
+        border-bottom: 1px solid #ECE7E7;
+      }
+      .doctor_title {
+        color: #0973FF;
+        font-size: 2vh;
+      }
+    }
+    .doctor:last-child {
+      border: none;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cta {
+      margin: 2vh;
+    }
+  }
+}

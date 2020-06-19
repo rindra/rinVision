@@ -1,0 +1,145 @@
+<script id=daily_activities_cab_template type=text/x-handlebars-template>
+
+{{#if is_mobile}}
+  <div class=static>
+    <div class="dots">
+      {{#each carousel}}
+      <div class="dot"></div>
+      {{/each}}
+      <div class="dot grey_dot"></div>
+    </div>
+  </div>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer data-cta="{{cta}}" data-status="{{status}}" data-bg="{{amount_plan_status}}">
+      <div class=program>
+        <div class=image style='background-image:url({{image}})'>
+          <div class=title_slide>{{{title}}}</div>
+          <div class=description>{{description}}</div>
+
+          {{#if color}}
+          <div class=doughnut>
+            <div class=doughnut-bg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)"></path>
+              </svg>
+            </div>
+            <div class=doughnut-wrapper>
+              <div class=circle data-circle-prc={{amount_fsa}}>
+                <!--<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                  <defs>
+                    <linearGradient id="linear_{{name}}" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0)">
+                      <stop offset="0%" stop-color="{{end_color}}" />
+                      <stop offset="100%" stop-color="{{start_color}}" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)" stroke="url(#linear_{{name}})"></path>
+                </svg>-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                  <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)" stroke="{{color}}"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class=points_box>
+            <div class=box>
+              <div class=points data-circle-points={{points}} data-circle-label={{label_fsa}}></div>
+              <div class=points_days>
+                <div class=box>{{caption_fsa}}</div>
+              </div>
+            </div>
+          </div>
+          {{/if}}
+
+          <div class=cta>
+            <div class=button>{{cta}}</div>
+          </div>
+          <div class="progress_bar" style='background-image:url({{avatar}})'></div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide>
+        <div class=hotspot data-slide={{name}}></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <div class="card_web_wrapper">
+    <div class=static>
+      <div class="dots">
+        {{#each carousel}}
+        <div class="dot"></div>
+        {{/each}}
+        <div class="dot grey_dot"></div>
+      </div>
+    </div>
+    <div class=layers>
+      {{#each carousel}}
+      <div class=layer data-cta="{{cta}}" data-status="{{status}}" data-bg="{{amount_plan_status}}">
+        <div class=program>
+          <div class=image style='background-image:url({{image}})'>
+            <div class=title_slide_web>{{{title}}}</div>
+            <div class=description_slide_web>{{description}}</div>
+
+            {{#if color}}
+            <div class=doughnut>
+              <div class=doughnut-bg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                  <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)"></path>
+                </svg>
+              </div>
+              <div class=doughnut-wrapper>
+                <div class=circle data-circle-prc={{amount_fsa}}>
+                  <!--<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                    <defs>
+                      <linearGradient id="linear_{{name}}" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0)">
+                        <stop offset="0%" stop-color="{{end_color}}" />
+                        <stop offset="100%" stop-color="{{start_color}}" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)" stroke="url(#linear_{{name}})"></path>
+                  </svg>-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-20 -25 360 360">
+                    <path d="M152.1,7 C232.2,7 297.2,72 297.2,152.1 C297.2,232.2 232.2,297.2 152.1,297.2 C72,297.2 7,232.2 7,152.1 C7,72 72,7 152.1,7" fill="#000000" fill-rule="nonzero" transform="translate(152.100000, 152.100000) scale(-1, 1) translate(-152.100000, -152.100000)" stroke="{{color}}"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class=points_box>
+              <div class=box>
+                <div class=points data-circle-points={{points}} data-circle-label={{label_fsa}}></div>
+                <div class=points_days>
+                  <div class=box>{{caption_fsa}}</div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+
+            <div class=cta_slide_web>
+              <div class=button_slide_web>{{cta}}</div>
+            </div>
+            <div class="progress_bar" style='background-image:url({{avatar}})'></div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class=carousel>
+      <div class=box>
+        {{#each carousel}}
+        <div class=slide>
+          <div class=hotspot data-slide={{name}}></div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  {{/if}}
+</script>

@@ -1,0 +1,27 @@
+<script id=healthy_dos_template type=text/x-handlebars-template>
+  <div class=container data-visible="{{visible}}" data-tasks-left="{{tasks_left}}">
+    <div class=arrow_box>
+      <div class=arrow style="border-top-color:{{color}}"></div>
+    </div>
+    <div class=top>
+      <div class=title>{{title}}</div>
+      <div class=completed><span class=current>{{total_completed}}</span> of <span class=total>{{total}}</span> completed</div>
+    </div>
+    <div class=bottom>
+      {{#each cards}}
+      <div class=card data-status={{status}}>
+        <div class=title>{{title}}</div>
+        <div class=points_box data-points={{points}}>
+          <div class=icon></div>
+          <div class=points><span>{{points}}</span> pts</div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class=cta_box>
+      <div class=cta_box>
+        <div class=cta>VIEW ALL</div>
+      </div>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,203 @@
+._web_overrides() {
+  aside {
+    .card {
+      .group {
+        width: 384px;
+      }
+    }
+    [data-type="top_nav_cab"] {
+      position: relative;
+      overflow: hidden;
+      .bg {
+        position: absolute;
+        top: -856px;
+        overflow: hidden;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 1000px;
+        .gradient {
+          margin: 0;
+          height: 100%;
+          width: auto;
+        }
+      }
+      .container {
+        position: relative;
+        width: 384px;
+        overflow: hidden;
+        .greetings {
+          height: auto;
+          margin-top: 30px;
+          .avatar_box {
+            .avatar {
+              height: 48px;
+              width: 48px;
+              margin: 20px;
+              font-family: "Lato Light";
+              font-size: 22px;
+              box-shadow: 0 0 10px #bab9be;
+            }
+          }
+          .description span:first-child {
+            font-size: 24px;
+          }
+          .description span:nth-child(2) {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .description {
+            font-size: 14px;
+            font-family: "Lato Regular";
+            line-height: 24px;
+          }
+        }
+        .activity_points {
+          display: none;
+        }
+        .container_web_points {
+          display: flex;
+          margin-top: 30px;
+          .activity_points_web {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 384px;
+            padding: 24px;
+            // border-left: 1px solid #dadada;
+            // border-right: 1px solid #dadada;
+            .box {
+              display: flex;
+              .label,
+              .points {
+                color: #282C37;
+              }
+              .label {
+                font-size: 16px;
+              }
+              .points {
+                font-size: 20px;
+              }
+              .points > span {
+                font-size: 18px;
+              }
+              .right_arrow {
+                margin: 3px 0 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    [data-type="store_credit_cab"] {
+      .group {
+        .container {
+          display: flex;
+          justify-content: space-between;
+          width: 384px;
+          height: 56px;
+          margin: 0;
+          background-color: #9AEEBC;
+          .dollar {
+            flex: none;
+            width: 20px;
+            height: 20px;
+            margin-left: 16px;
+          }
+          .info {
+            flex: none;
+            font-size: 14px;
+            margin-right: 140px;
+          }
+          .right_arrow {
+            flex: none;
+            background-image: url(images/homepage_web/grey_right_arrow_aside.svg);
+            width: 8px;
+            height: 18px;
+            margin-right: 24px;
+          }
+        }
+        .container:hover {
+          .right_arrow {
+            background-image: url(images/homepage_web/blue_right_arrow_aside.svg);
+          }
+        }
+      }
+    }
+    [data-type="home_plan_status_cab"] {
+      .group {
+        display: none;
+      }
+      .group_web {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        .title_wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .title_web {
+            font-weight: bold;
+            font-size: 2.2vh;
+            color: #626B7A;
+          }
+        }
+        .description_web > b {
+          color: #282C37;
+        }
+        .description_web {
+          margin-top: 2vh;
+          line-height: 3vh;
+          font-size: 2vh;
+          color: #6D7E9A;
+        }
+        .date {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 3vh;
+          .updated {
+            font-size: 1.9vh;
+            color: #6D7E9A;
+          }
+        }
+      }
+    }
+    [data-type="earn_points_web"] {
+      display: none;
+    }
+  }
+  main {
+    [data-type="separators"] {
+      .group {
+        .title {
+          font-weight: bold;
+          font-size: 16px;
+          color: #626b7a;
+        }
+        .dots {
+          display: none;
+        }
+      }
+    }
+    [data-type="autosuggest_web"] {
+      position: absolute;
+      top: -50px;
+      width: 840px;
+      height: 320px;
+      border-radius: 0 0 4px 4px;
+      border: 1px solid #dadada;
+      font-family: "Lato Regular";
+      font-size: 15px;
+      .autosuggest,
+      .matches {
+        margin: 0;
+        .item:hover {
+          background-color: #EBF0F4;
+        }
+        .item {
+          margin: 0;
+          padding: 8px 0 8px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<script id=profile_my_interests_template type=text/x-handlebars-template>
+  <div class=group>
+    <div class=title>{{title}}</div>
+
+    <div class="interests">
+      {{#each carousel}}
+      <div class="box">
+        <div class="interest">{{title}}</div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class=description>{{description}}</div>
+    <div class="footer">
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+</script>

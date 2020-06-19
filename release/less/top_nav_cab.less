@@ -1,0 +1,202 @@
+._top_nav_cab() {
+  [data-type=top_nav_cab] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .bg {
+      position: absolute;
+      overflow: hidden;
+      width: 175vh;
+      height: 175vh;
+      top: -156vh;
+      border-radius: 200vh;
+      .gradient {
+        margin: 0 0 0 58vh;
+        width: 105vw;
+        height: 100%;
+      }
+    }
+    .container {
+      position: relative;
+      width: 100vw;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      //      margin: 0 0 2vh 0;
+      .greetings {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        &.bottom {
+          margin-bottom: 5vh;
+        }
+        .avatar_box {
+          display: flex;
+          justify-content: center;
+          flex: .15;
+          .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vh;
+            margin: 2vh;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 5vh;
+            // box-shadow: 0 0 20px #dedede;
+            background-size: cover;
+            color: #FFFFFF;
+            background-color: #282C37;
+          }
+        }
+        .description {
+          flex: .85;
+          font-size: 2vh;
+          line-height: 2.5vh;
+          font-family: "Roboto Regular";
+          color: #ffffff;
+          span:nth-child(2) {
+            font-weight: bold;
+          }
+        }
+      }
+      .activity_points {
+        display: flex;
+        background: #ffffff;
+        border-radius: .75vh;
+        margin: -1vh 2vh 2vh 2vh;
+        height: 10vh;
+        &.hide {
+          display: none;
+        }
+        .left,
+        .right {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
+        .left {
+          .label {
+            font-size: 2vh;
+          }
+        }
+        .right {
+          justify-content: flex-end;
+          //        border-left: .15vh solid #f2f2f2;
+          .box {
+            margin: 0 2vh 0 0;
+          }
+        }
+        .box {
+          margin: 0 0 0 2vh;
+        }
+        .label {
+          color: #6e7684;
+          font-size: 1.5vh;
+        }
+        .activities,
+        .points {
+          color: #1c1d1f;
+          font-size: 2.5vh;
+        }
+        .view_rewards {
+          font-size: 1.6vh;
+          color: #006dff;
+        }
+        &.incentive {
+          //          background-image: url(images/home/stars_bg.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          .left {
+            flex: .2;
+          }
+          .middle {
+            display: flex;
+            align-items: center;
+            flex: .7;
+            .box {
+              margin: 0;
+            }
+            .label {
+              font-size: 2vh;
+              line-height: 2.5vh;
+              color: #626B7A;
+            }
+            b {
+              font-weight: normal;
+              font-family: 'Roboto Bold';
+              color: #1D1E20;
+            }
+          }
+          .right {
+            flex: .1;
+            .left_arrow {
+              width: 2vh;
+              height: 3vh;
+              background-image: url(images/home/left_arrow_shortcuts.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+          .learn_topnav_box {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 4vh;
+            right: 4vh;
+            border: 1px solid #006dff;
+            border-radius: 50px;
+            padding: 1vh 5vh;
+            font-family: "Roboto Medium";
+            .cta_text {
+              font-size: 1.6vh;
+              color: #006dff;
+              text-transform: uppercase;
+            }
+          }
+          .wallet {
+            width: 6vh;
+            height: 6vh;
+            background-image: url(images/home/wallet.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        &.incentive.stretch {
+          height: 15vh;
+          .left {
+            .box {
+              .wallet {
+                width: 9vh;
+                height: 9vh;
+                margin-bottom: 4vh;
+                background-image: url(images/home/new_rewards_icon.svg);
+              }
+            }
+          }
+          .middle {
+            .box {
+              margin-bottom: 4vh;
+            }
+          }
+          .right {
+            display: none;
+          }
+        }
+        &.points_only {
+          margin: 0 2vh 0 2vh;
+          height: 7vh;
+          .view_rewards {
+            display: none;
+          }
+        }
+      }
+    }
+    .container_web_points {
+      display: none;
+    }
+  }
+}

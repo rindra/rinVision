@@ -1,0 +1,58 @@
+._personal_challenges() {
+  [data-type=personal_challenges] {
+    height: 100vh;
+    margin: 0;
+    .challenge_container {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      .go_back,
+      .exit {
+        position: absolute;
+        height: 8vh;
+        z-index: 1;
+      }
+      .go_back {
+        top: 0;
+        left: 0;
+        width: 80vw;
+      }
+      .exit {
+        top: 0;
+        right: 0;
+        width: 20vw;
+      }
+      .section {
+        position: absolute;
+        right: 100vw;
+        height: 100vh;
+        width: 100vw;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        &.show {
+          -webkit-transform: translate(100vw,0);
+          transform: translate(100vw,0);
+        }
+        img {
+          width: 100vw;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .user_greetings {
+          position: absolute;
+          top: 20vh;
+          display: flex;
+          width: 100vw;
+          justify-content: center;
+          text-align: center;
+          color: #626B7A;
+          font-size: 2.2vh;
+        }
+      }
+    }
+  }
+}

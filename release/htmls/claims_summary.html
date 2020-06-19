@@ -1,0 +1,33 @@
+<script id=claims_summary_template type=text/x-handlebars-template>
+  <div class=group>
+    <div class=title>{{title}}</div>
+
+    <div class="container">
+      <div class="circle_wrapper">
+        <div class="circle" style="background-image:url({{image}})"></div>
+      </div>
+      <div class="labels">
+        <div class="label">
+          <div class="square yellow"></div>
+          {{label_one_title}}
+        </div>
+        <div class="label">
+          <div class="square blue"></div>
+          {{label_two_title}}
+        </div>
+        <div class="label">
+          <div class="square green"></div>
+          {{label_three_title}}
+        </div>
+        <div class="label">
+          <div class="square purple"></div>
+          {{label_three_sub_title}}
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,111 @@
+<script id=find_pcp_providers_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="map" style="background-image:url({{image}})"></div>
+    <div class=layers>
+      {{#each carousel}}
+        {{#if is_updated}}
+        <div class="container_updated">
+          <div class="doctor" data-name="{{name}}"> 
+            <div class="top">
+              <div class="doctor_info">
+                <div class="doctor_icon" style="background-image:url({{image}})"></div>
+                <div class="doctor_specialty_box">
+                  <div class="doctor_name">{{title}}</div>
+                  <div class="department">{{description}}</div>
+                </div>
+              </div>
+              <div class="distance">{{distance}}</div>
+            </div>
+            <div class="bottom">
+              <div class="office_address">
+                <div class="address">{{{address_line_one}}}</div>
+                <div class="address">{{{location}}}</div> 
+              </div>
+              <div class="estimate_box">
+                <div class="price">{{subtitle}}</div>
+                <div class="price_label">{{cta}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="box_quality">
+            <div class="box_network">
+              {{#if network}}
+              <div class="network">{{network}}</div>
+               {{/if}}
+              {{#if is_livepopup}}
+              <div class="hospital_quality_box">
+                <div class="quality_icon"></div>
+                <div class="clinical_quality">{{address_line_two}}</div>
+                <div class="hospital_info_popup">
+                  <div class="hospital_details">{{{popup_content}}}
+                    <div class="exit_icon_box">
+                      <div class="exit_icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{/if}}
+              {{#if is_schedulable}}
+              <div class="schedule">Schedule Appointment</div>
+              {{/if}}
+            </div>              
+            {{#if cta_color}}
+            <div class="box_ratings">
+              <div class="flat">
+                <div class="star" style="background-image:url(images/search_results/orange_star.svg)"></div>
+                <div class="rating">{{cta_color}}</div>
+              </div>
+              <div class="amount_ratings">{{phone}}</div>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+        {{else}}
+        <div class="layer">
+          <div class="container">
+            <div class="doctor" data-name="{{name}}">
+              <div class="distance">{{distance}}</div>
+              <div class="box">
+                <div class="doctor_title">{{title}}</div>
+                <div class="box_amount">
+                  <div class="amount">{{subtitle}}</div>
+                  <div class="estimate">{{cta}}</div>
+                </div>
+              </div>
+            <div class="address_line_one">{{address_line_one}}</div>
+            <div class="description">{{description}}</div>
+          </div>
+          <div class="box_quality">
+            {{#if is_livepopup}}
+            <div class="hospital_quality_box">
+              <div class="quality_icon"></div>
+              <div class="clinical_quality">{{address_line_two}}</div>
+              <div class="hospital_info_popup">
+                <div class="hospital_details">{{{popup_content}}}
+                  <div class="exit_icon_box">
+                    <div class="exit_icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{else}}
+            <div class="address_line_two"> </div>
+            {{/if}}
+            <div class="box_ratings">
+              <div class="flat">
+                <div class="star" style="background-image:url(images/search_results/orange_star.svg)"></div>
+                <div class="rating">{{cta_color}}</div>
+              </div>
+              <div class="amount_ratings">{{phone}}</div>
+            </div>
+          </div>
+         </div>
+       </div>
+      {{/if}}
+      {{/each}}
+    </div>
+    <div class="footer">
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+</script>

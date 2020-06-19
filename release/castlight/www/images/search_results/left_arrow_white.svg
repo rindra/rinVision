@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Back Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="23-Checkout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-12.000000, -39.000000)">
+        <g id="Group-2" fill="#FFFFFF">
+            <g id="Web-view---Top-bar---Pts-balance">
+                <g id="Group-3">
+                    <path d="M12.4889849,49.9434957 L12.3509034,49.8054142 L22.6753548,39.4809628 L24.7587314,41.5643394 L16.3795751,49.9434957 L24.7587314,58.3226521 L22.6753548,60.4060287 L12.3509034,50.0815773 L12.4889849,49.9434957 Z" id="Back-Arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

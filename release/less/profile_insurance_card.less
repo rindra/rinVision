@@ -1,0 +1,80 @@
+._profile_insurance_card() {
+  [data-type=profile_insurance_card] {
+    margin: 2vh 0 0 0;
+    height: 40vh;
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .slide {
+      width: 100vw;
+      height: 40vh;
+      box-sizing: border-box;
+    }
+    .static {
+      position: absolute;
+      width: 95vw;
+      height: 40vh;
+      background: #ffffff;
+      margin: 0 0 0 1.5vh;
+      border-radius: .5vh;
+    }
+    .layers_wrapper {
+      position: absolute;
+      width: 95vw;
+      height: 40vh;
+      left: 1.5vh;
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        width: 85vw;
+        height: 32vh;
+        margin: 5vh 0 0 0;
+        .program {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 80vw;
+          height: 32vh;
+          border-radius: 1vh;
+          overflow: hidden;
+          //box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+          // border: 1px solid #f2f2f2;
+          box-sizing: border-box;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    .dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 33vh;
+    }
+    .dot {
+      border-radius: 100px;
+      margin-right: 1vh;
+      width: 1vh;
+      height: 1vh;
+      background-color: #CCCCCC;
+    }
+    .grey_dot {
+      background-color: #717C8E;
+    }
+    .static {
+      pointer-events: none;
+      overflow: hidden;
+      .bg {
+        position: absolute;
+        width: 100vw;
+        height: 24vh;
+      }
+    }
+  }
+}

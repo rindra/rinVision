@@ -1,0 +1,12 @@
+<script id=settings_cab_template type=text/x-handlebars-template>
+  <div class="group">
+    {{#each carousel}}
+      <div class="container" data-name="{{name}}">
+        <div class="image" style="background-image:url({{image}})"></div>
+        <div class="topic">{{title}}</div>
+        <div class="arrow_shortcuts"></div>
+        <div class="description">{{label_fsa}}</div>
+      </div>
+    {{/each}}
+  </div>
+</script>

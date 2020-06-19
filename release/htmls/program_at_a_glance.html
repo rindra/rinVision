@@ -1,0 +1,57 @@
+<script id=program_at_a_glance_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="description">{{description}}</div>
+    {{#if label_fsa}}
+    <div class="info">
+      <div class="bullet_point"></div>
+      <div class="info_details">{{label_fsa}}</div>
+    </div>
+    {{/if}}
+    {{#if caption_fsa}}
+    <div class="info">
+      <div class="bullet_point"></div>
+      <div class="info_details">{{caption_fsa}}</div>
+    </div>
+    {{/if}}
+    {{#if amount_fsa}}
+    <div class="info">
+      <div class="bullet_point"></div>
+      <div class="info_details">{{amount_fsa}}</div>
+    </div>
+    {{/if}}
+    {{#if label_store_credit}}
+    <div class="info">
+      <div class="bullet_point"></div>
+      <div class="info_details">{{label_store_credit}}</div>
+    </div>
+    {{/if}}
+    {{#if caption_store_credit}}
+    <div class="info">
+      <div class="bullet_point"></div>
+      <div class="info_details">{{caption_store_credit}}</div>
+    </div>
+    {{/if}}
+    <div class="see_more">See more</div>
+    <div class="collapse">
+      {{#if label_one_title}}
+      <div class="label_title">{{label_one_title}}</div>
+      {{/if}}
+      {{#if label_one_sub_title}}
+      <div class="label_info">{{label_one_sub_title}}</div>
+      {{/if}}
+      {{#if label_two_title}}
+      <div class="label_title">{{label_two_title}}</div>
+      {{/if}}
+      {{#if label_two_sub_title}}
+      <div class="label_info">{{label_two_sub_title}}</div>
+      {{/if}}
+      {{#if label_three_title}}
+      <div class="label_title">{{label_three_title}}</div>
+      {{/if}}
+      {{#if label_three_sub_title}}
+      <div class="label_info">{{label_three_sub_title}}</div>
+      {{/if}}
+      <div class="see_less">{{cta}}</div>
+    </div>
+  </div>
+</script>

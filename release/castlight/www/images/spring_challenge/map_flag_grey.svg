@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Leaderboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leaderboard_history" transform="translate(-89.000000, -82.000000)">
+            <g id="Group-3-Copy">
+                <g id="Component/Profile-3-stats">
+                    <g id="Group-3" transform="translate(89.000000, 82.000000)">
+                        <path d="M5,0 C2.24307923,0 0,2.06594695 0,4.60508945 C0,5.65055521 0.372445528,6.63667489 1.07785153,7.45814312 L5,12 L8.92322016,7.45718692 C9.62755447,6.63667489 10,5.65055521 10,4.60508945 C10,2.06594695 7.75692077,0 5,0" id="Path-Copy-11" fill="#C3C3C3"></path>
+                        <circle id="Oval" fill="#081653" fill-rule="nonzero" cx="5" cy="5" r="2"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

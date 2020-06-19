@@ -1,0 +1,27 @@
+<section id=home data-section=home data-style=dark data-state data-current-page=2>
+  <script id=home-template type=text/x-handlebars-template>
+    <div class=container>
+      <!--<img src=../images/dashboard_alex/0.png>-->
+      <div class=box-input>
+        <input id="search" name="search" placeholder="Search..." type="text" data-list=".box-list">
+        <div class=cancel>clear</div>
+      </div>
+      <div class=list>
+        <div class=box-list>
+          {{#each folders}}
+          <div class=link data-folder={{this.folder}}>{{folder}}</div>
+          {{/each}}
+        </div>
+      </div>
+      <div class=slides>
+      </div>
+    </div>
+  </script>
+  <script id=slide-template type=text/x-handlebars-template>
+    <div class=box>
+      {{#each slides}}
+      <a href=../images/{{folder}}/{{file}} download={{file}}><img src=../images/{{folder}}/{{file}}></a>
+      {{/each}}
+    </div>
+  </script>
+</section>

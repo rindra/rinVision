@@ -1,0 +1,138 @@
+<script id=spring_challenge_template type=text/x-handlebars-template>
+  <div class="challenge_container">
+    <div class="go_back"></div>
+    <div class="exit"></div>
+    <div class="section show intro_challenge">
+      <img src="images/spring_challenge/leaderboard_intro_1.jpg"></img>
+      <!-- <div class="logo_container">
+        {{#if is_logo_alt}}
+          <div class=logo_challenge style="background-image:url({{logo_alt}})"></div>
+        {{else}}
+          <div class=logo_challenge style="background-image:url({{logo}})"></div>
+        {{/if}}
+      </div> -->
+    </div>
+    <div class="section win_prize">
+      <img src="images/spring_challenge/leaderboard_intro_2.jpg"></img>
+    </div>
+    <div class="section how_to_play">
+      <img src="images/spring_challenge/leaderboard_intro_3.jpg"></img>
+    </div>
+    <div class="section countdown">
+      <img src="images/spring_challenge/leaderboard_teamselect_new.jpg"></img>
+      <div class=avatar_box>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+        <div class="user">{{username}}</div>
+      </div>
+    </div>
+    <div class="section create_team">
+      <img src="images/spring_challenge/create_team.jpg"></img>
+    </div>
+    <div class="section create_team_complete">
+      <img src="images/spring_challenge/create_team_complete.jpg"></img>
+    </div>
+    <div class="section invite_team_members">
+      <img src="images/spring_challenge/invite_team_members.jpg"></img>
+    </div>
+    <div class="section pending_members">
+      <img src="images/spring_challenge/pending_members_top.jpg"></img>
+      <div class="members_container">
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+        <div class="wrapper">
+          <div class="captain">{{username}}</div>
+          <div class="description"><span></span> {{state}} <span></span> Captain</div>
+        </div>
+      </div>
+      <img src="images/spring_challenge/pending_members_bottom.jpg"></img>
+    </div>
+    <div class="section challenge_push_notification">
+      <img src="images/spring_challenge/team_challenge_started_push_notification.jpg"></img>
+    </div>
+    <div class="section scoreboard">
+      <img src="images/spring_challenge/teams_list_updated.jpg"></img>
+      <!-- <div class="logo_container">
+        {{#if is_logo_alt}}
+          <div class=logo_challenge style="background-image:url({{logo_alt}})"></div>
+        {{else}}
+          <div class=logo_challenge style="background-image:url({{logo}})"></div>
+        {{/if}}
+      </div> -->
+    </div>
+    <div class="section team_progress">
+      <img src="images/spring_challenge/leaderboard_team_progress.jpg"></img>
+      <div class="team_members_container">
+        <div class="avatar yellow">TG</div>
+        <div class="avatar green">RR</div>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+        <div class="avatar brown">RL</div>
+        <div class="avatar purple">HY</div>
+      </div>
+      <img src="images/spring_challenge/team_progress_arrow.jpg"></img>
+      <div class="captain_box">
+        <div class="captain">{{username}}</div>
+        <div class="captain_location"><span></span> {{location}} <span></span> Captain</div>
+      </div>
+      <img src="images/spring_challenge/team_progress_bottom.jpg"></img>
+    </div>
+    <div class="section captain_profile">
+      <img src="images/spring_challenge/leaderboard_profile_live.jpg"></img>
+      <div class=avatar_box>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+        <div class="user">{{username}}</div>
+        <div class="user_department">Marketing Mayhem <span></span> Captain</div>
+        <div class="user_location"><span></span>{{location}}</div>
+      </div>
+    </div>
+    <div class="section challenge_history">
+      <div class="history_container">
+        <div class=avatar_box>
+          {{#if photo}}
+          <div class=avatar style="background-image:url({{photo}})"></div>
+          {{else}}
+          <div class=avatar>{{initials}}</div>
+          {{/if}}
+        </div>
+        <div class="user_info">
+          <div class="user_name">{{username}}</div>
+          <div class="user_role"><span>Marketing Mayhem</span> <span><div class="grey_star"></div>Captain</span></div>
+          <div class="user_location"><span></span>{{location}}</div>
+          <div class="user_stats_box">
+            <div class="user_stats"><span>162,868</span> <span>Total steps</span></div>
+            <div class="user_stats"> <span>245</span> <span>Gems</span></div>
+          </div>
+        </div>
+        <div class="history_done">Done</div>
+      </div>
+      <img src="images/spring_challenge/leaderboard_history_live.jpg"></img>
+    </div>
+    <div class="section challenge_complete_push">
+      <img src="images/spring_challenge/leaderboard_push_complete.jpg"></img>
+    </div>
+    <div class="section leaderboard_complete">
+      <img src="images/spring_challenge/leader_board_winners.png"></img>
+      <!-- <div class="logo_container">
+        {{#if is_logo_alt}}
+          <div class=logo_challenge style="background-image:url({{logo_alt}})"></div>
+        {{else}}
+          <div class=logo_challenge style="background-image:url({{logo}})"></div>
+        {{/if}}
+      </div> -->
+    </div>
+  </div>
+</script>

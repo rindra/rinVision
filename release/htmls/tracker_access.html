@@ -1,0 +1,62 @@
+<section id=tracker_access class="main" data-module=tracker_access>
+  <script id=tracker_access_template type=text/x-handlebars-template>
+
+    <div class="container">
+
+      <div class="header">
+        <div class="do_not_allow">
+          Don't Allow
+        </div>
+        <div class="health_access_title">
+          {{config.skin.tracker.title_access}}
+        </div>
+        <div class="allow">
+          Allow
+        </div>
+      </div>
+
+      <div class="image_and_description">
+        <div class="image_access" style="background-image:url({{config.skin.tracker.image_access}})"></div>
+        <div class="description_access">
+          {{config.skin.tracker.description_access}}
+        </div>
+      </div>
+
+      <div class="castlight_request">
+        “Castlight” would like to access and update your Health data in the categories below.
+      </div>
+      <div class="turn_categories_on is_off">
+        <div class="turn_categories_on_info">Turn All Categories On</div>
+      </div>
+      <div class="castlight_permission">
+        Allow or disallow “Castlight” to access all health data types listed here.
+      </div>
+
+      <div class="read_data">
+        Allow "Castlight" to read data:
+      </div>
+
+      <div class="data">
+        <div class="dietary_energy">
+          <div class="carrot_image"></div>
+          <div class="dietary_energy_title">Dietary Energy</div>
+          <div class="toggle">
+            <div class=on>@@include('toggle_on.svg')</div>
+            <div class=off>@@include('toggle_off.svg')</div>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="fire_image"></div>
+          <div class="steps_title">Steps</div>
+          <div class="toggle">
+            <div class=on>@@include('toggle_on.svg')</div>
+            <div class=off>@@include('toggle_off2.svg')</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </script>
+</section>

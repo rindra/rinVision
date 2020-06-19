@@ -1,0 +1,131 @@
+<script id=personalized_for_you_cab_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class=static>
+    <div class="dots">
+      {{#each carousel}}
+      <div class="dot"></div>
+      {{/each}}
+      <div class="dot grey_dot"></div>
+    </div>
+  </div>
+  <div class=layers>
+    {{#each carousel}}
+    {{#if is_tmp_images}}
+    <div class=layer>
+      <div class=program>
+        <div class=image style='background-image:url({{image}});height:100%;'></div>
+      </div>
+    </div>
+    {{else if is_user_journey}}
+    <div class=layer data-user-journey={{name}}>
+      <div class=program>
+        <div class="program_top">
+          <div class="program_icon" style='background-image:url({{avatar}})'></div>
+          <div class="program_info">
+            <div class="title">{{description}}</div>
+            <div class="description">{{title}}</div>
+          </div>
+        </div>
+        <div class="dynamic_content" style='background-color:{{color}}'>
+          <div class="dynamic_text">{{caption_fsa}}</div>
+        </div>
+        {{#if show_incentive}}
+        <div class="points_info user_journey"><span></span>{{caption_store_credit}}</div>
+        {{/if}}
+        {{#if label_incentive}}
+        <div class="points_info user_journey">{{label_store_credit}}</div>
+        {{/if}}
+      </div>
+      <div class="program_end">
+        <div class="end_image" style='background-image:url({{image}})'></div>
+        <div class="end message">{{{label_fsa}}}</div>
+        <div class="end cta">{{cta}}</div>
+        {{#if show_incentive}}
+        <div class="points_info user_journey stars"><span></span>{{caption_store_credit}}</div>
+        {{/if}}
+        {{#if label_incentive}}
+        <div class="points_info user_journey">{{label_store_credit}}</div>
+        {{/if}}
+      </div>
+    </div>
+    {{else}}
+    <div class=layer>
+      <div class=program>
+        <div class=image style='background-image:url({{image}})'></div>
+        <div class=title>{{title}}</div>
+        <div class=description>{{description}}</div>
+        <div class="more_info">{{label_store_credit}}</div>
+        {{#if show_incentive}}
+        <div class="points_info"><span></span>{{caption_store_credit}}</div>
+        {{/if}}
+        {{#if show_new}}
+        <div class="new_label"><span></span>{{date_updated}}</div>
+        {{/if}}
+      </div>
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide>
+        <div class=hotspot data-slide={{name}}></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <div class="card_web_wrapper">
+    <div class=static>
+      <div class="dots">
+        {{#each carousel}}
+        <div class="dot"></div>
+        {{/each}}
+        <div class="dot grey_dot"></div>
+      </div>
+    </div>
+    <div class=layers>
+      {{#each carousel}}
+      {{#if is_tmp_images}}
+      <div class=layer>
+        <div class=program>
+          <div class=image style='background-image:url({{image}})'></div>
+        </div>
+      </div>
+      {{else}}
+      <div class=layer>
+        <div class=program>
+          <div class=image style='background-image:url({{image}})'></div>
+          <div class=title_slide_web>{{title}}</div>
+          <div class=description_slide_web>{{description}}</div>
+          <div class=more_info_web>{{label_store_credit}}</div>
+          {{#if show_incentive}}
+          <div class="points_info_web"><span></span>{{caption_store_credit}}</div>
+          {{/if}}
+          {{#if show_new}}
+          <div class="new_label_web"><span></span>{{date_updated}}</div>
+          {{/if}}
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+    <div class=carousel>
+      <div class=box>
+        {{#each carousel}}
+        <div class=slide>
+          <div class=hotspot data-slide={{name}} data-clickthrough={{web_clickthrough}}></div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="arrow back">
+        <div class="arrow_image"></div>
+      </div>
+      <div class="arrow forward">
+        <div class="arrow_image"></div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</script>

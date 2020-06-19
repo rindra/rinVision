@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>💎 icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.6601558 4.39403201 0 6.05418781 5.76302749 11.8172153 16 1.58024278 14.4197572 0 5.76302749 8.58372126"></polygon>
+    </defs>
+    <g id="Home-page-spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Specs/Individual-pages/Wellbeing-programs" transform="translate(-1277.000000, -932.000000)">
+            <g id="mocks/Get-Active---In-progress-2" transform="translate(1098.000000, 462.000000)">
+                <g id="Calendars,-Bars-and-Pie-charts/Bar-Chart/Full-view" transform="translate(0.000000, 144.000000)">
+                    <g id="Calendars,-Bars-and-Pie-charts/Bar-Chart/Bars-only" transform="translate(0.000000, 165.000000)">
+                        <g id="bars" transform="translate(-12.000000, 65.649994)">
+                            <g id="💎-icon" transform="translate(191.000000, 96.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Path-3-Copy-2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                                <g id="🎨-Color/White" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <g transform="translate(-4.000000, -6.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="24" height="24"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

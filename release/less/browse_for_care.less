@@ -1,0 +1,35 @@
+._browse_for_care() {
+  [data-type=browse_for_care] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+    .group {
+      flex-direction: column;
+      .title {
+        text-transform: uppercase;
+        color: #717c8e;
+      }
+      .layers {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        .program {
+          display: flex;
+          align-items: center;
+          height: 6vh;
+          margin: 0 2vh;
+          border-bottom: 1px solid #DADADA;
+          .program_title {
+            font-size: 2vh;
+            color: #1d1e20;
+          }
+        }
+        .program:last-child {
+          border: 0;
+          //margin-bottom: 2vh;
+        }
+      }
+    }
+  }
+}

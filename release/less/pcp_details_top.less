@@ -1,0 +1,175 @@
+._pcp_details_top() {
+  [data-type=pcp_details_top] {
+    width: 100vw;
+    height: 97vh;
+    margin-top: 0;
+    card_wrapper .map_box {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
+    .map {
+      width: 100vw;
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .container {
+      width: 95vw;
+      position: absolute;
+      top: 20vh;
+      left: 1.5vh;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    // .gradient {
+    //   position: absolute;
+    //   width: 100vw;
+    //   height: 50vh;
+    //   top: 30vh;
+    //   background-image: linear-gradient(to top, #EDEDF2 10%, transparent 70%);
+    // }
+    .group_wrapper {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      top: 22.5vh;
+    }
+    .group {
+      display: block;
+      width: 95vw;
+      overflow: visible;
+    }
+    .icon_box {
+      display: flex;
+      justify-content: flex-end;
+      width: 95vw;
+      height: 3vh;
+      .icon {
+        width: 6vh;
+        height: 6vh;
+        margin: -3vh 3vh 0 0vh;
+        background-image: url(images/find_care/phone.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .name_box,
+    .street_box {
+      display: flex;
+    }
+    .distance,
+    .town,
+    .specialty {
+      .secondary();
+    }
+    .distance {
+      margin: 0 0 0 2vh;
+    }
+    .more {
+      .terciary();
+      color: #2981fc;
+      margin: .5vh 0 0 2vh;
+    }
+    .name_box {
+      .primary();
+      display: flex;
+      justify-content: space-between;
+      margin: .5vh 0 0 2vh;
+      .amount {
+        margin: 0 2vh 0 0;
+      }
+    }
+    .street {
+      color: #717C8E;
+      font-size: 1.6vh;
+      margin: 0.5vh 0 0 2vh;
+    }
+    .street_box {
+      .secondary();
+      display: flex;
+      justify-content: space-between;
+      margin: .5vh 0 0 2vh;
+      .label {
+        margin: 0 2vh 0 0;
+      }
+    }
+    .town {
+      margin: .5vh 0 0 2vh;
+    }
+    .rating_box {
+      .secondary();
+      display: flex;
+      margin: .5vh 0 0 2vh;
+      .rating,
+      .total {
+        margin: 0 0 0 .3vh;
+      }
+    }
+    .rating {
+      width: 22vw;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .action_box {
+      .primary();
+      margin: 2vh 0 0 0;
+    }
+    .phone_number {
+      .secondary();
+      margin: 0 2vh 0 0;
+    }
+    .call_box,
+    .directions_box,
+    .add_to_care_team_box {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #ECE7E7;
+      height: 5vh;
+      .icon {
+        width: 2.5vh;
+        height: 2vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 0 0 2vh;
+      }
+      .label {
+        flex: 1;
+        margin: 0 0 0 2vh;
+      }
+    }
+    .call_box {
+      .icon {
+        background-image: url(images/find_care/phone2.svg);
+      }
+    }
+    .directions_box {
+      .icon {
+        background-image: url(images/find_care/directions.svg);
+      }
+    }
+    .add_to_care_team_box {
+      .icon {
+        background-image: url(images/find_care/add_to_care_team.svg);
+      }
+    }
+    /*.title {
+      width: 90vw;
+      font-size: 3vh;
+      height: 7vh;
+      color: #000000;
+      margin: 0 0 0 2vh;
+    }
+    .description {
+      width: 88vw;
+      font-size: 2vh;
+      color: #717C8E;
+      margin: 0 0 2vh 2vh;
+      line-height: 2.8vh;
+    }*/
+  }
+}

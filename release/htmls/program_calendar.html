@@ -1,0 +1,46 @@
+<script id=program_calendar_template type=text/x-handlebars-template>
+  <div class="grey_line"></div>
+  <div class="container">
+    <div class="wrapper">
+      <div class="grey_circle"></div>
+      <div class="day">{{before_4}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="grey_circle"></div>
+      <div class="day">{{before_3}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="green_checkmark"></div>
+      <div class="day">{{before_2}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="grey_circle"></div>
+      <div class="day">{{before_1}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="green_checkmark active"></div>
+      <div class="today">{{today}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="white_circle"></div>
+      <div class="day">{{after_1}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="white_circle"></div>
+      <div class="day">{{after_2}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="white_circle"></div>
+      <div class="day">{{after_3}}</div>
+    </div>
+    <div class="wrapper">
+      <div class="white_circle"></div>
+      <div class="day">{{after_4}}</div>
+    </div>
+  </div>
+  <div class="today_pointer">
+    <div class="triangle"></div>
+    <div class="cover"></div>
+    <div class="date">Today, {{date}}</div>
+  </div>
+</script>

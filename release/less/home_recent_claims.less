@@ -1,0 +1,53 @@
+._home_recent_claims() {
+  [data-type=home_recent_claims] {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 42.8vh;
+    .group {
+      flex-wrap: wrap;
+    }
+    .title {
+      justify-content: space-between;
+      width: 100%;
+      margin-right: 2vh;
+    }
+    .box {
+      // .sub {
+      //   width: 40vh;
+      // }
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 1.5vh 2vh;
+      padding: 2vh 0 0 0;
+      width: 100%;
+      border-top: 1px solid #ECE7E7;
+      .label_title,
+      .label_amount {
+        font-size: 2.4vh;
+      }
+      .label_amount {
+        margin-right: 2vh;
+      }
+      .label_title, .label_sub_title {
+        margin-bottom: 0.5vh;
+        width: max-content;
+      }
+      .label_sub_title, .label_caption {
+        font-size: 1.3vh;
+        color: #717C8E;
+      }
+    }
+    .box:nth-child(2) {
+      border: 0 none;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .cta {
+      margin: 3vh 2vh 3vh 0;
+    }
+  }
+}

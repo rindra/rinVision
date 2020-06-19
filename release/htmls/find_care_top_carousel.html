@@ -1,0 +1,24 @@
+<script id=find_care_top_carousel_template type=text/x-handlebars-template>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer>
+      <div class=program>
+        <div class=image style='background-image:url({{image}})'></div>
+        <div class=overlay style='background: linear-gradient(to right, {{cta_color}} , transparent);'></div>
+        <div class=action_box>
+          <div class=program_title>{{title}}</div>
+          <div class=program_subtitle>{{subtitle}}</div>
+          <div class=program_description>{{description}}</div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide data-slide={{name}}></div>
+      {{/each}}
+    </div>
+  </div>
+</script>

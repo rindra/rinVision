@@ -1,0 +1,58 @@
+._program_at_a_glance() {
+  [data-type=program_at_a_glance] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      border-radius: .75vh;
+      .description {
+        font-size: 2vh;
+        margin: 2vh;
+      }
+      .info {
+        display: flex;
+        margin: 0 3vh 2vh 3vh;
+        .info_details {
+          font-size: 2vh;
+          width: 70vw;
+          color: #1D1E20;
+        }
+        .bullet_point {
+          border-radius: 100px;
+          width: .9vh;
+          height: .9vh;
+          background-color: #000000;
+          margin: 0.5vh 2vh 0 2vh;
+        }
+      }
+      .see_more,
+      .see_less {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 2vh 2vh 0vh;
+        font-size: 2vh;
+        color: #006dff;
+      }
+      .collapse {
+        display: none;
+      }
+      .collapse.active {
+        display: block;
+      }
+      .label_title,
+      .label_info {
+        margin: 0 2vh 2vh 2vh;
+        color: #1D1E20;
+      }
+      .label_title {
+        font-size: 2.2vh;
+        text-transform: uppercase;
+        color: #626B7A;
+      }
+      .label_info {
+        font-size: 2vh;
+        width: 85vw;
+      }
+    }
+  }
+}

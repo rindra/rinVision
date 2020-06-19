@@ -1,0 +1,61 @@
+<script id=home_company_updates_cab_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class="group">
+    {{#each carousel}}
+    <div class="box" data-name={{name}} data-category={{category}}>
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="container">
+        <div class="title_box">
+          <div class="update_type" style="color:{{color}}">{{title}}</div>
+            <div class="label">{{points}} going</div>
+          <!--<div class="status">{{points}} spots</div>-->
+        </div>
+        <div class="date">{{date_updated}}</div>
+        <div class="description">{{description}}</div>
+        <div class="description_label">{{label_store_credit}}</div>
+        <div class="wrapper">
+          {{#if is_cta}}
+          <div class="learn_box" data-status={{status}}>
+            <div class="learn">{{cta}}</div>
+            <div class="going_box">
+              <div class="checkmark"></div>
+              <div class="going">Going</div>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{else}}
+  <div class="group_web">
+    {{#each carousel}}
+    <div class="box" data-name={{name}} data-category={{category}}>
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="container">
+        <div class="title_box">
+          <div class="update_type" style="color:{{color}}">{{title}}</div>
+            <div class="label">{{points}} going</div>
+          <!--<div class="status">{{points}} spots</div>-->
+        </div>
+        <div class="date">{{date_updated}}</div>
+        <div class="description">{{description}}</div>
+        <div class="description_label">{{label_store_credit}}</div>
+        <div class="wrapper">
+          {{#if is_cta}}
+          <div class="learn_box" data-status={{status}}>
+            <div class="learn">{{cta}}</div>
+            <div class="going_box">
+              <div class="checkmark"></div>
+              <div class="going">Going</div>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</script>

@@ -1,0 +1,35 @@
+<script id=insurance_card_dynamic_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="action_box">
+      <div class=header_wrapper>
+        <div class=image style='background-image:url({{image}})'></div>
+        <div class=card_label>{{label_fsa}}</div>
+      </div>
+      <div class=card_subtitle>{{title}}</div>
+      <div class=phone>{{phone}}</div>
+      <div class="user_info">
+        <div class="left">
+          <div class="member_title">{{caption_fsa}}</div>
+          <div class="member_name">{{first_name}} {{last_name}}</div>
+        </div>
+        <div class="right">
+          <div class="number_title">{{label_store_credit}}</div>
+          <div class="member_number">{{caption_store_credit}}</div>
+        </div>
+      </div>
+      <div class="grey_border"></div>
+      <div class="insurance_info">
+        <div class="left">
+          <div class="insurance_details">{{amount_store_credit}}</div>
+          <div class="insurance_details">{{label_plan_status}}</div>
+          <div class="insurance_details">{{label_one_title}}</div>
+        </div>
+        <div class="right">
+          <div class="insurance_details">{{date_updated}}</div>
+          <div class="insurance_details">{{label_one_caption}}</div>
+          <div class="insurance_details">{{label_one_sub_title}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,28 @@
+._tmp_image_with_left_right_hotspot() {
+  [data-type=tmp_image_with_left_right_hotspot] {
+    margin: 0;
+    .container {
+      width: 100vw;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+    .hotspot {
+      position: absolute;
+      bottom: 0;
+      height: 12vh;
+      opacity: 0;
+    }
+    .hotspot_left {
+      background: rgba(100, 255, 0, .5);
+      left: 0;
+      width: 45vh;
+    }
+    .hotspot_right {
+      background: rgba(200, 100, 0, .5);
+      width: 10vh;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+._full_screen_overflow_hidden_image() {
+  [data-type=full_screen_overflow_hidden_image] {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    z-index: 9;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    // .image_box {
+    //   width: 100%;
+    //   height: 100%;
+    // }
+    img {
+      width: 100vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    // .image {
+    //   width: 100%;
+    //   height: 100%;
+    //   background-size: cover;
+    // }
+    .hotspot_back,
+    .hotspot_target {
+      position: absolute;
+      z-index: 3;
+    }
+    .hotspot_back {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10vh;
+    }
+    .hotspot_target {
+      top: 24vh;
+      left: 0;
+      width: 100%;
+      height: 76vh;
+    }
+  }
+}

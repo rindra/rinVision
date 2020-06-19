@@ -1,0 +1,87 @@
+._rewards_gift_cards_pcorp() {
+  [data-type=rewards_gift_cards_pcorp] {
+    display: flex;
+    justify-content: center;
+    .group {
+      width: 97vw;
+      flex-direction: column;
+      .filters {
+        display: flex;
+        border-top: 1px solid #e6e8e9;
+        margin: 0 0 2vh .5vh;
+        padding-top: 2vh;
+        .filter:first-child {
+          margin-left: 0;
+          background-color: #B2D3FF;
+        }
+        .filter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1vh 2vh;
+          height: 3vh;
+          margin: 1vh;
+          color: #151617;
+          text-transform: uppercase;
+          font-size: 2vh;
+          border: 1px solid #C4D2E4;
+          border-radius: .75vh;
+        }
+      }
+      .layers_gifts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2vh;
+        .layer_gift {
+          position: relative;
+          display: flex;
+          width: 95vw;
+          height: 20vh;
+          margin-bottom: 2vh;
+          box-shadow: 0 3px 10px 4px rgba(0,0,0,0.08);
+          border-radius: 8px;
+          overflow: hidden;
+          .image {
+            width: 16vh;
+            height: 14vh;
+            margin-left: 2vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            .title_gift {
+              width: 55vw;
+              margin: 0 0 0 2vh;
+              color: #1c1d1f;
+              font-size: 2.2vh;
+            }
+            .points {
+              margin: 2vh 0 .5vh 2vh;
+              font-size: 2vh;
+              color: #626b79;
+            }
+          }
+          .reward_footer {
+            position: absolute;
+            bottom: 0;
+            height: 6vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 2vh;
+            color: #1c1d1f;
+            background-color: #E5F0FF;
+            .reward_footer_pts {
+              margin-right: 2vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}

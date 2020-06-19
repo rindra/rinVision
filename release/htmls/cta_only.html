@@ -1,0 +1,33 @@
+<script id=cta_only_template type=text/x-handlebars-template>
+  <div class=cta_box>
+    <div class=cta>{{reminder}}</div>
+  </div>
+  <div class=overlay>
+    {{#if isReminded}}
+    <div class=dialog>
+      <div class=close_box>
+        <div class=close></div>
+      </div>
+      <div class=icon_box>
+        <div class=icon></div>
+      </div>
+      <div class=message_box>{{{label_one_title}}}</div>
+      <div class=buttons_box>
+        <div class='button outlined not_now'>not now</div>
+        <div class='button ok'>ok</div>
+      </div>
+      <div class=sub>{{label_one_sub_title}}</div>
+    </div>
+    {{else}}
+    <div class="dialog check">
+      <div class=close_box>
+        <div class=close></div>
+      </div>
+      <div class=icon_box>
+        <div class="icon"></div>
+      </div>
+      <div class=message_box>{{{label_two_title}}}</div>
+    </div>
+    {{/if}}
+  </div>
+</script>

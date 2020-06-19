@@ -1,0 +1,23 @@
+<div class=slide data-slide=hi_web>
+  {{#each config.skin.onboarding}}
+  {{#equal this this.type "hi_web"}}
+  <hgroup>
+    <div class=group>
+      <div class=title>{{title}}</div>
+      <div class=message>{{description}}</div>
+    </div>
+  </hgroup>
+  <div class=list>
+    {{#each check_items}}
+    <div class=item>
+      <div class=check></div>
+      <div class=message>{{this}}</div>
+    </div>
+    {{/each}}
+  </div>
+  {{/equal}}
+  {{/each}}
+  <div class=button_box>
+    <div class=button data-name=next>Get Started</div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+._personalized_for_you_web() {
+  [data-type=personalized_for_you_web] {
+    position: relative;
+    width: 850px;
+    height: 46vh;
+    margin-top: 16px;
+    overflow: hidden;
+    .static,
+    .layers {
+      position: absolute;
+    }
+    .static {
+      display: flex;
+      justify-content: center;
+      width: 850px;
+    }
+    .layers {
+      display: flex;
+      // z-index: 1;
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 245px;
+        margin-right: 30px;
+      }
+      .program {
+        width: 340px;
+        height: 245px;
+        background: #ffffff;
+        border: 1px solid #dadada;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .image {
+        height: 135px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 -6vh 5vh -4vh rgba(0, 0, 0, 0.7);
+        // background-position: 0 -2vh;
+      }
+      .title {
+        font-size: 14px;
+        margin: 24px 0 12px 24px;
+        color: #626b79;
+      }
+      .description {
+        width: 300px;
+        font-size: 18px;
+        margin-left: 24px;
+        color: #1c1d1f;
+      }
+      .description:hover {
+        cursor: pointer;
+        color: #006dff;
+      }
+    }
+    .carousel {
+      position: relative;
+      box-shadow: inset -40px -15px 50px 0px white;
+      .box {
+        display: flex;
+        width: min-content;
+      }
+      .slide {
+        width: 100vw;
+        height: 40vh;
+        box-sizing: border-box;
+        .hotspot {
+          width: 27vw;
+          height: 40vh;
+        }
+      }
+    }
+    .dots {
+      position: relative;
+      top: 43vh;
+      display: flex;
+      align-items: center;
+    }
+    .dot {
+      border-radius: 100px;
+      width: 8px;
+      height: 8px;
+      background-color: #c4d2e3;
+      margin: 0 1vh 0 0;
+      &.blue_dot {
+        position: absolute;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #006DFF;
+      }
+    }
+  }
+}

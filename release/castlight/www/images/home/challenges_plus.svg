@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="challenges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-set-goals" transform="translate(-185.000000, -415.000000)" fill-rule="nonzero">
+            <g id="🔶-Card-2" transform="translate(166.000000, 306.000000)">
+                <g id="Group-2" transform="translate(19.000000, 109.000000)">
+                    <circle id="Oval" fill="#006DFF" cx="32" cy="32" r="32"></circle>
+                    <g id="Group" transform="translate(18.000000, 19.000000)" fill="#FFFFFF">
+                        <path d="M3.07603332,17.02913 C1.49238983,17.02913 0.208593129,15.7552852 0.208593129,14.183918 C0.208593129,12.6125509 1.49238983,11.3387061 3.07603332,11.3387061 L25.0808063,11.3387061 C26.6644498,11.3387061 27.9482465,12.6125509 27.9482465,14.183918 C27.9482465,15.7552852 26.6644498,17.02913 25.0808063,17.02913 L3.07603332,17.02913 Z" id="Line"></path>
+                        <path d="M11.422564,3.05687719 C11.422564,1.48551001 12.7063607,0.211665218 14.2900042,0.211665218 C15.8736477,0.211665218 17.1574444,1.48551001 17.1574444,3.05687719 L17.1574444,24.9431228 C17.1574444,26.51449 15.8736477,27.7883348 14.2900042,27.7883348 C12.7063607,27.7883348 11.422564,26.51449 11.422564,24.9431228 L11.422564,3.05687719 Z" id="Line"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

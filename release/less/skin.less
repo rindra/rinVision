@@ -1,0 +1,841 @@
+[data-app="castlight"] {
+  width: 100%;
+  height: 100%;
+  @font-face {
+    font-family: "Open Sans Regular";
+    src: url(images/fonts/Roboto-Regular.woff);
+  }
+  @font-face {
+    font-family: "Open Sans Semi";
+    src: url(images/fonts/OpenSans-Semibold.woff);
+  }
+  @font-face {
+    font-family: "San Francisco Regular";
+    src: url(images/fonts/SF-UI-Text-Regular.woff);
+  }
+  @font-face {
+    font-family: "Roboto Light";
+    src: url(images/fonts/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: "Roboto Regular";
+    src: url(images/fonts/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Roboto Medium";
+    src: url(images/fonts/Roboto-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Roboto Bold";
+    src: url(images/fonts/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Lato Regular";
+    src: url(images/fonts/Lato-Regular.ttf);
+  }
+  font-family: "Open Sans Regular";
+  -webkit-font-smoothing: antialiased;
+  .skin {
+    > section {
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  #hotspot {
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 100px;
+    height: 100px;
+    background: #18e0f2;
+    border-radius: 150px;
+    border: 5px solid #ffffff;
+    opacity: 0;
+  }
+  ._home();
+  ._picker();
+  ._configurator();
+  ._intro();
+  ._why_castlight();
+  ._onboarding();
+  ._tracker();
+  ._tracker_access();
+  //._healthkit();
+  ._homepage();
+  ._interstitial();
+  ._onboarding_web();
+  ._homepage_web();
+  ._iphoneX();
+  ._iphoneXS_Max();
+  [data-module="homepage"] {
+    .card {
+      &._sticky {
+        position: sticky;
+        bottom: 3vh;
+        left: 46vh;
+        z-index: 4;
+      }
+    }
+  }
+  [data-skin="engage"] {
+    [data-module="onboarding"] {
+      .logo {
+        height: 3vh;
+      }
+    }
+    [data-module="homepage"] {
+      [data-type="top_nav"] {
+        .logo {
+          height: 3vh;
+        }
+      }
+    }
+  }
+  [data-skin="Summit"] {
+    [data-slide=intro] {
+      //background-image: url(images/onboarding/employer_intro.jpg);
+    }
+  }
+  [data-skin="Summit Care"] {
+    [data-slide=intro] {
+      //background-image: url(images/onboarding/summit_intro_cg.jpg);
+    }
+  }
+  [data-skin="Walmart"] {
+    [data-slide=intro] {}
+  }
+  [data-homepage-tab="plan_details"],
+  [data-homepage-tab="find_care"],
+  [data-homepage-tab="sr"] {
+    .card {
+      &._sticky {
+        margin: 0 0 0 80vw;
+      }
+    }
+  }
+  ._skin_complete_cab();
+  ._skin_main_pcorp();
+  ._skin_main_hb();
+  ._package_hb_cc();
+  ._package_caremore_with_points();
+  ._package_caremore_no_points();
+}
+[data-app-name="castlight_app"] {
+  [data-module=home],
+  [data-module=homepage] {
+    .web_wrapper,
+    .container_web {
+      display: none;
+    }
+  }
+  [data-homepage-tab=rewards],
+  [data-homepage-tab=todo] {
+    .home_wrapper {
+      footer {
+        display: none;
+      }
+    }
+  }
+  [data-module=home] {
+    .logo_box {
+      .logo {
+        background-image: url(images/home/castlight.svg);
+      }
+    }
+    [data-name=why_castlight] {
+      display: flex;
+    }
+    [data-name=why_engage] {
+      display: none;
+    }
+  }
+  [data-module="homepage"] {
+    footer {
+      .engage {
+        display: none;
+      }
+    }
+  }
+  [data-package="care_guidance"] {
+    main {
+      [data-type=top_nav_cab] {
+        .activity_points {
+          visibility: hidden;
+          height: 4vh;
+        }
+      }
+    }
+    footer .tabs {
+      [data-name=community] {
+        display: none;
+      }
+    }
+  }
+  [data-skin=sandbox] {
+    [data-homepage-tab="home"],
+    [data-homepage-tab="find_care"],
+    [data-homepage-tab="benefits"],
+    [data-homepage-tab="notifications"],
+    [data-homepage-tab="profile"],
+    [data-homepage-tab="sr"] {
+      footer {
+        [data-name=profile],
+        [data-name=notifications] {
+          display: flex;
+        }
+        [data-name=community],
+        [data-name=more] {
+          display: none;
+        }
+      }
+    }
+    [data-homepage-tab="home"] {
+      header {
+        .new_notification {
+          display: none;
+        }
+      }
+      main {
+        background-color: #f4f4f7;
+        .ffw {
+          display: none;
+        }
+        .card:nth-child(3) {
+          margin: 2vh 0 2vh 0;
+          .container {
+            width: 95vw;
+          }
+        }
+      }
+      [data-type="personalized_for_you_cab"] {
+        margin: 0 0 0 0;
+        .dots {
+          top: 38vh;
+        }
+        .carousel {
+          .slide {
+            .hotspot {
+              width: 87vw;
+            }
+          }
+        }
+        .layer {
+          width: 90vw;
+          margin: 0 0 0 1vh;
+          .program {
+            width: 100%;
+            height: 32.4vh;
+            background: none;
+          }
+          .image {
+            height: 100%;
+            box-shadow: none;
+          }
+          .title,
+          .description {
+            display: none;
+          }
+        }
+      }
+    }
+    [data-homepage-tab="notifications"] {
+      main {
+        background-color: #ffffff;
+      }
+      [data-type=notifications] {
+        .subtitle {
+          display: block;
+          margin-top: 1vh;
+          color: #717c8e;
+          font-size: 1.8vh;
+          line-height: 2.4vh;
+        }
+        .buttons {
+          display: flex;
+          .cta_button {
+            border: 1px solid #006dff;
+            border-radius: 4px;
+            color: #006dff;
+            padding: 1vh 2vh;
+            font-size: 1.4vh;
+            width: 9vh;
+            text-align: center;
+            letter-spacing: .05vh;
+            margin-top: 3vh;
+            margin-right: 1vh;
+          }
+        }
+      }
+    }
+    [data-homepage-tab="sr"] {
+      main {
+        background-color: #f4f4f7;
+      }
+    }
+    [data-homepage-tab="profile"] {
+      main {
+        background-color: #f4f4f7;
+      }
+      [data-type="sign_out_cab"] {
+        .container {
+          width: 95vw;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    footer {
+      .castlight,
+      .engage {
+        display: none;
+      }
+      .sandbox {
+        display: block;
+      }
+    }
+  }
+  [data-skin="castlight"] {
+    [data-module="onboarding"] {
+      .carousel {
+        [data-slide="intro"] {
+          color: #1d1e20;
+          .group {
+            .dot {
+              background-color: #1d1e20;
+            }
+          }
+        }
+      }
+    }
+  }
+  [data-skin="complete_cab_int"],
+  [data-skin="dell_int"],
+  [data-skin="new_pinnacle_int"] {
+    .main {
+      header {
+        .new_notification {
+          display: none;
+        }
+      }
+      footer {
+        [data-name="community"] {
+          display: none;
+        }
+        [data-name=notifications] {
+          display: flex;
+        }
+      }
+    }
+  }
+  [data-package="wellbeing_int"] {
+    header {
+      .new_notification {
+        display: none;
+      }
+    }
+    footer {
+      [data-name="find_care"] {
+        display: none;
+      }
+      [data-name="community"] {
+        display: none;
+      }
+      [data-name="notifications"] {
+        display: flex;
+        .hack {
+          left: 36vh;
+        }
+      }
+    }
+  }
+}
+[data-app-name="castlight_web"] {
+  font-family: "Lato Regular";
+  .skin {
+    height: 100%;
+  }
+  [data-module=home],
+  [data-module=homepage] {
+    .home_wrapper,
+    .picker {
+      display: none;
+    }
+    .web_wrapper,
+    .container_web {
+      display: block;
+      aside,
+      main {
+        .card {
+          font-family: "Lato Regular";
+        }
+      }
+    }
+  }
+  [data-package="wellbeing"] {
+    .container_web {
+      header {
+        height: 110px;
+        .logo_box {
+          width: 260px;
+          margin-right: 140px;
+        }
+        .search_and_categories {
+          justify-content: flex-start;
+          .tabs_web {
+            margin: 20px 0 0 0;
+            .tab_web {
+              &.find_care,
+              &.claims,
+              &.plan {
+                display: none;
+              }
+            }
+          }
+          .search_box {
+            display: none;
+          }
+        }
+      }
+      .footer_web_container {
+        .sections_wrapper {
+          .section.health_care {
+            display: none;
+          }
+        }
+      }
+    }
+    &[data-homepage-tab="home"] {
+      .web_content_box {
+        aside {
+          .card:first-child {
+            border-bottom: none;
+          }
+          .card:nth-child(2) {
+            overflow: hidden;
+            border-bottom: 1px solid #dadada;
+          }
+        }
+      }
+    }
+  }
+  [data-homepage-tab=home] {
+    .container_web {
+      header {
+        .search_and_categories {
+          .tabs_web {
+            .home {
+              &.tab_web {
+                font-weight: bold;
+                border-bottom: 2px solid #282C37;
+              }
+            }
+          }
+        }
+      }
+      .title_web_box {
+        display: none;
+      }
+    }
+  }
+  [data-homepage-tab=benefits] {
+    .container_web {
+      header {
+        .search_and_categories {
+          .tabs_web {
+            .benefits {
+              &.tab_web {
+                font-weight: bold;
+                border-bottom: 2px solid #282C37;
+              }
+            }
+          }
+        }
+      }
+      .web_content_box {
+        aside {
+          width: 1200px;
+          top: 20px;
+          z-index: 0;
+          margin: 0 0 80px 0;
+          .card {
+            position: static;
+            width: 1200px;
+            border: none;
+          }
+          .card:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+        main {
+          display: none;
+        }
+      }
+    }
+  }
+}
+[data-app-name="engage_app"] {
+  .personas {
+    [data-email="molly_old@acme.com"] {
+      display: none;
+    }
+  }
+  [data-module=home],
+  [data-module=homepage] {
+    .web_wrapper,
+    .container_web {
+      display: none;
+    }
+    .logo_box {
+      .logo {
+        background-image: url(images/home/engage.svg);
+      }
+    }
+    [data-name=why_castlight] {
+      display: none;
+    }
+    [data-name=why_engage] {
+      display: flex;
+    }
+  }
+  [data-module="homepage"] {
+    .ffw {
+      top: 0;
+    }
+    [data-type=top_nav] {
+      .tabs_box,
+      .svg_box,
+      .program_box {
+        display: none;
+      }
+      .container {
+        height: 15vh;
+      }
+      .tab {
+        &.active {
+          color: #127ac0;
+        }
+      }
+    }
+    footer {
+      .castlight {
+        display: none;
+      }
+      .engage {
+        display: block;
+      }
+    }
+  }
+  [data-style="cab"] {
+    [data-package="engage_elite_buy_up"] {
+      footer {
+        .tabs {
+          [data-name="community"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  [data-style="null"] {
+    //FOR molly_old@acme.com ONLY
+    [data-package="engage_elite_buy_up"] {
+      footer {
+        .tabs {
+          [data-name="community"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+[data-app-name="healthyblue_app"] {
+  .personas {
+    [data-email="molly_old@acme.com"] {
+      display: none;
+    }
+  }
+  [data-module=home],
+  [data-module=homepage] {
+    .web_wrapper,
+    .container_web {
+      display: none;
+    }
+    .logo_box {
+      .logo {
+        background-image: url(images/home/healthybluelogo.svg);
+      }
+    }
+    [data-name=why_castlight] {
+      display: none;
+    }
+    [data-name=why_engage] {
+      display: flex;
+    }
+  }
+  [data-module=home] {
+    .home_wrapper {
+      background-size: cover;
+      background-image: url(images/home/healthybluebg.jpg);
+      .black {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, .3);
+      }
+      .logo_box,
+      .welcome_box,
+      .not_me,
+      .input,
+      .buttons,
+      .why_box,
+      .configuration_box,
+      .language_box {
+        position: relative;
+      }
+    }
+    .profile_image {
+      width: 100%;
+      height: 100%;
+      background-position: right;
+      margin: 0 0 0 -7vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(images/home/hb_susan.png);
+    }
+    .welcome_box {
+      display: flex;
+      .left,
+      .right {
+        flex: .5;
+      }
+      .left {
+        color: #355fa0;
+        margin: 0 0 0 7vh;
+      }
+    }
+    .welcome_label {
+      font-size: 2vh;
+      font-weight: 600;
+    }
+    .welcome_name {
+      font-size: 5vh;
+    }
+    .not_me {
+      font-size: 1.5vh;
+      font-weight: 600;
+      color: #355fa0;
+      margin: 2vh 0 0 0;
+    }
+    .button_box {
+      .button {
+        border-radius: 10vh;
+        margin: 0 12vh;
+        &.blue {
+          background-color: #0EE9DF;
+          box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+          //          background: linear-gradient(to right, #3ec5de, #12b4da);
+        }
+      }
+    }
+    .input {
+      margin: 0 12vh;
+      input {
+        background: none;
+      }
+      &.off {
+        display: none;
+      }
+    }
+    .email {
+      margin: 4vh 12vh;
+    }
+    .buttons {
+      margin: 7vh 7vh 0 7vh;
+      .button_box {
+        height: auto;
+        .button {
+          margin: 0 0 0 0;
+        }
+      }
+      .register {
+        margin: 2vh 0 0 0;
+        .button {
+          &.blank {
+            background: none;
+            text-transform: capitalize;
+            font-size: 1.5vh;
+            font-weight: 600;
+            color: #355fa0;
+            border: 0 none;
+            justify-content: flex-start;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .fingerprint {
+      width: 100%;
+      height: 6.5vh;
+      background-image: url(images/home/hb_fp.svg);
+    }
+    .why_box {
+      justify-content: flex-end;
+      margin: 10vh 0 0 0;
+      padding: 0;
+      .chat_box {
+        margin: 0 7vh 0vh 0;
+        padding: 0;
+        .chat_icon {
+          margin: 0;
+          padding: 0;
+          width: 6.5vh;
+          height: 6.5vh;
+          background-image: url(images/home/healthybluechat.svg);
+          box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+          border-radius: 20vh;
+        }
+      }
+    }
+    .configurator_box,
+    .language_box {
+      &.off {
+        display: none;
+      }
+    }
+  }
+  [data-module=homepage] {
+    .ffw {
+      top: 0;
+      height: 10vh;
+    }
+    [data-type=top_nav] {
+      .tabs_box,
+      .svg_box,
+      .program_box {
+        display: none;
+      }
+      .container {
+        height: 15vh;
+      }
+      .tab {
+        &.active {
+          color: #127ac0;
+        }
+      }
+    }
+    [data-type=top_nav_cab] {
+      .bg {
+        top: -165vh;
+        .gradient {
+          width: auto;
+        }
+      }
+      .container {
+        .greetings {
+          &.bottom {
+            margin-bottom: -1vh;
+            margin-top: -3vh;
+          }
+        }
+      }
+    }
+    [data-id=home_perso_sep] {
+      .title {
+        flex: 1;
+      }
+      .info_icon_box {
+        display: flex;
+        align-items: center;
+        .info_icon {
+          width: 1.5vh;
+          height: 1.5vh;
+          margin: 0 .5vh 0 0;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(images/home/info_icon_rewards.svg);
+        }
+        .info_label {
+          display: block;
+          color: #006dff;
+        }
+      }
+    }
+    footer {
+      .hack {
+        //        left: 31vh;
+      }
+      .sandbox,
+      .castlight,
+      .engage {
+        display: none;
+      }
+      .healthyblue {
+        display: block;
+      }
+    }
+  }
+  [data-style="pcorp"] {
+    main {
+      [data-type="profile_insurance_card"] {
+        .share_box {
+          position: absolute;
+          bottom: 1vh;
+          right: 3vh;
+          width: 2vh;
+          height: 2vh;
+          background-image: url(images/home/share.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    [data-homepage-tab=home] {
+      header {
+        .new_notification {
+          display: none;
+        }
+      }
+    }
+    [data-module="onboarding"] {
+      [data-slide=tmp_image] {
+        .button_box {
+          top: 0;
+          .button {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  [data-style="cab"] {
+    [data-package="engage_elite_buy_up"] {
+      footer {
+        .tabs {
+          [data-name="community"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  [data-style="null"] {
+    //FOR molly_old@acme.com ONLY
+    [data-package="engage_elite_buy_up"] {
+      footer {
+        .tabs {
+          [data-name="community"] {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

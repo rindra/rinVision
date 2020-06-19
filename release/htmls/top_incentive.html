@@ -1,0 +1,35 @@
+<script id=top_incentive_template type=text/x-handlebars-template>
+  <div class=bg>
+    <div class=gradient style="background:{{color}}"></div>
+  </div>
+  <div class=container>
+    <div class=greetings>
+      <div class=description>
+        <div class=dollars><span class=actual>$0</span>/${{outof}}</div>
+        <div class=label>Total Earned</div>
+      </div>
+    </div>
+    <div class=wallet></div>
+    <div class=container_web_points>
+      <div class=activity_points_web>
+        <div class=left>
+          <div class=box>
+            <div class=label>Points balance{{current_date}}</div>
+          </div>
+        </div>
+        <div class=right>
+          <div class=box>
+            <div class=points>{{current_points}} <span>pts</span></div>
+            <div class="right_arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{#if is_milestone}}
+    <div class="label_milestone_wrapper">
+      <div class="label_milestone">milestone</div>
+      <div class="milestone_reward">${{outof}} / Complete by Dec 31</div>
+    </div>
+  {{/if}}
+</script>

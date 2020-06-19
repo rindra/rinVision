@@ -1,0 +1,19 @@
+<script id=separators_incentives_template type=text/x-handlebars-template>
+  {{#if is_progress}}
+  <div class=group>
+    <div class=label>{{total_currently_earning_items}} currently earning</div>
+    <div class=info></div>
+  </div>
+  {{/if}} 
+  {{#if is_start}}
+  <div class=group>
+    <div class=label>opportunities to earn</div>
+    <div class=info></div>
+  </div>
+  {{/if}} 
+  {{#if is_end}}
+  <div class=group>
+    <div class=label>completed</div>    
+  </div>
+  {{/if}}
+</script>

@@ -1,0 +1,29 @@
+<script id=profile_insurance_card_template type=text/x-handlebars-template>
+  <div class=static>
+    <div class=title>{{title}}</div>
+    <div class="dots">
+      {{#each carousel}}
+      <div class="dot"></div>
+      {{/each}}
+    </div>
+  </div>
+  <div class=layers_wrapper>
+    <div class=layers>
+      {{#each carousel}}
+      <div class=layer>
+        <div class=program style="background-image:url({{image}})"></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide data-slide={{name}}></div>
+      {{/each}}
+    </div>
+  </div>
+  <div class=share_box>
+    <div class=share_icon></div>
+  </div>
+</script>

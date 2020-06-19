@@ -1,0 +1,33 @@
+<script id=notifications_template type=text/x-handlebars-template>
+  <div class=group data-cta="{{cta}}" data-arrow="{{label_fsa}}" data-read="{{label_plan_status}}">
+    <div class=action_box>
+      <div class=icon style="background-image:url({{image}})"></div>
+      <div class=wrapper>
+        <div class=date>{{date_updated}}</div>
+        <div class=box>
+          <div class=description>{{description}}</div>
+          <div class=arrow style="background-image:url(images/notifications/right_arrow.png)"></div>
+        </div>
+        <div class=subtitle>{{label_three_sub_title}}</div>
+
+        {{#if sandbox}}
+
+        <div class=buttons>
+          {{#if label_one_caption}}
+          <div class=cta_button>{{label_one_caption}}</div>
+          {{/if}} 
+          {{#if label_two_caption}}
+          <div class=cta_button>{{label_two_caption}}</div>
+          {{/if}}
+          <div class=cta_button>{{label_three_caption}}</div>
+        </div>
+        
+        {{else}}        
+        <div class=cta_button>{{label_three_caption}}</div>        
+        {{/if}}
+
+
+      </div>
+    </div>
+  </div>
+</script>

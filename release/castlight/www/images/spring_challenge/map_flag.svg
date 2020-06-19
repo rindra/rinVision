@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Leaderboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leaderboard_team_invite" transform="translate(-63.000000, -276.000000)">
+            <g id="Search">
+                <g id="Group" transform="translate(6.000000, 247.000000)">
+                    <g id="Group-3" transform="translate(57.000000, 29.000000)">
+                        <path d="M4.75636181,0 C2.13377928,0 0,2.13381114 0,4.75636181 C0,5.83617003 0.354297137,6.85468271 1.02533037,7.70313531 L4.75636181,12.3941874 L8.48841272,7.7021477 C9.15842649,6.85468271 9.51272363,5.83617003 9.51272363,4.75636181 C9.51272363,2.13381114 7.37894435,0 4.75636181,0" id="Path" fill="#C3C3C3"></path>
+                        <path d="M4.75636181,6.73868632 C3.63211115,6.73868632 2.71742496,5.82403198 2.71742496,4.69974946 C2.71742496,3.57527578 3.63211115,2.6608126 4.75636181,2.6608126 C5.88061248,2.6608126 6.79529867,3.57527578 6.79529867,4.69974946 C6.79529867,5.82403198 5.88061248,6.73868632 4.75636181,6.73868632" id="Path" fill="#F7F7F7"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

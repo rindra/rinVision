@@ -1,0 +1,65 @@
+<script id=fixed_header_template type=text/x-handlebars-template>
+  <div class=header>
+    <div class=nav>
+      <div class="cta cancel">Cancel</div>
+      {{#if hasDone}}
+      <div class='title hasDone'>{{title}}</div>
+      <div class="cta done">Done</div>
+      {{else}}
+      <div class=title>{{title}}</div>
+      <div class=space></div>
+      {{/if}}
+    </div>
+    {{#if hasDone}}
+    <div class=label>reminder</div>
+    <div class=question>When would you like to be reminded?</div>
+    <div class=answers>
+      <div class=answer data-reminder-time='Reminder is set to: Daily'>
+        <div class=text>Every Day</div>
+        <div class=check></div>
+      </div>
+      <div class=answer data-reminder-time='Reminder is set to: Weekly'>
+        <div class=text>Every Week</div>
+        <div class=check></div>
+      </div>
+      <div class=answer data-reminder-time='Reminder is set to: Biweekly'>
+        <div class=text>Every 2 Weeks</div>
+        <div class=check></div>
+      </div>
+      <div class=answer data-reminder-time='Reminder is set to: Never'>
+        <div class=text>Never</div>
+        <div class=check></div>
+      </div>
+    </div>
+    {{else}} {{/if}}
+    <div class=time>
+      <div class="arrow left"></div>
+      <div class="cta date">{{date_updated}}</div>
+      <div class="arrow right"></div>
+    </div>
+
+    <div class='main-container'>
+      <div class="calwrapper">
+        <div class="weekdays">
+          {{#each dates_weekday}}
+          <div class="weekday-text">{{this}}</div>
+          {{/each}}
+
+        </div>
+        <!-- Week Mode -->
+        <div class="touchweek">
+          {{#each dates_daynum}}
+          <div class="day-text">{{this}}</div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="bar">
+        <svg class=special width="13px" height="6px" viewBox="0 0 13 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polyline stroke="#B8BDC6" fill="#F2F2F2" points="1 0 7 6 12 0"></polyline>
+        </svg>
+      </div>
+      <div class='today-announce'>{{today}}</div>
+    </div>
+
+  </div>
+</script>

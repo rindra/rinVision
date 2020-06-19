@@ -1,0 +1,30 @@
+._separators_incentives() {
+  [data-type=separators_incentives] {
+    display: none;
+    justify-content: center;
+    margin: 2vh 0 2vh 0;
+    &.visible {
+      display: flex;
+    }
+    &.incentive {
+      display: none;
+    }
+    .group {
+      align-items: center;
+      font-family: 'Roboto Medium';
+      font-size: 2vh;
+      text-transform: uppercase;
+      color: #626b7a;
+      background: none;
+    }
+    .info {
+      width: 2.5vh;
+      height: 2.5vh;
+      margin: 0 0 0 1vh;
+      background-image: url(images/home/info_icon_rewards.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

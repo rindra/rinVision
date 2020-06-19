@@ -1,0 +1,77 @@
+._search_results_resources_and_benefits() {
+  [data-type=search_results_resources_and_benefits] {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    .group {
+      display: flex;
+      flex-direction: column;
+      &[data-style="updated"] {
+        .title {
+          display: none;
+        }
+      }
+    }
+    .action_box {
+      display: flex;
+      align-items: center;
+      background-color: white;
+    }
+    .action_box:last-child {
+      // background-color: #F7FAFD;
+      margin-bottom: 2vh;
+    }
+    .icon {
+      width: 6.5vh;
+      height: 6.5vh;
+      margin: 2vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      // flex: 1;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // flex: 5;
+    }
+    .title_action {
+      font-size: 2.6vh;
+      margin-bottom: .5vh;
+    }
+    .subtitle {
+      color: #717C8E;
+      font-size: 2vh;
+    }
+    .footer,
+    .cta {
+      display: none;
+    }
+  }
+  [data-id=search_results_your_coverage_pt_live] {
+    .title_action {
+      font-size: 2vh;
+      margin-bottom: 0;
+      width: 70%;
+    }
+    .subtitle {
+      display: none;
+    }
+    .icon {
+      width: 5vh;
+      height: 5vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cta {
+      display: block;
+      margin: 2vh;
+    }
+    .wrapper {
+      flex: 7;
+    }
+  }
+}

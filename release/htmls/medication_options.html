@@ -1,0 +1,39 @@
+<script id=medication_options_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="title">{{title}}</div>
+    <div class="medications">
+      
+      <div class="toggle_1 on">
+        <div class=on></div>
+        <div class=off></div>
+      </div>
+      <div class="generic">
+        <div class="box_left">
+          <div class="type">{{{label_one_title}}}</div>
+          <div class="name">{{{label_one_sub_title}}}</div>
+        </div>
+        <div class="box_right">
+          <div class="price">{{label_one_caption}}</div>
+          <div class="estimate">{{{label_plan_status}}}</div>
+        </div>
+      </div>
+
+      {{#if label_two_title}}
+      <div class="toggle_2">
+        <div class=on></div>
+        <div class=off></div>
+      </div>
+      <div class="generic">
+        <div class="box_left">
+          <div class="type">{{{label_two_title}}}</div>
+          <div class="name">{{{label_two_sub_title}}}</div>
+        </div>
+        <div class="box_right">
+          <div class="price">{{{label_two_caption}}}</div>
+          <div class="estimate">{{{label_plan_status}}}</div>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</script>

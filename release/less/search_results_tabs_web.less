@@ -1,0 +1,97 @@
+._search_results_tabs_web() {
+  [data-type=search_results_tabs_web] {
+    .blue_line {
+      position: relative;
+      top: 8vh;
+      z-index: -1;
+      width: 100vw;
+      height: 2px;
+      background-color: #B5D6F1;
+    }
+    .container_tabs {
+      display: flex;
+      margin: 2vh 0 0 17.3vw;
+      .wrapper {
+        img {
+          display: none;
+        }
+      }
+      .wrapper.on {
+        .web_tab {
+          background-color: #FFFFFF;
+        }
+        img {
+          display: block;
+          position: absolute;
+          left: 0vw;
+          width: 100vw;
+        }
+      }
+      [data-tab-name="Profile"] {
+        &.on {
+          img {
+            content: url(images/search_results_web/hospital_profile_info.png);
+          }
+        }
+      }
+      [data-tab-name="Patient ratings"] {
+        &.on {
+          img {
+            content: url(images/search_results_web/patient_ratings.png);
+          }
+        }
+      }
+      [data-tab-name="Quality"] {
+        &.on {
+          img {
+            content: url(images/search_results_web/quality_surgery.png);
+          }
+        }
+      }
+      [data-tab-name="Doctors"] {
+        &.on {
+          img {
+            content: url(images/search_results_web/doctors_reviews.png);
+          }
+        }
+      }
+      [data-tab-name="Services"] {
+        &.on {
+          img {
+            content: url(images/search_results_web/services.png);
+          }
+        }
+      }
+      .wrapper:not(.no-hover):hover {
+        .web_tab {
+          cursor: pointer;
+          background-color: #ddeefc;
+          border-top: 2px solid #ddeefc;
+          border-left: 2px solid #ddeefc;
+          border-right: 2px solid #ddeefc;
+        }
+      }
+      .wrapper {
+        margin-right: .5vw;
+        .web_tab {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 12px 29px;
+          border-radius: 4px 4px 0 0;
+          background-color: #B5D6F1;
+          border-top: 2px solid #B5D6F1;
+          border-left: 2px solid #B5D6F1;
+          border-right: 2px solid #B5D6F1;
+          .tab_title {
+            font-size: 2vh;
+            font-weight: bold;
+          }
+        }
+        .web_tab:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

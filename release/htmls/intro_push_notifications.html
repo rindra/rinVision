@@ -1,0 +1,30 @@
+<script id=intro_push_notifications_template type=text/x-handlebars-template>
+  <div class="container" style="background-image:url({{config.skin.persona.intro.article_img}})">
+    <div class="time-and-date">
+      <div class="livetime">
+        {{config.skin.persona.intro.livetime}}
+      </div>
+      <div class="livedate">
+        {{config.skin.persona.intro.livedate}}
+      </div>
+    </div>
+
+    <div class="notification" data-name="connect_onboarding">
+      <div class="notification-header">
+        <div class="logo"></div>
+        <div class="company-name">
+          {{config.skin.persona.intro.from_who}}
+        </div>
+        <div class="time-ago">
+          {{config.skin.persona.intro.livetime_ago}}
+        </div>
+      </div>
+      <div class="notification-description">
+        {{config.skin.persona.intro.description}}
+      </div>
+      <div class="notification-footer">
+        <p>Press for more</p>
+      </div>
+    </div>
+  </div>
+</script>

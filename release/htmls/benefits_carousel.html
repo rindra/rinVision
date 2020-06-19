@@ -1,0 +1,20 @@
+<script id=benefits_carousel_template type=text/x-handlebars-template>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer>
+      <div class=program>
+        <div class="benefit">
+          <div class="star hidden" style="background-image:url(images/benefits/star.svg)"></div>
+          {{title}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide data-slide={{name}}></div>
+      {{/each}}
+    </div>
+  </div>
+</script>

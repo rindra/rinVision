@@ -1,0 +1,90 @@
+<script id=todo_card_template type=text/x-handlebars-template>
+  {{#if is_incentive}}
+  <div class="container incentive {{status}}" data-status-override="{{label_plan_status}}" data-status="{{status}}" data-category="{{category}}" data-points={{points}} data-cta={{is_cta}}>
+    <div class=label>
+      <div class=icon>
+        <div class=dollar></div>
+      </div>
+      <div class=points_label>
+        {{#if is_weekly}}
+          <div class=points>{{points}} per week</div>
+        {{else}}
+          <div class=points>{{points}}</div>
+        {{/if}}
+        <div class=date>{{label_fsa}}</div>
+      </div>
+    </div>
+    <div class=top>
+      <div class=info>
+        <div class="description">Complete by Dec 31</div>
+        <div class=title>{{title}}</div>
+        {{#if is_amount_plan_status}}
+        <div class=main_description>{{description}}</div>
+        {{/if}}
+        <!-- {{#if activities}}
+          <div class=description>{{list_length}} activities</div>
+        {{else}}
+          <div class=description>1 activity</div>
+        {{/if}} -->
+        <div class=progress>
+          <div class=bg>
+            {{#if is_rewards_complete}}
+            <div class="bar bar_{{label_plan_status}}" style="width:100%"></div>
+            {{else}}
+            <div class=bar></div>
+            {{/if}}
+          </div>
+        </div>
+        {{#if is_amount_plan_status}}
+        <div class=status><span class=completed_items>{{list_length}}</span>&nbsp;of {{list_length}} activities completed</div>        
+        {{else}}
+        <div class=status><span class=completed_items>0</span>&nbsp;of {{list_length}} activities completed</div>
+        {{/if}}
+        <div class=ctas>
+          <div class=cta_see_all>
+            <!-- <div class=link data-status=0>See required activities</div> -->
+            
+            {{#if is_amount_plan_status}}
+            <div class="description">Rewards</div>
+            {{#each list}}
+            <div class=item_group>
+            <div class="item {{../label_plan_status}}"><span></span>{{this}}</div>
+              <div class=contribution>$50 HSA Contribution</div>
+            </div>
+            {{/each}}
+            {{else}}
+            <div class="description">Required activities: {{list_length}}</div>
+            {{#each list}}
+              <div class=item><span></span>{{this}}</div>
+            {{/each}}
+            {{/if}}
+          </div>
+        </div>
+        <div class=cta_get_started>get started</div>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="container" data-status-override="{{label_plan_status}}" data-status="{{status}}">
+    <div class=top>
+      <div class=icon_box>
+        <div class=icon style="background-image:url({{image}})"></div>
+        <div class=icon_complete></div>
+      </div>
+      <div class=info>
+        <div class=title>{{title}}</div>
+        <div class=description>{{{description}}}</div>
+      </div>
+      <div class=space></div>
+    </div>
+    <div class=bottom>
+      <div class=space></div>
+      <div class=points_box data-points={{points}}>
+        <div class=icon></div>
+        <div class=points><span>{{points}}</span> pts</div>
+      </div>
+      <div class=cta>{{cta}}</div>
+    </div>
+  </div>
+  {{/if}}
+</script>

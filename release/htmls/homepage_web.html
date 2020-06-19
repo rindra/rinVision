@@ -1,0 +1,33 @@
+<section id=homepage_web class="main" data-module=homepage_web data-homepage-web-tab=home data-bieber-name data-package data-top>
+  <script id=homepage_web_template type=text/x-handlebars-template>
+    <div class="container_web">
+      <header style='background-color:{{config.skin.header_background_color}}'>
+        <div class="logo_box">
+          <div class="logo"></div>
+        </div>
+        <div class="search_and_categories">
+          <div class="categories" style='color:{{config.skin.header_text_color}}'>
+            <div class="home category on" data-name="home">home</div>
+            <div class="find_care category">find care</div>
+            <div class="claims category">claims</div>
+            <div class="plan category">plan details</div>
+            <div class="benefits category">benefits</div>
+            <div class="notifications category"></div>
+            <div class="more category">more
+              <div class="dropdown"></div>
+            </div>
+          </div>
+          <div class="search_box">
+            <form>
+                <input type=text placeholder="Search for doctors, services, conditions, or medicines">
+            </form>
+            <div class="search_button">search</div>
+          </div>
+        </div>
+      </header>
+      <aside data-time={{config.skin.persona.time}}></aside>
+      <main data-time={{config.skin.persona.time}}></main>
+      <footer data-time={{config.skin.persona.time}}></footer>
+    </div>
+  </script>
+</section>

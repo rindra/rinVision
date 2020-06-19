@@ -1,0 +1,163 @@
+<script id=top_nav_cab_template type=text/x-handlebars-template>
+
+  {{#if is_incentive}}
+  <div class=bg>
+    <div class=gradient style="background:{{gradient_color}}"></div>
+  </div>
+  <div class=container>
+    <div class=greetings>
+      <div class=avatar_box>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar>{{initials}}</div>
+        {{/if}}
+      </div>
+      <div class=description>
+        <span>Hello </span> <span>{{username}}</span> ,
+        {{#if is_message}}
+          <br>{{message}}
+        {{else}}
+          <br>{{description}}
+        {{/if}}
+     </div>
+    </div>
+
+    <div class="activity_points incentive">
+      <div class=left>
+        <div class=box>
+          <div class=wallet></div>
+        </div>
+      </div>
+      <div class=middle>
+        <div class=box>
+          <div class=label>{{{label_fsa}}}</div>
+        </div>
+      </div>
+      <div class=right>
+        <div class=box>
+          <div class=left_arrow></div>
+        </div>
+      </div>
+      <div class="learn_topnav_box">
+        <div class="cta_text">{{cta}}</div>
+      </div>
+    </div>
+    <div class=container_web_points>
+      <div class=activity_points_web>
+        <div class=left>
+          <div class=box>
+            <div class=label>Points balance{{current_date}}</div>
+          </div>
+        </div>
+        <div class=right>
+          <div class=box>
+            <div class=points>{{current_points}} <span>pts</span></div>
+            <div class="right_arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if is_points}}
+  <div class=container>
+    <div class="activity_points points_only">
+      <div class=left>
+        <div class=box>
+          <div class=label>Points balance{{current_date}}</div>
+          <div class=view_rewards>View Rewards</div>
+          <!--<div class=activities>{{total}} recent</div>-->
+        </div>
+      </div>
+      <div class=right>
+        <div class=box>
+          <!--<div class=label>Points balance, {{current_date}}</div>-->
+          <div class=points>{{current_points}} pts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if is_default}}
+  <div class=bg>
+    <div class=gradient style="background:{{gradient_color}}"></div>
+  </div>
+  <div class=container>
+    <div class=greetings>
+      <div class=avatar_box>
+        {{#if photo}}
+        <div class=avatar style="background-image:url({{photo}})"></div>
+        {{else}}
+        <div class=avatar style="color:{{header_text_color}}">{{initials}}</div>
+        {{/if}}
+      </div>
+      <div class=description>
+         {{#if is_german}}
+           <span>Hallo </span> <span>{{username}}</span> ,
+         {{else if is_chinese}}
+           <span>{{username}}</span> <span>您好：</span> ,
+         {{else if is_spanish}}
+           <span>Hola</span> <span>{{username}}</span> ,
+         {{else}}
+           <span>Hello </span> <span>{{username}}</span> ,
+         {{/if}}
+         {{#if is_message}}
+           <br>{{message}}
+         {{else}}
+           <br>{{description}}
+         {{/if}}
+      </div>
+    </div>
+    <div class=activity_points>
+      <div class=left>
+        <div class=box>
+          {{#if is_german}}
+            <div class=label>Punktestand, 17. Jan</div>
+            <div class=view_rewards>Belohnungen ansehen</div>
+          {{else if is_chinese}}
+            <div class=label>积分余额，1 月 17 日</div>
+            <div class=view_rewards>查看奖励</div>
+          {{else if is_spanish}}
+            <div class=label>Balance de puntos, 17 de enero.</div>
+            <div class=view_rewards>Ver Recompensas</div>
+          {{else}}
+            <div class=label>Points balance{{current_date}}</div>
+          {{/if}}
+          <!--<div class=activities>{{total}} recent</div>-->
+        </div>
+      </div>
+      <div class=right>
+        <div class=box>
+          <!--<div class=label>Points balance, {{current_date}}</div>-->
+          {{#if is_german}}
+            <div class=points>{{current_points}} Pkt.</div>
+          {{else if is_chinese}}
+            <div class=points>{{current_points}} 分</div>
+          {{else}}
+            <div class=points>{{current_points}} pts</div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    <div class=container_web_points>
+      <div class=activity_points_web>
+        <div class=left>
+          <div class=box>
+            <div class=label>Points balance{{current_date}}</div>
+          </div>
+        </div>
+        <div class=right>
+          <div class=box>
+            <div class=points>{{current_points}} <span>pts</span></div>
+            <div class="right_arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+</script>

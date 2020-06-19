@@ -1,0 +1,730 @@
+._skin_complete_cab() {
+  [data-style="cab"] {
+    main {
+      .card {
+        &.off {
+          display: none;
+        }
+      }
+      [data-type="profile_insurance_card"] {
+        margin: 0;
+        .title {
+          display: none;
+        }
+        .dots {
+          margin-top: 38vh;
+        }
+        .static {
+          background: none;
+        }
+      }
+      .card:last-child {
+        &[data-type="office_visit"] {
+          .container_visit {
+            .grey_border {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    [data-homepage-tab="blog"] {
+      main {
+        .card:last-child {
+          margin: 0;
+        }
+      }
+    }
+    [data-homepage-tab="plan_details"] {
+      header {
+        height: 8vh;
+        margin: 0;
+        background-color: #2A27D7;
+        .title {
+          display: flex;
+          flex: .9;
+          justify-content: center;
+          margin-right: 5vh;
+          color: #FDFDFE;
+          font-size: 2.4vh;
+          text-transform: capitalize;
+        }
+        .search,
+        .logo {
+          display: none;
+        }
+        .left {
+          display: flex;
+          flex: .1;
+          .icon_left {
+            width: 3vh;
+            height: 3vh;
+            margin: 0 0 1vh 2vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(images/home/icon_left_blue.svg)
+          }
+        }
+      }
+      main {
+        height: 92vh;
+      }
+      footer {
+        display: none;
+      }
+    }
+    [data-package="community_removed"],
+    [data-package="engage_no_community"] {
+      footer {
+        .tabs {
+          [data-name=community] {
+            display: none;
+          }
+        }
+      }
+    }
+    [data-package="wellbeing_home_benefits_notifications_more"] {
+      .tabs {
+        [data-name="notifications"] {
+          display: flex;
+        }
+      }
+    }
+    [data-package="wellbeing_int"] {
+      footer {
+        .tabs {
+          [data-name="notifications"] {
+            display: flex;
+          }
+        }
+      }
+    }
+    [data-homepage-tab="blog"],
+    [data-homepage-tab="stories"] {
+      header,
+      footer {
+        display: none;
+      }
+      main {
+        height: 100vh;
+        [data-type="button_only"] {
+          margin: 0;
+        }
+        .card:last-child {
+          &[data-type="interesting_reads_one_story"] {
+            .group {
+              .action_box {
+                .wrapper {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    [data-top="top-hidden"] {
+      header {
+        .arrow {
+          background-image: url(images/search_results/left_arrow_black.svg);
+        }
+      }
+    }
+    [data-module="onboarding"] {
+      .static {
+        .logo {
+          width: 23vh;
+          height: 5vh;
+        }
+      }
+      .slide {
+        box-shadow: inset 0vh -31vh 7vh -11vh rgba(255, 255, 255, 1);
+        .description > span {
+          font-size: 2.5vh;
+        }
+        .group {
+          .dot {
+            width: 1.5vh;
+            height: 1.5vh;
+            margin: 1vh 0 0 0;
+          }
+        }
+        .button_box {
+          top: 81vh;
+          .button {
+            width: 25vh;
+            border-radius: 50px;
+            text-transform: uppercase;
+            background-color: #006DFF;
+            color: #FFFFFF;
+          }
+        }
+      }
+      [data-slide="goals"] {
+        .group {
+          width: 80vw;
+        }
+      }
+      .dots_container {
+        bottom: 17vh;
+      }
+      .onboarding_overlay,
+      .button_gradient,
+      .onboarding_image {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .onboarding_image {
+        background-size: cover;
+      }
+      .button_gradient {
+        height: 25%;
+        bottom: 0;
+        top: auto;
+        background-image: linear-gradient(0deg, #ffffff, rgba(255, 255, 255, 0));
+      }
+      .logo {
+        z-index: 1;
+      }
+      .carousel {
+        position: relative;
+        z-index: 2;
+        background-image: none;
+      }
+      [data-slide=intro] {
+        .bg {
+          display: none;
+        }
+        .list {
+          .item {
+            .group {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .slide {
+        .group,
+        .doctors,
+        .goals {
+          position: relative;
+          z-index: 1;
+        }
+        .group {
+          margin: 2vh 0 0 0;
+          .message {
+            margin: 2vh 0 0 0;
+          }
+        }
+        .doctors,
+        .goals {
+          height: 45vh;
+        }
+        .white_g {
+          top: auto;
+          bottom: 0;
+          width: 95vw;
+          margin: 0 0 0 2.5vw;
+          border-radius: 1vh;
+          height: 87vh;
+          background: #ffffff;
+        }
+      }
+    }
+    [data-search-name="back_surgery_cab"] {
+      header,
+      footer {
+        display: none;
+      }
+      main {
+        .card {
+          .container {
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    [data-top="top-hidden"] {
+      main {
+        background-color: #FFFFFF;
+      }
+    }
+    [data-homepage-tab="find_care"],
+    [data-homepage-tab="sr"] {
+      .search {
+        .icon {
+          background-image: url(images/home/magnifier_ico.svg);
+        }
+        // .pin {
+        //   background-image: url(images/home/pin_ico.svg);
+        // }
+        .search-box {
+          // background-color: #e7e5e6;
+          input::placeholder {
+            color: #b6afb3;
+          }
+        }
+      }
+    }
+    main {
+      [data-type=separators] {
+        .title {
+          color: #626B7A;
+        }
+        .dots {
+          opacity: 0;
+        }
+      }
+    }
+    [data-homepage-tab="home"] {
+      header {
+        display: flex;
+        &.off {
+          display: none;
+        }
+        .search,
+        .arrow,
+        .question,
+        .title,
+        .settings-box,
+        .logout {
+          display: none;
+        }
+        .logo {
+          width: 23vh;
+          height: 5vh;
+          margin: 3vh 0 1vh 0;
+        }
+        .new_notification {
+          position: absolute;
+          display: block;
+          bottom: 2vh;
+          right: 2vh;
+          width: 3vh;
+          height: 3vh;
+          background-repeat: no-repeat;
+          background-image: url(images/home/new_notifications.svg);
+          background-size: contain;
+          &.off {
+            display: none;
+          }
+          .hotspot {
+            position: absolute;
+            display: block;
+            z-index: 2;
+            width: 5vh;
+            height: 5vh;
+          }
+          .number {
+            font-family: 'Roboto Bold';
+            font-size: 1.1vh;
+            color: #ffffff;
+            margin: .1vh 0 0 1.4vh;
+            text-align: center;
+          }
+        }
+      }
+      main {
+        .card {
+          &.off {
+            display: none;
+          }
+        }
+        height: 84vh;
+        .ffw {
+          top: 0;
+          left: 0;
+          width: 100vw;
+        }
+      }
+    }
+    footer {
+      &.off {
+        display: none;
+      }
+      .tabs {
+        [data-name=profile],
+        [data-name=notifications] {
+          display: none;
+        }
+        [data-name=more] {
+          display: flex;
+        }
+      }
+    }
+    [data-homepage-tab="todo"],
+    [data-homepage-tab="rewards"] {
+      header {
+        //display: none;
+        .left,
+        .right {
+          display: block;
+          .icon_left,
+          .icon_i {
+            width: 3vh;
+            height: 3vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+          .icon_left {
+            margin: 0 0 1vh 2vh;
+            background-image: url(images/home/icon_left.svg);
+          }
+          .icon_i {
+            margin: 0 2vh 1vh 0;
+            background-image: url(images/home/icon_i.svg);
+          }
+        }
+        .title {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      main {
+        height: 92vh;
+      }
+      .card:nth-child(6) {
+        .container {
+          .top {
+            border: 0 none;
+          }
+        }
+      }
+      [data-type="header_nav"] {
+        display: none;
+      }
+      [data-type=todo_nav] {
+        margin: 0;
+        .container {
+          width: 100vw;
+          border-radius: 0;
+          background-color: #ffffff;
+          .tri {
+            position: absolute;
+            display: block;
+            width: 95vw;
+            height: 1vh;
+            background-image: url(images/home/tri.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .top {
+            justify-content: flex-end;
+          }
+          .history {
+            display: none;
+          }
+          .completed {
+            position: relative;
+            font-size: 1.6vh;
+            color: #717C8E;
+            padding: 2vh 2vh 2vh 0;
+          }
+        }
+      }
+      [data-type="todo_card"] {
+        margin: 0;
+        .container {
+          width: 100vw;
+          height: auto;
+          border-radius: 0;
+          background-color: #ffffff;
+          .top {
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            height: 10vh;
+            margin: 0 0 0 2vh;
+            border-bottom: 1px solid #ECE7E7;
+          }
+          .info {
+            .title {
+              margin: 2vh 0 0 0;
+              font-size: 1.6vh;
+              font-family: "Roboto Regular";
+              color: #717C8E;
+            }
+            .description {
+              font-size: 1.9vh;
+              color: #2E2F32;
+            }
+          }
+          .space {
+            display: none;
+          }
+          .label {
+            border-radius: .5vh;
+            background-color: #ffffff;
+            padding: 0 0 0 2vh;
+            .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 4vh;
+              height: 4vh;
+              background: linear-gradient(45deg, #3bb3b8 0%, #43e595 100%);
+              border-radius: 10vh;
+              overflow: hidden;
+              .dollar {
+                width: 3vh;
+                height: 3vh;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(images/home/dollar.svg);
+                &.checked {
+                  width: 2vh;
+                  height: 1.5vh;
+                  background-image: url(images/home/check_incentive.svg);
+                }
+              }
+            }
+          }
+          &.incentive {
+            margin: 2vh 0 0 0;
+            width: 95vw;
+            background: none;
+            border: 0 none;
+            > .label {
+              display: flex;
+              height: 6vh;
+              align-items: center;
+              background: transparent;
+              padding: 0;
+              .points_label {
+                margin: 0 0 0 1vh;
+              }
+              .points {
+                font-family: 'Roboto Bold';
+                font-size: 2vh;
+                color: #626B7A;
+              }
+              .date {
+                font-size: 1.6vh;
+                color: #1D1E20;
+              }
+            }
+            .top {
+              height: auto;
+              margin: 1vh 0 0 0;
+              padding: 0 0 0 2vh;
+              border-radius: .5vh;
+              border: 0 none;
+              background-color: #ffffff;
+            }
+            .info {
+              flex: none;
+              .title {
+                margin: 2.5vh 0 0 0;
+                font-family: 'Roboto Bold';
+                color: #1D1E20;
+                font-size: 2vh;
+              }
+              .description {
+                color: #626B7A;
+              }
+              .ctas {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 2vh 0 0 0;
+                .cta_see_all {
+                  color: #006DFF;
+                  font-size: 1.6vh;
+                  margin: 0 0 2vh 0;
+                }
+                .cta_get_started {
+                  text-transform: uppercase;
+                  width: max-content;
+                  color: #006dff;
+                  font-size: 1.6vh;
+                  padding: .5vh 2vh .5vh 2vh;
+                  border: .15vh solid #006dff;
+                  border-radius: 10vh;
+                  font-family: 'Roboto Medium';
+                  margin: 0 0 2vh 0;
+                }
+                .item {
+                  display: none;
+                  color: #1c1d1f;
+                  font-size: 1.8vh;
+                  margin: 1vh 0 0 0;
+                  text-transform: capitalize;
+                  &.on {
+                    display: block;
+                  }
+                  &.completed {
+                    text-decoration: line-through;
+                  }
+                }
+              }
+              .completed_items {
+                padding: 0 .2vh 0 0;
+              }
+            }
+            .progress {
+              width: 88vw;
+              margin: 2vh 0 0 0;
+              .bg,
+              .bar {
+                background-color: #e7e9ed;
+                height: .5vh;
+                border-radius: .5vh;
+              }
+              .bg {
+                background-color: #e7e9ed;
+              }
+              .bar {
+                width: 1%;
+                background-color: #39ca74;
+              }
+            }
+            .status {
+              display: flex;
+              justify-content: flex-end;
+              color: #626b7a;
+              margin: 1vh 0 0 0;
+            }
+          }
+        }
+        .bottom {
+          display: none;
+        }
+        .icon_box {
+          opacity: 0;
+        }
+        [data-status="complete"] {
+          .title,
+          .description {
+            text-decoration: none;
+          }
+          .icon_box {
+            opacity: 1;
+          }
+        }
+        [data-status-override="incomplete"] {
+          .icon_box {
+            opacity: 0;
+          }
+        }
+      }
+      [data-type="todo_card"]:nth-child(2) {
+        margin: 3vh 0 0 0;
+      }
+    }
+  }
+  [data-skin="engage_cab"],
+  [data-skin="castlight"] {
+    [data-homepage-tab="home"] {
+      main {
+        .card:last-child {
+          &[data-type="home_your_care_team_cab"] {
+            .content {
+              .wrapper {
+                margin: 0 0 0 3vh;
+                .name {
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+        [data-type="interesting_reads_cab"] {
+          .group {
+            .top {
+              display: flex;
+              align-items: flex-start;
+              margin: 2vh;
+              .image {
+                margin: 0;
+              }
+              .topic {
+                margin: 0 2vh;
+              }
+              .label_info {
+                display: block;
+                position: absolute;
+                top: 9vh;
+                left: 17vh;
+                font-size: 2vh;
+                color: #717c8e;
+                margin: 0 2vh 0 2vh;
+              }
+            }
+            .description {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    [data-homepage-tab="blog"] {
+      main {
+        [data-id="emergency_care_628"],
+        [data-id="office_visit_250"],
+        [data-id="office_visit_dec_250"] {
+          .container_visit {
+            .grey_border {
+              display: none;
+            }
+          }
+        }
+        [data-type="hsa_balance_cab"] {
+          background-color: #FFFFFF;
+          margin: 0;
+          .group {
+            display: flex;
+            align-items: flex-start;
+            border-radius: 4px;
+            border: 1px solid #B1D2FF;
+            .image {
+              width: 7vh;
+              height: 6vh;
+              margin: 0vh 2vh;
+            }
+            .info {
+              color: #1c1d1f;
+            }
+          }
+        }
+      }
+    }
+    [data-top="top-hidden"] {
+      header {
+        .arrow {
+          background-image: url(images/search_results/left_arrow_black.svg);
+        }
+      }
+    }
+  }
+  [data-skin="att"] {
+    [data-homepage-tab="todo"] {
+      main {
+        [data-id="todo_nav_1"] {
+          .container {
+            .tri {
+              display: none;
+            }
+          }
+        }
+      }
+      header {
+        .title {
+          margin-right: 5vh;
+        }
+        .right {
+          display: none;
+        }
+      }
+    }
+  }
+}

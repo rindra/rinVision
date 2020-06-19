@@ -1,0 +1,69 @@
+<script id=program_action_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class=group data-category="{{category}}" data-story="{{label_fsa}}" data-contact="{{phone}}" data-border="{{caption_fsa}}" data-incentive="{{label_plan_status}}">
+    <div class=action_box>
+      <div class=icon style="background-image:url({{image}})"></div>
+      <div class=wrapper>
+        <div class="subtitle_all_stories">{{label_store_credit}}</div>
+        <div class=title_action>{{title}}</div>
+        <div class=description>{{description}}</div>
+        <div class="phone_icon_box">
+          <div class="phone_icon"></div>
+          <div class="call_label">{{phone}}</div>
+        </div>
+      </div>
+      <div class="program_points">{{label_store_credit}} pts</div>
+    </div>
+  </div>
+  {{else}}
+    <div class="group_benefits">
+      <div class=icon style="background-image:url({{image}})"></div>
+      <div class=wrapper>
+        <div class=title_action>{{title}}</div>
+        <div class=description>{{description}}</div>
+      </div>
+    </div>
+    {{#if is_activities}}
+    <div class="activities_wrapper">
+      {{#each activities}}
+      <div class="activity_box" data-type="{{type}}" data-name="{{name}}">
+        <div class="program_top_card">
+          <div class="program_image" style="background-image:url({{image}})"></div>
+          <div class="program_title_box">
+            <div class="program_title">{{title}}</div>
+            <div class="program_cta">{{cta}}</div>
+          </div>
+        </div>
+        <div class="program_separator_card">
+          <div class="program_separator">{{title}}</div>
+        </div>
+        <div class="program_at_a_glance_card">
+          <div class="at_a_glance_description">{{description}}</div>
+          <ul>
+            <li>{{label_fsa}}</li>
+            <li>{{caption_fsa}}</li>
+            <li>{{amount_fsa}}</li>
+          </ul>
+          <div class="more_details"><span></span>Read more</div>
+          <div class="collapse">
+            <div class="at_a_glance_title">{{label_one_title}}</div>
+            <div class="at_a_glance_info">{{label_one_sub_title}}</div>
+            <div class="at_a_glance_title">{{label_two_title}}</div>
+            <div class="at_a_glance_info">{{label_two_sub_title}}</div>
+            <div class="less_details"><span></span>Read less</div>
+          </div>
+        </div>
+        <div class="program_activity_card">
+          <div class="activity_type">{{label_fsa}}</div>
+          <div class="activity_title">{{title}}</div>
+          <div class="activity_description">{{description}}</div>
+          <div class="cta_button_box">
+            <div class="cta_button">{{cta}}</div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+  {{/if}}
+</script>

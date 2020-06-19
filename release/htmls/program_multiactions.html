@@ -1,0 +1,15 @@
+<script id=program_multiactions_template type=text/x-handlebars-template>
+  <div class=group>
+    <div class=header style="background-image:url(images/{{name}}/{{image}})"></div>
+    <!-- <div class=title>{{title}}</div> -->
+    {{#each actions}}
+    <div class=action_box>
+      <div class=icon_box>{{icon}}</div>
+      <div class=wrapper>
+        <div class=title_action>{{title}}</div>
+        <div class=points>{{points}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</script>

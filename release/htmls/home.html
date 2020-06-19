@@ -1,0 +1,202 @@
+<section id=home class="main" data-module=home>
+  <script id=home_template type=text/x-handlebars-template>
+{{#if is_healthy_blue}}
+  <div class="home_wrapper">
+    <!--    <div class=black></div>-->
+    <div class=logo_box>
+      <div class=group>
+        <div class=logo></div>
+        <!-- <div class=tagline>Your health and benefits in one place</div> -->
+      </div>
+    </div>
+    <div class=welcome_box>
+      <div class=left>
+        <div class=welcome_label>Welcome back,</div>
+        <div class=welcome_name>Susan</div>
+      </div>
+      <div class=right>
+        <div class=profile_image></div>
+      </div>
+    </div>    
+    <div class="input email off">
+      <input type=text placeholder="Email" data-name=email align='bottom'> </div>
+    <div class="input password off">
+      <input type=text placeholder="Password" data-name=password align='bottom' disabled> </div>
+    <div class=buttons>
+      <div class=button_box data-name=sign_in>
+        <div class="button blue">Log In</div>
+      </div>
+      <div class=not_me data-show=false>Forgot your password?</div>
+      <div class="button_box register">
+        <div class="button blank" data-name=register>Register</div>        
+      </div>      
+    </div>    
+    <div class=fingerprint data-name=fingerprint></div>
+    <div class="why_box">      
+      <div class="chat_box" data-name="chat_window">
+        <div class="chat_icon"></div>        
+      </div>
+    </div>
+    <div class="configurator_box off" data-name=configurator>
+      <div class="configurator">Choose A Persona</div>
+    </div>
+    <div class="language_box off" data-name=language>
+      <div class="language">Choose A Language</div>
+    </div>    
+  </div>
+{{else}}
+  <div class="home_wrapper">
+    <div class="sso_sign_in_box">
+      <div class="wrapper_sso">
+        <div class="blue_left_arrow_sso" data-name="sso_flow"></div>
+        <div class="header_box">
+          <div class="header_title">Sign In</div>
+        </div>
+      </div>
+    </div>
+    <div class=logo_box>
+      <div class=group>
+        <div class=logo></div>
+        <!-- <div class=tagline>Your health and benefits in one place</div> -->
+      </div>
+    </div>
+    <div class="input email">
+      <input type=text placeholder="Email" data-name=email align='bottom'> </div>
+    <div class="input password">
+      <input type=text placeholder="Password" data-name=password align='bottom' disabled> </div>
+    <div class=button_box data-name=sign_in>
+      <div class="button blue">Sign In</div>
+    </div>
+    <div class=forgot_password_container>
+      <div class=forgot_password>Forgot password?</div>
+      <div class=fingerprint data-name=fingerprint></div>
+    </div>
+    <div class=button_box>
+      <div class="button blank" data-name=register>Register</div>
+    </div>
+    <div class="why_box">
+      <div class=why data-name=why_castlight>Why Castlight?</div>
+      <div class=why data-name=why_engage>Why Engage?</div>
+      <div class="chat_box" data-name="chat_window">
+        <div class="chat_icon"></div>
+        <span>Chat with a guide</span>
+      </div>
+    </div>
+    <div class="configurator_box" data-name=configurator>
+      <div class="configurator">Choose A Persona</div>
+    </div>
+    <div class="language_box" data-name=language>
+      <div class="language">Choose A Language</div>
+    </div>
+  </div>
+{{/if}}
+
+  <div class="picker hidden"></div>
+  @@include('homepage_sso.html')
+  @@include('homepage_register.html')
+  @@include('homepage_register_german.html')
+  @@include('homepage_register_chinese.html')
+  @@include('homepage_register_spanish.html')
+  @@include('homepage_terms_of_use.html')
+  @@include('homepage_privacy_statement.html')
+  @@include('language.html')
+  @@include('homepage_german.html')
+  @@include('homepage_chinese.html')
+  @@include('homepage_spanish.html')
+  @@include('chat_window.html')
+    <!-- CASTLIGHT COMPLETE WEB VERSION -->
+  <div class="web_wrapper">
+    <header>
+      <div class=header_box>
+        <div class=logo></div>
+        <div class=register>Register</div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <div class="topic">Take Charge</div>
+          <div class="description">Your health journey starts at Castlight</div>
+          <div class="check_item">
+            <div class="check_image"></div>
+            <div class="item">Track your everyday activities</div>
+          </div>
+          <div class="check_item">
+            <div class="check_image"></div>
+            <div class="item">Redeem your points for rewards</div>
+          </div>
+          <div class="check_item">
+            <div class="check_image"></div>
+            <div class="item">See your best options when you need care</div>
+          </div>
+          <div class="check_item">
+            <div class="check_image"></div>
+            <div class="item">Choose health and well-being programs right for you</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="topic">Sign In</div>
+          <div class="label">Email</div>
+          <div class="input_web email">
+            <input type=text data-name-web=email size="40"> </div>
+          <div class="label">Password</div>
+          <div class="input_web password_web">
+            <input type=text data-name=password disabled> </div>
+          <div class=forgot_password>Forgot password?</div>
+          <div class=button_box_web data-name=fingerprint>
+            <div class="button_web">Sign In</div>
+          </div>
+          <div class="box">
+            <div class="no_account">Don't have an account? <span data-name=register_web>Register</span></div>
+            <div class="norton"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="help_section">
+    <div class="bottom">
+      <div class="help_title">Need help?</div>
+      <div class="category">
+        <div class="icon faq"></div>
+        <div class="flat">
+          <div class="category_name">FAQ's</div>
+          <div class="info">Questions about how to use Castlight?</div>
+          <div class="info"><span>Find answers here</span></div>
+        </div>
+      </div>
+      <div class="category middle">
+        <div class="icon chat"></div>
+        <div class="flat">
+          <div class="category_name">Chat with a Guide</div>
+          <div class="info">Offline</div>
+          <div class="info">Availability:</div>
+          <div class="info">Weekdays, 8am to 9pm (ET)</div>
+        </div>
+      </div>
+      <div class="category">
+        <div class="icon phone"></div>
+        <div class="flat">
+          <div class="category_name">(888) 722-0483</div>
+          <div class="info">Availability:</div>
+          <div class="info">Weekdays, 8am to 9pm (ET)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_box">
+      <div class="left_footer">
+        <div class="">Copyright</div>
+        <div class="copyright"></div>
+        <div class=""> 2019 Castlight Health</div>
+      </div>
+      <div class="right_footer">
+        <div class="security">Security</div>
+        <div class="privacy">Privacy</div>
+        <div class="terms">Terms of use</div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </script>
+</section>

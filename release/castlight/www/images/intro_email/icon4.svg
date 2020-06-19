@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="41px" viewBox="0 0 45 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>reply</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iOS-icon-kit" transform="translate(-1825.000000, -1683.000000)" fill="#0F75EB">
+            <g id="Icon-sets">
+                <g id="Other-Icons" transform="translate(1380.000000, 1402.000000)">
+                    <g id="SVGs" transform="translate(50.000000, 50.000000)">
+                        <path d="M416.341477,244.833333 L416.341477,234.998208 L397.209644,250.166666 L416.341477,265.335124 L416.341477,255.160264 C434.85331,255.448406 438.80619,269.951612 438.80619,269.951612 C438.80619,269.951612 440.2977,244.833333 417.832987,244.833333 L416.341477,244.833333 L416.341477,244.833333 Z M417.832987,243.112903 L417.832987,231.5 L395,250.166666 L417.832987,268.489247 L417.832987,256.955002 C433.733999,258.105907 438.45633,271.5 438.45633,271.5 L439.929425,271.5 C439.929425,271.5 442.41849,243.112903 417.832987,243.112903 L417.832987,243.112903 L417.832987,243.112903 Z" id="reply"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

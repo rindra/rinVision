@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>💎 icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.2169517,0.50241175 C17.0045173,0.292063192 16.6415857,0.275757103 16.411222,0.465994816 L7.73998366,7.61077981 C7.50961993,7.80101752 7.12278273,7.81243178 6.8815528,7.63686955 L2.82247875,4.68709791 C2.5807055,4.51153568 2.2242937,4.55393152 2.0308751,4.78167324 L0.970875976,6.0290891 C0.777457377,6.25683082 0.789410211,6.61828248 0.99804151,6.83297932 L7.19341312,13.2043121 C7.40150111,13.4184654 7.7421569,13.4184654 7.9507882,13.2037686 L18.401369,2.43740107 C18.609457,2.22324775 18.6061971,1.87592804 18.3937627,1.66557949 L17.2169517,0.50241175 Z" id="path-1"></path>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#43E695" offset="0%"></stop>
+            <stop stop-color="#3BB2B8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Specs/Individual-pages/Programs-template" transform="translate(-2944.000000, -1206.000000)">
+            <g id="Program-details-in-progress" transform="translate(2617.000000, 322.000000)">
+                <g id="Group-18" transform="translate(16.000000, 507.000000)">
+                    <g id="Component/Program-action-card" transform="translate(0.000000, 361.000000)">
+                        <g id="💎-icon" transform="translate(311.000000, 16.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="🎨-Color/White" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                                <g transform="translate(-5.000000, -8.000000)" id="Rectangle">
+                                    <rect x="0" y="0" width="30" height="30"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

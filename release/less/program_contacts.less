@@ -1,0 +1,54 @@
+._program_contacts() {
+  [data-type=program_contacts] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      border-radius: .75vh;
+      .outer_wrapper:last-child {
+        .wrapper {
+          border: none;
+        }
+      }
+      .outer_wrapper {
+        display: flex;
+        align-items: center;
+        .image {
+          flex: .1;
+          height: 2.5vh;
+          margin: 2vh;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .phone {
+          background-image: url(images/programs/phone_blue.svg);
+        }
+        .email {
+          background-image: url(images/programs/email_blue.svg);
+        }
+        .web {
+          background-image: url(images/programs/web_blue.svg);
+        }
+        .wrapper {
+          flex: .9;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 10vh;
+          border-bottom: 1px solid #e6e8e9;
+          .topic {
+            font-size: 2.4vh;
+            font-weight: bold;
+            color: #1d1e20;
+            margin-bottom: .5vh;
+          }
+          .description {
+            font-size: 2vh;
+            color: #626b7a;
+          }
+        }
+      }
+    }
+  }
+}

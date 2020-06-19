@@ -1,0 +1,59 @@
+._earn_points_web() {
+  [data-type=earn_points_web] {
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    width: 65vw;
+    margin: 6vh 0;
+    .container {
+      display: flex;
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex: .5;
+        margin: 3vh;
+        .topic {
+          font-size: 2.5vh;
+          font-weight: bold;
+          color: #1c1d1f;
+          margin-bottom: 1vh;
+        }
+        .description,
+        .label {
+          font-size: 2.2vh;
+          color: #626b79;
+          margin-bottom: 1vh;
+        }
+        .image {
+          height: 30vh;
+          width: 27vw;
+          background-position-x: -5vh;
+          background-position-y: -7vh;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .right {
+        .complete_activity {
+          font-size: 2.2vh;
+          color: #626b79;
+          margin-bottom: 4vh;
+        }
+        .wrapper {
+          display: flex;
+          width: 28vw;
+          justify-content: space-between;
+          margin-bottom: 3vh;
+          .activity {
+            font-size: 2.5vh;
+            color: #006dff;
+          }
+          .points {
+            font-size: 2.3vh;
+            color: #1c1d1f;
+          }
+        }
+      }
+    }
+  }
+}

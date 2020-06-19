@@ -1,0 +1,22 @@
+._full_screen_video() {
+  [data-type=full_screen_video] {
+    margin: 0;
+    .video {
+      width: 100vw;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .hotspot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+._package_hb_cc() {
+  [data-package="package_hb_cc"] {
+    main {
+      [data-type=top_nav_cab] {
+        .container {
+          .activity_points {
+            display: none;
+          }
+        }
+      }
+    }
+    footer .tabs {
+      [data-name=community] {
+        display: none;
+      }
+      [data-name=notifications] {
+        display: flex;
+      }
+    }
+    &[data-homepage-tab=home] {
+      header {
+        .comm {
+          display: flex;
+          .icon {
+            position: absolute;
+            width: 7vh;
+            height: 5vh;
+            top: 3vh;
+            right: 0;
+            background-repeat: no-repeat;
+            background-image: url(images/home/comm.svg);
+            background-size: contain;
+          }
+        }
+        .new_notification {
+          display: none;
+        }
+      }
+      [data-type=top_nav_cab] {
+        .bg {
+          top: -160vh;
+        }
+      }
+      footer {
+        .healthyblue {
+          display: block;
+        }
+      }
+    }
+  }
+}

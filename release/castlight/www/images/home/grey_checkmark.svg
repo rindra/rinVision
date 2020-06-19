@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>💎 checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.7735614,0.8019294 C13.6036138,0.633650554 13.3132686,0.620605682 13.1289776,0.772795853 L6.19198693,6.48862384 C6.00769595,6.64081402 5.69822619,6.64994543 5.50524224,6.50949564 L2.257983,4.14967833 C2.0645644,4.00922855 1.77943496,4.04314521 1.62470008,4.22533859 L0.776700781,5.22327128 C0.621965901,5.40546466 0.631528169,5.69462598 0.798433208,5.86638346 L5.7547305,10.9634497 C5.92120089,11.1347723 6.19372552,11.1347723 6.36063056,10.9630149 L14.7210952,2.34992085 C14.8875656,2.1785982 14.8849577,1.90074243 14.7150101,1.73246359 L13.7735614,0.8019294 Z" id="path-1"></path>
+    </defs>
+    <g id="mocks-for-1/1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mocks/C/money/1-prog-1-act---in-progress" transform="translate(-32.000000, -614.000000)">
+            <g id="Group-2" transform="translate(16.000000, 191.000000)">
+                <g id="Incentive-Card-Zero" transform="translate(0.000000, 253.000000)">
+                    <g id="activities" transform="translate(12.000000, 121.000000)">
+                        <g id="💎-checkmark" transform="translate(4.000000, 49.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="🎨-Color/White" mask="url(#mask-2)" fill="#CFD3E0">
+                                <g transform="translate(-4.000000, -6.000000)" id="Rectangle">
+                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

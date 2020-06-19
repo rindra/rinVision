@@ -1,0 +1,17 @@
+<script id=fund_balance_combined_template type=text/x-handlebars-template>
+  <div class=group>
+    <div class="title">{{title}}</div>
+    {{#each carousel}}
+    <div class="action_box" data-name="{{name}}">
+      <div class=box>
+        <div class=label>{{title}}</div>
+        <div class=amount>{{distance}}</div>
+      </div>
+      <div class="caption_box">
+        <div class=caption>{{subtitle}}</div>
+        <div class=caption>{{address_line_one}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</script>

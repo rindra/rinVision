@@ -1,0 +1,153 @@
+._intro_community_live() {
+  [data-type=intro_community_live] {
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 0;
+    .intro_container {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      .go_back,
+      .exit {
+        position: absolute;
+        height: 8vh;
+        z-index: 1;
+      }
+      .go_back {
+        top: 0;
+        left: 0;
+        width: 80vw;
+      }
+      .exit {
+        top: 0;
+        right: 0;
+        width: 20vw;
+      }
+      .section {
+        position: absolute;
+        right: 100vw;
+        height: 100vh;
+        width: 100vw;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        &.show {
+          -webkit-transform: translate(100vw,0);
+          transform: translate(100vw,0);
+        }
+        .intro_top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 7vh;
+          width: 100vw;
+          z-index: 1;
+          .company_name {
+            text-align: center;
+            color: #2C3542;
+            font-size: 3vh;
+            font-weight: bold;
+            width: 55vw;
+            span {
+              text-transform: capitalize;
+            }
+          }
+        }
+        img {
+          width: 100vw;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.personalized_experience {
+          .live_cards_wrapper {
+            display: flex;
+            justify-content: center;
+            .upload_picture_box,
+            .office_location_box,
+            .user_occupation_box {
+              display: flex;
+              position: absolute;
+              top: 14vh;
+              width: 92vw;
+              z-index: 1;
+              background: #fff;
+              border-radius: .75vh;
+              box-shadow: 3px 2px 15px 2px #efefef;
+              .avatar_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                bottom: 7vh;
+                width: 92vw;
+                .avatar {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 3vh;
+                  width: 11vh;
+                  height: 11vh;
+                  margin: 2vh;
+                  border-radius: 50%;
+                  background-size: cover;
+                  color: #FFFFFF;
+                  background-color: #282C37;
+                }
+                .greetings {
+                  font-size: 3vh;
+                  font-weight: bold;
+                  color: #1D1E20;
+                  margin-bottom: 1vh;
+                }
+                .greetings_subtitle {
+                  font-size: 2.2vh;
+                  color: #626B7A;
+                }
+              }
+            }
+            .office_location_box,
+            .user_occupation_box {
+              top: 37vh;
+              .icon_box {
+                flex: .2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3vh 3.5vh 3vh 3vh;
+                .benefit_icon {
+                  width: 7vh;
+                  height: 7vh;
+                  background-size: contain;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                }
+              }
+              .right_content {
+                .grey_line {
+                  height: 1px;
+                  width: 55vw;
+                  margin: 1vh 0 .5vh 0;
+                  background-color: #cecece;
+                }
+              }
+            }
+            .user_occupation_box {
+              top: 52vh;
+              .right_content {
+                .example_occupation {
+                  font-size: 1.8vh;
+                  margin-bottom: 1vh;
+                  color: #cecece
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

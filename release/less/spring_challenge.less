@@ -1,0 +1,379 @@
+._spring_challenge() {
+  [data-type=spring_challenge] {
+    height: 100vh;
+    margin: 0;
+    .challenge_container {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      .go_back,
+      .exit {
+        position: absolute;
+        height: 8vh;
+        z-index: 1;
+      }
+      .go_back {
+        top: 0;
+        left: 0;
+        width: 80vw;
+      }
+      .exit {
+        top: 0;
+        right: 0;
+        width: 20vw;
+      }
+      .section {
+        position: absolute;
+        right: 100vw;
+        height: 100vh;
+        width: 100vw;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll;
+        &.show {
+          -webkit-transform: translate(100vw,0);
+          transform: translate(100vw,0);
+        }
+        img {
+          width: 100vw;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .logo_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 7vh;
+          width: 100vw;
+          z-index: 1;
+          .logo_challenge {
+            width: 23vh;
+            height: 4.5vh;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        &.countdown {
+          .avatar_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 24vh;
+            width: 100vw;
+            .avatar {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 3vh;
+              margin: 2vh;
+              width: 17vh;
+              height: 17vh;
+              border-radius: 50%;
+              background-size: cover;
+              color: #FFFFFF;
+              background-color: #282C37;
+            }
+            .user {
+              font-size: 4vh;
+              color: #fff;
+            }
+          }
+        }
+        &.pending_members {
+          .members_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #D8D8D8;
+            background-color: #fff;
+            margin: 0 2vh;
+            .avatar {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 3vh;
+              margin: 2vh 0;
+              width: 6vh;
+              height: 6vh;
+              border-radius: 50%;
+              background-size: cover;
+              color: #FFFFFF;
+              background-color: #282C37;
+            }
+            .wrapper {
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              margin-left: 2vh;
+              .captain {
+                color: #1D1E20;
+                font-size: 2.3vh;
+                font-weight: bold;
+                margin-bottom: 1vh;
+              }
+              .description {
+                display: flex;
+                align-items: center;
+                font-size: 1.9vh;
+                color: #717C8E;
+                span {
+                  display: inline-block;
+                  height: 2vh;
+                  width: 1.5vh;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  margin-right: .8vh;
+                }
+                span:first-child {
+                  background-image: url(images/spring_challenge/map_flag.svg);
+                }
+                span:last-child {
+                  background-image: url(images/spring_challenge/captain_star.svg);
+                  margin-left: 5vh;
+                }
+              }
+            }
+          }
+        }
+        &.team_progress {
+          .team_members_container {
+            display: flex;
+            align-items: center;
+            .avatar {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 3vh;
+              margin: 0 1.5vh 0 .5vh;
+              width: 6vh;
+              height: 6vh;
+              border-radius: 50%;
+              background-size: cover;
+              color: #4A4A4A;
+              background-color: #282C37;
+            }
+            .avatar.yellow {
+              background-color: #F8E71C;
+            }
+            .avatar.green {
+              background-color: #50E3C2;
+            }
+            .avatar.brown {
+              background-color: #E5B89E;
+            }
+            .avatar.purple {
+              background-color: #F0ADD7;
+            }
+          }
+          .captain_box {
+            display: flex;
+            flex-direction: column;
+            margin-left: 18vh;
+            .captain {
+              color: #1D1E20;
+              font-size: 3vh;
+              font-weight: bold;
+              margin-bottom: 1vh;
+            }
+            .captain_location {
+              display: flex;
+              align-items: center;
+              font-size: 1.9vh;
+              color: #717C8E;
+              span {
+                display: inline-block;
+                height: 2vh;
+                width: 1.5vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: .8vh;
+              }
+              span:first-child {
+                background-image: url(images/spring_challenge/map_flag.svg);
+              }
+              span:last-child {
+                background-image: url(images/spring_challenge/captain_star.svg);
+                margin-left: 5vh;
+              }
+            }
+          }
+        }
+        &.captain_profile {
+          .avatar_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 13vh;
+            width: 100vw;
+            .avatar {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 3vh;
+              width: 13vh;
+              height: 13vh;
+              margin-bottom: .5vh;
+              border-radius: 50%;
+              background-size: cover;
+              color: #FFFFFF;
+              background-color: #282C37;
+            }
+            .user {
+              font-size: 2.5vh;
+              font-weight: bold;
+              margin-bottom: 1vh;
+              color: #1D1E20;
+            }
+            .user_department {
+              color: #717C8E;
+              font-size: 1.9vh;
+              margin-bottom: 1vh;
+              span {
+                display: inline-block;
+                width: 1.5vh;
+                height: 1.5vh;
+                margin-left: 2vh;
+                background-image: url(images/spring_challenge/captain_star.svg);;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              }
+            }
+            .user_location {
+              display: flex;
+              color: #717c8e;
+              font-size: 1.9vh;
+              margin-bottom: 1vh;
+              span {
+                display: inline-block;
+                height: 2vh;
+                width: 1.5vh;
+                margin-right: 1vh;
+                background-image: url(images/spring_challenge/map_flag.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+        }
+        &.challenge_history {
+          .history_container {
+            display: flex;
+            position: relative;
+            background-color: #0D0951;
+            .avatar_box {
+              flex: .2;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 4vh;
+              .avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+                width: 10vh;
+                height: 10vh;
+                margin: 0 2vh;
+                border-radius: 50%;
+                background-size: cover;
+                color: #FFFFFF;
+                background-color: #282C37;
+              }
+            }
+            .user_info {
+              flex: .8;
+              display: flex;
+              flex-direction: column;
+              margin-top: 5vh;
+              .user_name {
+                font-size: 2.9vh;
+                margin-bottom: 1vh;
+                color: #fff;
+              }
+              .user_role {
+                display: flex;
+                font-size: 2vh;
+                color: #C0C5D4;
+                margin-bottom: .8vh;
+                span:first-child {
+                  margin-right: 2vh;
+                }
+                .grey_star {
+                  display: inline-block;
+                  width: 1.5vh;
+                  height: 1.5vh;
+                  margin-right: 1vh;
+                  background-image: url(images/spring_challenge/captain_star_grey.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: contain;
+                }
+              }
+              .user_location {
+                display: flex;
+                font-size: 2vh;
+                color: #C0C5D4;
+                margin-bottom: 2vh;
+                span {
+                  display: inline-block;
+                  height: 2vh;
+                  width: 1.5vh;
+                  margin-right: 1vh;
+                  background-image: url(images/spring_challenge/map_flag_grey.svg);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+              }
+              .user_stats_box {
+                display: flex;
+                justify-content: space-between;
+                width: 24vh;
+                .user_stats {
+                  display: flex;
+                  flex-direction: column;
+                  span:first-child {
+                    font-size: 2.5vh;
+                    font-weight: bold;
+                    margin-bottom: 1vh;
+                    color: #fff;
+                  }
+                  span:nth-child(2) {
+                    font-size: 1.9vh;
+                    color: #C0C5D4;
+                    margin-bottom: 3vh;
+                  }
+                }
+              }
+            }
+            .history_done {
+              position: absolute;
+              top: 2vh;
+              right: 2vh;
+              font-size: 2.5vh;
+              color: #fff;
+            }
+          }
+        }
+        &.leaderboard_complete {
+          .logo_container {
+            top: 4vh;
+          }
+        }
+      }
+    }
+  }
+}

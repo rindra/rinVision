@@ -1,0 +1,148 @@
+._home_recent_claims_cab() {
+  [data-type=home_recent_claims_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      .box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2vh 1vh 2vh;
+        font-size: 2.4vh;
+        font-weight: bold;
+        color: #1d1e20;
+      }
+      .visit {
+        margin: .5vh 0 1vh 2vh;
+      }
+      .doctor {
+        margin: 0 0 3vh 2vh;
+      }
+      .visit,
+      .doctor {
+        font-size: 2vh;
+        color: #717c8e;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #e6e8e9;
+        .circle_wrapper {
+          display: flex;
+          height: 25vh;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+          .circle {
+            height: 21vh;
+            width: 21vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 1vh;
+          }
+        }
+        .square {
+          height: 1.7vh;
+          width: 1.7vh;
+          border-radius: 3px;
+          margin-right: 1vh;
+        }
+        .yellow {
+          background-color: #FFD02D;
+        }
+        .blue {
+          background-color: #049BB6;
+        }
+        .green {
+          background-color: #2ECC71;
+        }
+        .purple {
+          background-color: #BD10E0;
+        }
+        .labels {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          margin: 4vh 0 0 2.5vh;
+          .label {
+            display: flex;
+            align-items: center;
+            font-size: 1.9vh;
+            color: #626B7A;
+            margin-bottom: 0.6vh;
+          }
+        }
+      }
+      .footer_cab {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6vh;
+        .cta_cab {
+          font-size: 2vh;
+          margin-right: 2vh;
+          color: #006DFF;
+        }
+      }
+    }
+    .group_web_aside {
+      .description_web {
+        font-size: 16px;
+        color: #626B7A;
+        line-height: 24px;
+        b {
+          font-weight: bold;
+          color: #282C37;
+        }
+      }
+      .container_pie {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .circle_wrapper {
+          display: flex;
+          flex: .5;
+          .circle {
+            height: 140px;
+            width: 140px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+        .labels {
+          display: flex;
+          flex-direction: column;
+          flex: .5;
+          .label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #626B7A;
+            margin-bottom: 5px;
+            .square {
+              height: 12px;
+              width: 12px;
+              border-radius: 3px;
+              margin-right: 5px;
+              &.yellow {
+                background-color: #FFD02D;
+              }
+              &.blue {
+                background-color: #049BB6;
+              }
+              &.green {
+                background-color: #2ECC71;
+              }
+              &.purple {
+                background-color: #BD10E0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

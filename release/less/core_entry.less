@@ -1,0 +1,108 @@
+._core_entry() {
+  [data-type=core_entry] {
+    display: flex;
+    justify-content: center;
+    //    pointer-events: none;
+    margin: 3vh 0 0 0;
+    .group {
+      display: block;
+    }
+    .top {
+      display: flex;
+    }
+    .left {
+      flex: .8;
+      .title {
+        font-family: "Roboto Medium";
+        font-size: 2vh;
+      }
+      .description,
+      .label {
+        color: #626B7A;
+        margin: 0 0 0 2vh;
+        font-size: 1.4vh;
+      }
+      .label {
+        margin: 1.5vh 0 0 2vh;
+      }
+    }
+    .right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: .2;
+    }
+    .slider {
+      position: relative;
+      width: 30vh;
+    }
+    .bg {
+      position: absolute;
+      background-color: #E7E9ED;
+      width: 30vh;
+      height: .5vh;
+      border-radius: 3vh;
+      top: 1.5vh;
+      overflow: hidden;
+      .bar {
+        width: 1%;
+        height: 100%;
+      }
+    }
+    .slider_box {
+      display: flex;
+      margin: 1.5vh 0 0 2vh;
+    }
+    .circle {
+      width: 3vh;
+      height: 3vh;
+      border: 2px solid #BBC2CD;
+      background-color: #ffffff;
+      border-radius: 10vh;
+    }
+    .amount {
+      display: flex;
+      align-items: center;
+      color: #22BFCA;
+      margin: 0 0 0 1vh;
+      font-size: 1.4vh;
+    }
+    .total {
+      font-size: 2vh;
+    }
+    .total_label {
+      color: #626B7A;
+      font-size: 1vh;
+    }
+    .sep {
+      position: absolute;
+      top: 3vh;
+      left: -1.5vh;
+      background-color: #dadada;
+      width: 1px;
+      height: 10vh;
+    }
+    .bottom {
+      display: flex;
+      margin: 2vh 2vh 2vh 0;
+      justify-content: flex-end;
+    }
+    .b {
+      font-family: "Roboto Medium";
+    }
+    .cta {
+      cursor: pointer;
+    }
+    .video {
+      width: 5vh;
+      height: 5vh;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

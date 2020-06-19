@@ -1,0 +1,102 @@
+._onboarding_goals() {
+  [data-slide=goals] {
+    position: relative;
+    hgroup {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 13vh 0 0 0;
+      .group {
+        width: 45vh;
+        text-align: center;
+        height: auto;
+        margin: 0;
+        .title {
+          font-size: 3.2vh;
+          color: #2C3542;
+        }
+        .message {
+          font-size: 2.2vh;
+          color: #717C8E;
+          line-height: 3vh;
+          margin: 2vh 0;
+        }
+      }
+    }
+    .goals {
+      display: flex;
+      justify-content: center;
+      height: 35vh;
+      overflow-y: scroll;
+      margin: 4vh 0 0 0;
+      .group {
+        height: 27vh;
+        margin: 0 0 20vh 0;
+      }
+    }
+    .group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .goal {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      //width: 46vh;
+      height: 6vh;
+      background-color: #ffffff;
+      border: 1px solid #C4D2E4;
+      border-radius: 4px;
+      margin: 0 .5vh 1vh .5vh;
+      padding: 0 1vh 0 1vh;
+      &.active {
+        background-color: #006DFF;
+        .name {
+          color: #ffffff;
+          position: relative;
+          right: 0;
+        }
+        .check {
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+    .name {
+      text-transform: uppercase;
+      font-size: 1.5vh;
+      color: #1D1E20;
+      position: relative;
+      right: 1.5vh;
+      //margin: 0 0 0 2vh;
+    }
+    .check {
+      // display: none;
+      visibility: hidden;
+      margin: 0 1vh 0 0;
+      width: 2vh;
+      height: 2vh;
+      background-image: url(images/onboarding/check2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .button_box {
+      position: absolute;
+      width: 100vw;
+      top: 81vh;
+      z-index: 1;
+    }
+    .white_g {
+      //display: none;
+      pointer-events: none;
+      position: absolute;
+      left: 0;
+      top: 64vh;
+      width: 100vw;
+      height: 20vh;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.97) 80%, rgba(255, 255, 255, 1) 31%, rgba(255, 255, 255, 1) 100%);
+    }
+  }
+}

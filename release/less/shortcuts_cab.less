@@ -1,0 +1,58 @@
+._shortcuts_cab() {
+  [data-type=shortcuts_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2vh;
+        border-bottom: 1px solid #e6e8e9;
+        .image {
+          flex: .1;
+          height: 5vh;
+          width: 5vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin: 2vh 2vh 2vh 0;
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          flex: .8;
+          .topic {
+            color: #1d1e20;
+            font-size: 2.2vh;
+          }
+          .description {
+            font-size: 2vh;
+            color: #717c8e;
+          }
+        }
+        .arrow_shortcuts {
+          flex: .1;
+          background-image: url(images/home/left_arrow_shortcuts.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 2.5vh;
+          width: 2vh;
+        }
+      }
+      .footer_cab {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 6vh;
+        .cta_cab {
+          font-size: 2vh;
+          margin-left: 2vh;
+          color: #006DFF;
+        }
+      }
+    }
+  }
+}

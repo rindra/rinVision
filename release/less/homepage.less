@@ -1,0 +1,743 @@
+._homepage() {
+  [data-module=homepage] {
+    .primary() {
+      color: #000000;
+      font-size: 2.0vh;
+    }
+    .secondary() {
+      color: #717C8E;
+      font-size: 1.6vh;
+    }
+    .terciary() {
+      font-size: 1.3vh;
+      color: #717C8E;
+    }
+    .home_wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+    header {
+      position: relative;
+      z-index: 1;
+      box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+      background-color: #2A27D7;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .logo {
+        width: 20vh;
+        height: 3.5vh;
+        margin: 0 0 .5vh 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .new_notification {
+        display: none;
+      }
+      .title {
+        margin: 0;
+      }
+      .left,
+      .right {
+        display: none;
+      }
+      .popup {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        background-color: #626b7a;
+        top: -10vh;
+        width: 100%;
+        height: 8vh;
+        color: #ffffff;
+        &.yeah {
+          display: flex;
+        }
+        .box {
+          width: 62vw;
+          font-size: 2vh;
+        }
+      }
+    }
+    .arrow {
+      display: none;
+    }
+    .search {
+      display: flex;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      .search-box {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+        height: 4vh;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+        border-radius: .5vh;
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+        height: 4vh;
+        color: #FFFFFF;
+      }
+      .icon {
+        width: 2.5vh;
+        height: 2.5vh;
+        background-image: url(images/find_care/magnifying_glass.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 0 0 2vh;
+      }
+      .pin {
+        width: 2vh;
+        height: 2vh;
+        background-image: url(images/find_care/new_blue_pin.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .zip {
+        color: #006dff;
+        font-size: 1.8vh;
+      }
+      .input {
+        height: 4vh;
+        margin: 0 0 0 1.5vh;
+      }
+      input {
+        width: 80vw;
+        font-size: 1.8vh;
+        height: 4vh;
+        background-color: rgba(255, 255, 255, 0);
+      }
+      input::placeholder {
+        color: rgba(255, 255, 255, .7);
+        font-size: 1.8vh;
+      }
+    }
+    main {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background-color: #f2f2f2;
+      height: 85vh;
+      &.lightboxed {
+        -webkit-overflow-scrolling: auto;
+        overflow: hidden;
+      }
+      &.bg_white {
+        background-color: #fff;
+      }
+      .card {
+        &.hide {
+          display: none;
+        }
+      }
+    }
+    footer {
+      .tabs {
+        [data-name=more] {
+          display: none;
+        }
+      }
+    }
+    .card {
+      position: relative;
+      margin: 2vh 0 0 0;
+      font-family: "Roboto Regular";
+    }
+    .card:last-child {
+      margin-bottom: 2vh;
+    }
+    .group {
+      display: flex;
+      width: 95vw;
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: .75vh;
+      //box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      color: #1d1e20;
+      font-size: 1.8vh;
+      height: 5vh;
+      margin: 0 0 0 2vh;
+    }
+    .title_top {
+      display: flex;
+      justify-content: space-between;
+      width: 95vw;
+    }
+    .title_cab {
+      color: #1D1E20;
+      font-size: 2vh;
+      margin: 2vh 0 3vh 2vh;
+    }
+    .updated_date_cab {
+      color: #626B7A;
+      font-size: 1.9vh;
+      margin: 2vh 2vh 0 0;
+    }
+    .cta {
+      font-size: 2vh;
+      color: #006DFF;
+      // letter-spacing: 0.1vh;
+    }
+    .ffw {
+      display: none;
+      position: absolute;
+      background: #ff0000;
+      width: 80vw;
+      height: 13vh;
+      z-index: 3;
+      top: 20vh;
+      left: 10vw;
+      opacity: 0;
+    }
+    .logout {
+      display: none;
+    }
+    ._footer();
+    ._home_top_carousel();
+    ._home_rewards_balance();
+    ._home_fund_balances();
+    ._home_action_carousel();
+    ._home_plan_status();
+    ._home_recent_claims();
+    ._find_care_top_carousel();
+    ._find_care_nearby_carousel();
+    ._search_results_top_definition();
+    ._browse_for_care();
+    ._three_things_you_should_know();
+    ._find_pcp_providers();
+    ._your_coverage();
+    ._find_pcp_carousel();
+    ._legal_notice();
+    ._pcp_details_profile();
+    ._pcp_details_rate_provider();
+    ._autosuggest();
+    ._pcp_details_patient_ratings();
+    ._program();
+    ._program_details();
+    ._program_multiactions();
+    ._program_action();
+    ._program_screen();
+    ._home_www_start();
+    ._challenge_www_start();
+    ._tmp_images();
+    ._profile_medical_carousel();
+    ._claims_summary();
+    ._profile_top();
+    ._profile_care_team();
+    ._search_results_resources_and_benefits();
+    ._search_results_related_care();
+    ._bieber();
+    ._profile_insurance_card();
+    ._find_care_top_carousel_2();
+    ._benefits_carousel();
+    ._home_activity_carousel();
+    ._find_care_immediate_care();
+    ._profile_start_care_team();
+    ._profile_start_top();
+    ._profile_rewards_summary();
+    ._profile_my_interests();
+    ._notifications();
+    ._profile_active_programs();
+    ._todo_nav();
+    ._titles();
+    ._todo_card();
+    ._healthy_dos();
+    ._separators();
+    ._home_cards();
+    ._rewards_carousel();
+    ._health_assessment();
+    ._hsa_balance();
+    ._home_recent_claims_new();
+    ._events();
+    ._newsfeed();
+    ._top_nav();
+    ._top_social();
+    ._social_feed_post();
+    ._social_feed_blog();
+    ._social_feed_other_posts();
+    ._rewards_balance();
+    ._low_back();
+    ._dosage_calculator();
+    ._medication_options();
+    ._search_and_disclaimer();
+    ._top_nav_cab();
+    ._daily_activities_cab();
+    ._personalized_for_you_cab();
+    ._home_plan_status_cab();
+    ._home_fund_balance_cab();
+    ._home_recent_claims_cab();
+    ._home_your_care_team_cab();
+    ._home_company_updates_cab();
+    ._header_nav();
+    ._subheader_nav();
+    ._sign_out_cab();
+    ._profile_disclaimer_cab();
+    ._full_tmp_image();
+    ._rewards_gift_cards_cab();
+    ._interesting_reads_cab();
+    ._trending_cab();
+    ._shortcuts_cab();
+    ._settings_cab();
+    ._rewards_active_programs_cab();
+    ._blog_content();
+    ._text_only();
+    ._program_top();
+    ._top_image_nav();
+    ._program_at_a_glance();
+    ._program_activity();
+    ._program_contacts();
+    ._button_only();
+    ._program_points();
+    ._insurance_card_dynamic();
+    ._program_calendar();
+    ._program_completed();
+    ._store_credit_cab();
+    ._hsa_balance_cab();
+    ._home_plan_status_new();
+    ._trending_now_cab();
+    ._top_header();
+    ._office_visit();
+    ._separators_claims();
+    ._top_incentive();
+    ._plan_status_spending();
+    ._interesting_reads_one_article();
+    ._interesting_reads_one_story();
+    ._interactive_survey();
+    ._fixed_header();
+    ._core_entry();
+    ._cta_only();
+    ._fixed_header_lang_picker();
+    ._intro_community();
+    ._ways_to_earn_top();
+    ._incentive_category();
+    ._tmp_image_with_report_option();
+    ._ios_popup();
+    ._tmp_image_with_left_right_hotspot();
+    ._full_screen_overflow_hidden_image();
+    ._separators_incentives();
+    ._top_nav_pcorp();
+    ._milestone_reward();
+    ._full_screen_video();
+    ._countdown_top();
+    ._countdown_action();
+    ._countdown_tracker_link();
+    ._logo_only();
+    ._spring_challenge();
+    ._intro_community_live();
+    ._community_top_left_right_hotspot();
+    ._community_message_live();
+    ._benefit_details();
+    ._fund_balance_combined();
+    ._plan_status_details();
+    ._linked_trackers();
+    ._full_screen_hidden_card();
+    ._community_carousel();
+    ._community_interests_slide();
+    ._your_care_team_search();
+    ._recent_claim_details();
+    ._deductibles_breakdown();
+    ._esi_alert();
+    ._points_balance();
+    ._rewards_top();
+    ._rewards_gift_cards_pcorp();
+    ._rewards_disclaimer();
+    ._why_urgent_care();
+    ._personal_challenges();
+    ._homepage_popup();
+    ._high_touch();
+    ._global_chat();
+    ._shortcuts_health_goals_selector();
+    ._siri_card();
+._rewards_history();
+    ._pcp_details_top();
+    ._how_it_works_incentive();
+    ._homepage_web_style();
+  }
+  section#homepage.main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  [data-homepage-tab="home"],
+  [data-homepage-tab="social"] {
+    header {
+      display: none;
+    }
+    main {
+      position: relative;
+      height: 93vh;
+    }
+    [data-type=tmp_images] {
+      .container {
+        border-radius: 4px;
+        overflow: hidden;
+      }
+    }
+    .ffw {
+      display: block;
+    }
+  }
+  [data-homepage-tab="home"] {
+    main {
+      .card:nth-child(3) {
+        margin: 0;
+        .container {
+          width: 100vw;
+        }
+      }
+    }
+  }
+  [data-homepage-tab="benefits"] {
+    main {
+      background-color: #FFFFFF;
+    }
+  }
+  [data-homepage-tab="benefits"],
+  [data-homepage-tab="community"] {
+    [data-type="header_nav"] {
+      display: none;
+    }
+    header {
+      height: 8vh;
+      margin: 0;
+      background-color: #2A27D7;
+      .title {
+        color: #FDFDFE;
+        font-size: 2.4vh;
+        text-transform: capitalize;
+      }
+    }
+    .search,
+    .logo,
+    .zip {
+      display: none;
+    }
+    .card:last-child {
+      .group {
+        .action_box {
+          .wrapper {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  [data-homepage-tab="profile"] {
+    .logout {
+      position: absolute;
+      display: block;
+      width: 9vh;
+      height: 8vh;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      //      background: #ff0000;
+    }
+    header {
+      height: 8vh;
+      margin: 0;
+      background-color: #2A27D7;
+      .title {
+        color: #FDFDFE;
+        font-size: 2.4vh;
+        text-transform: capitalize;
+      }
+      .settings-box {
+        position: relative;
+        bottom: 1.5vh;
+        left: 21vh;
+        .settings {
+          background-image: url("images/profile/profile_settings.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 2vh;
+          width: 2vh;
+        }
+      }
+      .search,
+      .logo {
+        display: none;
+      }
+    }
+  }
+  [data-homepage-tab="notifications"] {
+    [data-type=tmp_images] {
+      margin: 0;
+      .container {
+        width: 100%;
+      }
+    }
+    header {
+      height: 8vh;
+      margin: 0;
+      background-color: #2A27D7;
+      .title {
+        color: #FDFDFE;
+        font-size: 2.4vh;
+        text-transform: capitalize;
+      }
+      .settings-box {
+        position: relative;
+        bottom: 1.5vh;
+        left: 17.5vh;
+        .settings {
+          background-image: url("images/profile/profile_settings.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 2vh;
+          width: 2vh;
+        }
+      }
+      .search,
+      .logo {
+        display: none;
+      }
+    }
+  }
+  [data-homepage-tab="more"] {
+    header {
+      height: 8vh;
+      margin: 0;
+      background-color: #2A27D7;
+      .title {
+        color: #FDFDFE;
+        font-size: 2.4vh;
+        text-transform: capitalize;
+      }
+      .settings-box {
+        position: relative;
+        bottom: 1.5vh;
+        left: 17.5vh;
+        .settings {
+          background-image: url("images/profile/profile_settings.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 2vh;
+          width: 2vh;
+        }
+      }
+      .search,
+      .logo {
+        display: none;
+      }
+    }
+  }
+  [data-homepage-tab="todo"],
+  [data-homepage-tab="rewards"] {
+    header {
+      height: 8vh;
+      margin: 0;
+      background-color: #2A27D7;
+      .title {
+        color: #F2F2F2;
+        font-size: 2.4vh;
+        text-transform: capitalize;
+      }
+      .search,
+      .logo {
+        display: none;
+      }
+    }
+    .card {
+      //margin: 0;
+      .container {
+        width: 95vw;
+        border-radius: .5vh;
+        overflow: hidden;
+      }
+    }
+  }
+  [data-homepage-tab="todo"] {
+    main {
+      [data-type="todo_card"]:last-child {
+        margin-bottom: 4vh;
+      }
+    }
+  }
+  [data-homepage-tab="find_care"],
+  [data-homepage-tab="search_results"],
+  [data-homepage-tab="sr"] {
+    header {
+      height: 12vh;
+      background-color: #2A27D7;
+      .logo,
+      .title {
+        display: none;
+      }
+      input::placeholder {
+        text-transform: capitalize;
+      }
+    }
+    main {
+      height: 81vh;
+    }
+  }
+  [data-homepage-tab="pcp_details"] {
+    header {
+      display: none;
+    }
+    main {
+      height: 93vh;
+    }
+  }
+  [data-homepage-tab="program"] {
+    header,
+    footer {
+      display: none;
+    }
+    main {
+      display: flex;
+      width: max-content;
+      height: 100vh;
+      .card {
+        margin: 0;
+        width: 100vw;
+        &.hidden {
+          display: none;
+        }
+      }
+      .card:last-child {
+        margin: 0;
+      }
+      .group {
+        margin: 10vh;
+        padding: 0;
+      }
+    }
+  }
+  [data-homepage-tab="challenge"],
+  [data-homepage-tab="bieber"] {
+    header,
+    footer {
+      display: none;
+    }
+    main {
+      height: 100vh;
+      .card:last-child {
+        margin: 0;
+      }
+      .group {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+      }
+    }
+  }
+  [data-bieber-name="bieber_rewards_flow"],
+  [data-bieber-name="bieber_rewards_end"],
+  [data-bieber-name="bieber_self_care"],
+  [data-bieber-name="bieber_search_pediatrician"] {
+    main {
+      height: 93vh;
+    }
+    footer {
+      display: block;
+    }
+  }
+  [data-package=wellbeing],
+  [data-package="wellbeing_engage"] {
+    footer {
+      [data-name="find_care"] {
+        display: none;
+      }
+      .hack {
+        left: 36vh;
+      }
+    }
+  }
+  [data-package=wellbeing_home_benefits_notifications_more] {
+    footer {
+      [data-name="find_care"],
+      [data-name="community"] {
+        display: none;
+      }
+      .hack {
+        left: 36vh;
+      }
+    }
+  }
+  [data-package=care_guidance] {
+    main {
+      .card {
+        .container {
+          .tabs_box {
+            display: none;
+          }
+          .program_box {
+            margin-top: -5vh;
+          }
+        }
+      }
+    }
+  }
+  [data-top="top-hidden"] {
+    main {
+      height: 88vh;
+      background-color: #FFFFFF;
+    }
+    header {
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      .arrow {
+        display: flex;
+        //flex: .2;
+        width: 10%;
+        background-image: url(images/search_results/left_arrow_white.svg);
+        //background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 4vh;
+      }
+      .title {
+        display: flex;
+        //flex: .6;
+        width: 70%;
+        //margin-left: 12vh;
+        color: #FDFDFE;
+        font-size: 2.4vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .right {
+        display: flex;
+        width: 10%;
+      }
+      .search,
+      .logo {
+        display: none;
+      }
+    }
+    footer {
+      display: none;
+    }
+    .card:last-child {
+      .group {
+        .action_box {
+          .wrapper {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

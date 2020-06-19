@@ -1,0 +1,36 @@
+._fund_balance_combined() {
+  [data-type=fund_balance_combined] {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    .group {
+      display: flex;
+      flex-direction: column;
+      .action_box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2vh 2vh 2vh;
+        padding-top: 2vh;
+        .box {
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          margin-bottom: 1vh;
+          font-size: 2.4vh;
+        }
+        .caption_box {
+          display: flex;
+          justify-content: space-between;
+          .caption {
+            font-size: 2vh;
+            color: #717C8E;
+          }
+        }
+      }
+      .action_box:last-child {
+        margin: 0 2vh 4vh 2vh;
+        border-top: 1px solid #e6e8e9;
+      }
+    }
+  }
+}

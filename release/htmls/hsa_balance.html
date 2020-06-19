@@ -1,0 +1,43 @@
+<script id=hsa_balance_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class=group data-network="{{amount_plan_status}}">
+    <div class="title_top">
+      <div class="title_cab">{{title}}</div>
+      <div class="username">{{first_name}}, Tyler</div>
+      <div class="updated_date_cab">{{date_updated}}</div>
+    </div>
+    <div class=box>
+      <div class=label>{{label_fsa}}</div>
+      <div class=amount>{{amount_fsa}}</div>
+    </div>
+    <div class="spending_phase">{{{caption_store_credit}}}</div>
+    <div class="caption_box">
+      <div class=caption>{{caption_fsa}}</div>
+      <div class=caption>{{label_store_credit}}</div>
+    </div>
+    <div class="caption_box network">
+      <div class=caption>{{label_one_title}}</div>
+      <div class=caption>{{label_one_sub_title}}</div>
+    </div>
+    <div class="caption_box network">
+      <div class=caption>{{label_two_title}}</div>
+      <div class=caption>{{label_two_sub_title}}</div>
+    </div>
+  </div>
+  {{else}}
+  <div class="group_web_aside">
+    <div class="title_wrapper">
+      <div class="title_web">{{title}}</div>
+      <div class="right_arrow"></div>
+    </div>
+    <div class=box>
+      <div class=label>{{label_fsa}}</div>
+      <div class=amount>{{amount_fsa}}</div>
+    </div>
+    <div class=caption>{{caption_fsa}}</div>
+    <div class="date">
+      <div class="updated">{{date_updated}}</div>
+    </div>
+  </div>
+  {{/if}}
+</script>

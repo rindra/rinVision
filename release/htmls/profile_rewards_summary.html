@@ -1,0 +1,33 @@
+<script id=profile_rewards_summary_template type=text/x-handlebars-template>
+  <div class="group">
+
+    <div class="header">
+      <div class="title">{{title}}</div>
+      <div class="date">{{date_updated}}</div>
+    </div>
+
+    <div class="container">
+      <div class="inner_box">
+        <div class="image" style="background-image:url({{image}})"></div>
+        <div class="box_points_balance">
+          <div class="points_balance">{{points}}</div>
+          <div class="subtitle">{{label_fsa}}</div>
+        </div>
+        <div class="box_points_spent">
+          <div class="points_spent">{{label_one_title}}</div>
+          <div class="subtitle">{{label_one_sub_title}}</div>
+        </div>
+        <div class="box_points_earned">
+          <div class="points_earned">{{label_two_title}}</div>
+          <div class="subtitle">{{label_two_sub_title}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class=footer>
+      <div class=cta>{{cta}}</div>
+    </div>
+
+
+  </div>
+</script>

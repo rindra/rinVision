@@ -1,0 +1,78 @@
+._rewards_active_programs_cab() {
+  [data-type=rewards_active_programs_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      box-shadow: 0 4px 39px -12px rgba(0,0,0,0.2);
+      .layers {
+        .action_box:last-child {
+          .wrapper {
+            border: none;
+          }
+        }
+      }
+      .action_box {
+        display: flex;
+        align-items: center;
+        background-color: #FFFFFF;
+        .icon {
+          width: 7vh;
+          height: 7vh;
+          margin: 1vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          flex: .2;
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 1px solid #ECE7E7;
+          height: 11vh;
+          flex: .8;
+          .title_action {
+            font-size: 2.5vh;
+            margin-bottom: .5vh;
+          }
+          .box {
+            display: flex;
+            justify-content: space-between;
+            .points_wrapper {
+              display: flex;
+              .star {
+                width: 2vh;
+                height: 2vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: .5vh;
+              }
+              .description {
+                color: #717C8E;
+                font-size: 1.8vh;
+              }
+            }
+            .tasks {
+              color: #717C8E;
+              font-size: 1.8vh;
+              margin-right: 2vh;
+            }
+          }
+        }
+      }
+      .footer_cab {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6vh;
+        .cta_cab {
+          font-size: 2vh;
+          margin-right: 2vh;
+          color: #006DFF;
+        }
+      }
+    }
+  }
+}

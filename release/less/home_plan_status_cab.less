@@ -1,0 +1,59 @@
+._home_plan_status_cab() {
+  [data-type=home_plan_status_cab] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      .description > b {
+        color: #282C37;
+      }
+      .description {
+        margin-left: 2vh;
+        width: 80vw;
+        line-height: 3vh;
+        font-size: 2.2vh;
+        color: #6D7E9A;
+        // letter-spacing: .5px;
+      }
+      .progress_bar {
+        display: flex;
+        align-items: center;
+        height: 1vh;
+        margin: 4vh 0vh 1vh 2vh;
+        border-radius: 50px;
+        background-color: #EEEEEE;
+        width: 88vw;
+        .deductible_box {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          height: 3vh;
+          .deductible {
+            height: 1vh;
+            background-color: #2CCC72;
+            border-radius: 50px;
+          }
+        }
+      }
+      .label_box {
+        display: flex;
+        justify-content: flex-end;
+        height: 2vh;
+        font-size: 1.8vh;
+        margin: 1vh 2vh 4vh 0;
+        color: #6d7e9a;
+      }
+    }
+    .group_web_aside {
+      .description_web {
+        font-size: 16px;
+        color: #626B7A;
+        line-height: 24px;
+        b {
+          font-weight: bold;
+          color: #282C37;
+        }
+      }
+    }
+  }
+}

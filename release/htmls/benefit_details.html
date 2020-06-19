@@ -1,0 +1,35 @@
+<script id=benefit_details_template type=text/x-handlebars-template>
+  <div class=circle>
+    <div class=image style='background-image:url({{image}})'></div>
+  </div>
+  <div class="exit_box">
+    <div class="exit"></div>
+  </div>
+  <div class="container_benefit">
+    <div class="program_details" data-type="{{contact}}" data-icons="{{icons}}">
+      <div class="program_name">{{description}}</div>
+      <div class="program_title">{{title}}</div>
+      <div class="program_label">{{amount_fsa}}</div>
+      <div class="contacts phone">
+        <div class="number_box">
+          <div class="program_label">{{label_one_title}}</div>
+          <div class="program_number">{{label_one_sub_title}}</div>
+        </div>
+        <div class="contact_icon phone"></div>
+      </div>
+      <div class="contacts web">
+        <div class="number_box">
+          <div class="program_label">{{label_two_title}}</div>
+        </div>
+        <div class="contact_icon web"></div>
+      </div>
+      <div class="contacts cta">
+        <div class="cta_button">{{cta}}</div>
+      </div>
+    </div>
+    <div class="program_details description">
+      <div class="program_name">{{label_three_title}}</div>
+      <div class="description_content">{{{label_three_sub_title}}}</div>
+    </div>
+  </div>
+</script>

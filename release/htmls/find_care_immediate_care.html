@@ -1,0 +1,12 @@
+<script id=find_care_immediate_care_template type=text/x-handlebars-template>
+  <div class=group>
+    <div class=wrapper>
+      {{#each carousel}}
+      <div class=box data-slide={{name}} data-box-name={{name}}>
+        <div class=image style="background-image:url({{image}})"></div>
+        <div class=description>{{title}}</div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</script>

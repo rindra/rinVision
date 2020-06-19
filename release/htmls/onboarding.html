@@ -1,0 +1,35 @@
+<section id=onboarding class="main" data-module=onboarding data-onboarding-current-slide=0>
+  <script id=onboarding_template type=text/x-handlebars-template>
+    <div class=layers>
+      <div class=layer data-layer=back></div>
+      <div class=layer data-layer=front></div>
+    </div>
+    <div class=static>
+      <div class=onboarding_image style="background-image:url({{config.skin.onboarding_image}})"></div>
+      <div class=onboarding_overlay style="background-color:{{config.skin.onboarding_overlay}}"></div>
+      <div class=logo style="background-image:url({{config.skin.logo}})"></div>
+      <div class=button_gradient></div>
+
+      <div class=guydog>
+
+      </div>
+    </div>
+    <div class=carousel>
+      <div class=box>
+        @@include('onboarding_tmp_image.html')
+        @@include('onboarding_intro.html')        
+        @@include('onboarding_doctors.html')
+        @@include('onboarding_goals.html')
+        @@include('onboarding_tracker.html')
+        <!-- Removed onboarding_name.html, onboarding_address.html, onboarding_mobile.html onboarding_doctors.html onboarding_goals.html -->
+      </div>
+    </div>
+    <div class=dots_container>
+      <div class="dots">
+        {{#each config.skin.onboarding}}
+        <div class="dot"></div>
+        {{/each}}
+      </div>
+    </div>
+  </script>
+</section>

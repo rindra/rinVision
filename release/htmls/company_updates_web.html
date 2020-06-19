@@ -1,0 +1,16 @@
+<script id=company_updates_web_template type=text/x-handlebars-template>
+  <div class="view">{{cta}}</div>
+  <div class="group">
+    {{#each carousel}}
+    <div class="box">
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="container">
+        <div class="update_title" style="color:{{color}}">{{title}}</div>
+        <div class="description">{{description}}</div>
+        <div class="date">{{date_updated}}</div>
+        <div class="learn">{{cta}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</script>

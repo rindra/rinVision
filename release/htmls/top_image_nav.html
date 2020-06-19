@@ -1,0 +1,182 @@
+<script id=top_image_nav_template type=text/x-handlebars-template>
+  <div class=bg>
+    <div class=gradient style='background-image:{{gradient_color}}'>
+      <div class=img style='background-image:url({{image}})'></div>
+    </div>
+  </div>
+  <div class=container>
+    <div class=greetings>
+      <!-- <div class=description>
+        SPONSORED BY {{company}}
+      </div> -->
+    </div>
+    <div class="white_box title">
+      <div class=left>
+        <div class=box>
+          <div class=label>{{label_plan_status}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="white_box info">
+      <div class="group calendar">
+        <div class=left>
+          <div class=box>
+            <div class=icon></div>
+          </div>
+        </div>
+        <div class=middle>
+          <div class=box>
+            <!-- <div class=label_one_title>{{label_one_title}}</div> -->
+            <div class=label_one_caption>{{label_one_caption}},</div>
+            <div class=label_one_sub_title>{{label_one_sub_title}}</div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=points>Add to calendar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=sep></div>
+      <div class="group address">
+        <div class=left>
+          <div class=box>
+            <div class=icon></div>
+          </div>
+        </div>
+        <div class=middle>
+          <div class=box>
+            <div class=label_one_title>{{label_two_title}}</div>
+            <div class=label_one_sub_title>{{label_two_sub_title}}</div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=points>Get Directions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="white_box rsvp">
+      <div class=group>
+        <div class=left>
+          <div class=box>
+            <div class=label>RSVP</div>
+          </div>
+        </div>
+        <div class=right>
+          <div class=box>
+            <div class=points>{{points}} going</div>
+          </div>
+        </div>
+      </div>
+      <div class="group buttons">
+        <div class=button data-button=yes>Going</div>
+        <div class=button data-button=maybe>Maybe</div>
+        <div class=button data-button=no>Can't go</div>
+      </div>
+      <!-- <div class=sep></div> -->
+      <!-- <div class="guests"><span>GUESTS: </span> Up to 2 additional guests allowed</div> -->
+      <!-- <div class="group breakdown">
+        {{label_two_caption}}
+      </div> -->
+      <!-- <div class="group avatars">
+        <div class=avatar>
+          <div class=img></div>
+          <div class=label>Amy</div>
+        </div>
+        <div class=avatar>
+          <div class=img></div>
+          <div class=label>John</div>
+        </div>
+        <div class=avatar>
+          <div class=img></div>
+          <div class=label>July</div>
+        </div>
+      </div> -->
+      <!-- <div class="group ctabox">
+        <div class=cta>See all</div>
+      </div> -->
+    </div>
+    <div class="white_box main_description">
+      <div class="group">
+        <div class=label>DESCRIPTION</div>
+        <div class=copy>{{label_three_title}}</div>
+      </div>
+    </div>
+    <div class="white_box main_contact">
+      <div class="group top">
+        <div class=label>CONTACT</div>
+        <div class=name>{{label_three_sub_title}}</div>
+      </div>
+      <div class="group calendar">
+        <div class=left>
+          <div class=box>
+            <div class=icon></div>
+          </div>
+        </div>
+        <div class=middle>
+          <div class=box>
+            <div class=label_one_title>Call</div>
+            <div class=label_one_sub_title>{{phone}}</div>
+          </div>
+        </div>
+      </div>
+      <div class=sep></div>
+      <div class="group address">
+        <div class=left>
+          <div class=box>
+            <div class=icon></div>
+          </div>
+        </div>
+        <div class=middle>
+          <div class=box>
+            <div class=label_one_title>Email</div>
+            <div class=label_one_sub_title>{{label_three_caption}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=lightbox>
+    <div class=white_box>
+      <div class=title>Are you bringing anyone else with you?</div>
+      <div class=label>Up to 2 additional guests allowed</div>
+      <div class=number>0</div>
+      <div class=control_box>
+        <div class=control>
+          <div class=minus>−</div>
+          <div class=plus>+</div>
+        </div>
+      </div>
+      <div class=buttons>
+        <div class=no>NOT NOW</div>
+        <div class=yes>UPDATE</div>
+      </div>
+    </div>
+  </div>
+  <div class=confirmationbox>
+    <div class=white_box>
+      <div class=title>Would you like to add this event to your calendar?</div>
+      <div class=buttons>
+        <div class=no>NOT NOW</div>
+        <div class=yes>ADD</div>
+      </div>
+    </div>
+  </div>
+  <div class=iosbox>
+    <div class=white_box>
+      <div class=button>Open in Maps</div>
+      <div class=button>Open in Google Maps</div>
+      <div class=button>Request Uber</div>
+      <div class=button>Request Lyft</div>
+    </div>
+    <div class="white_box cancel">
+      <div class=button><span>Cancel</span></div>
+    </div>
+  </div>
+  <div class="exit_box">
+    <div class="exit"></div>
+  </div>
+  <!-- <div class=cross></div> -->
+</script>

@@ -1,0 +1,63 @@
+<script id=intro_email_template type=text/x-handlebars-template>
+  <div class=inbox>
+    <div class="box1"></div>
+    <div class="box2">Inbox (158)</div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </div>
+
+  <div class=from_to>
+    <div class=from>From: <span><b>{{config.skin.persona.intro.from_who}}</b></span>
+      <div class="img_grey_arrow"></div>
+      <div class="letter">
+        {{config.skin.persona.intro.firstletter}}
+      </div>
+    </div>
+    <div class=to>To: <span>{{config.skin.persona.email}}</span>
+      <div class="img_grey_arrow"></div>
+      <div class=hide>
+        Hide
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class=subject-date>
+    <div class=subject>{{config.skin.persona.intro.subject}}</div>
+    <div class=time>{{config.skin.persona.intro.time}}</div>
+  </div>
+
+  <div class=ad>
+    <div class="ad-content">
+      <div class="ad-logo"></div>
+      <div class="ad-logo-text">
+        {{config.skin.persona.intro.from_who}}
+      </div>
+    </div>
+    <div class="ad-content-info">
+      <p>{{config.skin.persona.intro.ad_content_info}}<a href="#">{{config.skin.persona.intro.ad_content_link}}</a></p>
+    </div>
+  </div>
+
+  <div class=article_image style="background-image:url({{config.skin.persona.intro.article_img}})"></div>
+  <div class="article">
+    <div class=article_title>
+      {{config.skin.persona.intro.title}}
+    </div>
+    <div class=article_dsc>
+      {{config.skin.persona.intro.description}}
+    </div>
+  </div>
+  <div class=article_button>
+    <button type="button">Learn More</button>
+  </div>
+
+  <div class="footer">
+    <div class="icon1"></div>
+    <div class="icon2"></div>
+    <div class="icon3"></div>
+    <div class="icon4"></div>
+    <div class="icon5"></div>
+  </div>
+</script>

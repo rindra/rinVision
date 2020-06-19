@@ -1,0 +1,25 @@
+<script id=shortcuts_health_goals_selector_template type=text/x-handlebars-template>
+
+<button class='cancel-button'>Cancel</button>
+
+<div class='main-container'>
+    <div class='header-container'>
+        <p style='font-size:3vh; font-family: Roboto Light; color: #282C37'>{{title}}</p>
+        <p style='font-size: 2.2vh; color:#626B7A; margin-top: 1vh; color: #626B7A; line-height: 2.8vh;'>{{description}}</p>
+    </div>
+
+    <div class='selection-container'>
+      {{#each list}}
+         <button class='selection-button'>{{this}}</button>
+      {{/each}}
+    </div>
+
+  <div class=button-group>
+    <button class='update-button'>
+        UPDATE
+    </button>    
+  </div>
+
+</div>
+
+</script>

@@ -1,0 +1,65 @@
+._trending_cab() {
+  [data-type=trending_cab] {
+    margin-bottom: 12vh;
+    .group_trending {
+      display: flex;
+      position: relative;
+      top: 2vh;
+      .background {
+        height: 18vh;
+        width: 70vw;
+        background: linear-gradient(to right, #4960E6 , #2AAEF3);
+        border-radius: 0 10px 10px 0;
+        .topic {
+          font-size: 2vh;
+          font-weight: bold;
+          color: #FFFFFF;
+          margin: 1vh 0 0 2vh;
+        }
+      }
+      .container {
+        display: flex;
+        position: absolute;
+        top: 5vh;
+        left: 2vh;
+        width: 93vw;
+        height: 20vh;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        .left {
+          flex: .5;
+          .image {
+            width: 43vw;
+            height: 23vh;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: .5;
+          .section {
+            display: flex;
+            align-items: center;
+            margin: 1vh;
+            .icon {
+              height: 3.5vh;
+              width: 3.5vh;
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+            .description {
+              font-size: 2vh;
+              color: #1D1E20;
+              margin-left: 1.5vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}

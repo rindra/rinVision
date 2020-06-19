@@ -1,0 +1,28 @@
+# This is a sample build configuration for all languages.
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# image: docker-image:tag
+image: node:10.15.3
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          max-time: 2
+          caches:              
+            - node
+            - surge
+          script:
+          - npm install -g surge@0.19.0        
+          - cd release/castlight/www
+          #- npm init --yes
+          #- npm i --save request
+          #- node version
+          - surge .
+          - surge . --d https://castlight-iframe.surge.sh
+definitions:
+  caches:
+    node: /usr/local/lib/node_modules
+    surge: /usr/local/lib/node_modules/surge

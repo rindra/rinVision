@@ -1,0 +1,99 @@
+._find_care_top_carousel() {
+  [data-type=find_care_top_carousel] {
+    margin: 2vh 0 0 0;
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 25vh;
+        .program {
+          position: relative;
+          width: 75vw;
+          height: 25vh;
+          color: #ffffff;
+          background: #ffffff;
+          border-radius: 1vh;
+          overflow: hidden;
+          //box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+        }
+        .image {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+        }
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .action_box {
+          position: relative;
+        }
+        .program_title {
+          display: flex;
+          align-items: center;
+          font-size: 1.6vh;
+          height: 5vh;
+          margin: 0 0 0 2vh;
+        }
+        .program_subtitle {
+          font-family: "Open Sans Semi";
+          font-size: 2.4vh;
+          margin: 0 0 0 2vh;
+          width: 21vh;
+        }
+        .program_description {
+          display: flex;
+          align-items: center;
+          height: 8vh;
+          font-size: 1.6vh;
+          margin: 0 0 0 2vh;
+          line-height: 2vh;
+          width: 20vh;
+        }
+        .program_cta {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: 1.7vh;
+          height: 5vh;
+          margin: 0 2vh 0 0;
+        }
+      }
+    }
+    .static {
+      pointer-events: none;
+      overflow: hidden;
+      .bg {
+        position: absolute;
+        width: 100vw;
+        height: 24vh;
+      }
+    }
+    .slide {
+      width: 100vw;
+      height: 25vh;
+      box-sizing: border-box;
+      //border: 2px solid #ccc;
+    }
+    [data-bg=slide_get_active] {
+      background: linear-gradient(180deg, rgb(28, 221, 157), rgb(40, 155, 255));
+    }
+    [data-bg=slide_sleep_well] {
+      background: linear-gradient(180deg, rgb(48, 35, 174), rgb(200, 109, 215));
+    }
+    [data-bg=slide_eat_smart] {
+      opacity: 0;
+      background: linear-gradient(180deg, rgb(255, 92, 49), rgb(255, 40, 98));
+    }
+  }
+}

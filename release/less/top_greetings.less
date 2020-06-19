@@ -1,0 +1,47 @@
+._top_greetings() {
+  [data-type=top_greetings] {
+    .group {
+      display: flex;
+      width: 100vw;
+      background: none;
+      border-radius: 0;
+      .top {
+        display: flex;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+        .initial_box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 3vh;
+          width: 7vh;
+          height: 7vh;
+          border-radius: 100px;
+          // box-shadow: 0 0 20px #FFFFFF;
+          background-color: #000000;
+          .initial {
+            color: #FFFFFF;
+            font-size: 3.5vh;
+          }
+        }
+        .greetings {
+          display: flex;
+          flex-direction: column;
+          // height: 12vh;
+          color: #FFFFFF;
+          .hello {
+            font-size: 3vh;
+            margin-bottom: .5vh;
+          }
+          span {
+            font-weight: bold;
+          }
+          .details {
+            font-size: 2vh;
+          }
+        }
+      }
+    }
+  }
+}

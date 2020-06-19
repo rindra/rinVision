@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FF0047" fill-rule="nonzero" id="Shape">
+            <path d="M11.6046667,0 C10.2293333,0 8.71333333,0.839333333 8,2.68133333 C7.29666667,0.869333333 5.81933333,0.0426666667 4.47933333,0.0426666667 C1.97666667,0.0426666667 0.666666667,2.42466667 0.666666667,4.77666667 C0.666666667,8.906 4.634,13.086 7.816,15.2066667 C7.93533333,15.286 8.09133333,15.2793333 8.204,15.1926667 C8.49466667,14.9673333 15.3333333,9.61333333 15.3333333,4.382 C15.3333333,1.50533333 13.458,0 11.6046667,0 Z"></path>
+        </g>
+    </g>
+</svg>

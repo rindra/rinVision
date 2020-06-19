@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="36" r="36"></circle>
+        <path d="M31.4716433,0.8711686 C31.0750989,0.478517959 30.3976267,0.448079925 29.9676144,0.803190324 L13.7813028,14.1401223 C13.3512905,14.4952327 12.6291944,14.5165393 12.1788986,14.1888232 L4.60196034,8.68258277 C4.15065027,8.35486661 3.48534824,8.43400549 3.12430019,8.85912337 L1.14563516,11.187633 C0.784587103,11.6127509 0.806899061,12.2874606 1.19634415,12.6882281 L12.7610378,24.5813826 C13.1494687,24.9811355 13.7853596,24.9811355 14.1748046,24.580368 L33.6825555,4.48314866 C34.0709864,4.08339581 34.0649013,3.43506568 33.668357,3.04241504 L31.4716433,0.8711686 Z" id="path-3"></path>
+    </defs>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Specs/Individual-pages/Surveys" transform="translate(-1810.000000, -1777.000000)">
+            <g id="Confirmation" transform="translate(1658.000000, 1538.000000)">
+                <g id="Group-22">
+                    <g id="Grouped-components/Popup---confirmation" transform="translate(32.000000, 207.000000)">
+                        <g id="Group-2" transform="translate(120.000000, 32.000000)">
+                            <g id="🎨-icon-circle">
+                                <g id="🎨-Color/Castlight/Pale-Blue">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#BBC2CD" xlink:href="#path-1"></use>
+                                    <g id="↳🎨-Color/Castlight/Pale-Blue" mask="url(#mask-2)" fill="#2ECC71">
+                                        <rect id="Rectangle" x="0" y="0" width="72" height="72"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="💎-icon" transform="translate(18.000000, 23.000000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <g id="Color/Greyscale/White" mask="url(#mask-4)" fill="#FFFFFF">
+                                    <g transform="translate(-10.000000, -15.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="56.2007168" height="56.2007168"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<script id=todo_nav_template type=text/x-handlebars-template>
+  <div class="container">
+    <div class=tri></div>
+    <div class=top>
+      {{#if is_german}}
+        <div class=completed><span class=current>{{total_completed}}</span> von <span class=total>{{total}}</span> abgeschlossen</div>
+      {{else if is_chinese}}
+        <div class=completed><span class=current>{{total_completed}}</span> / <span class=total>{{total}}</span> 已完成</div>
+      {{else}}
+        <div class=completed><span class=current>{{total_completed}}</span> of <span class=total>{{total}}</span> completed</div>
+      {{/if}}
+      <div class=history>History</div>
+    </div>
+    <div class=bottom>
+      <div class=box>+ Add a to do</div>
+    </div>
+  </div>
+</script>

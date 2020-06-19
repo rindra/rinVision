@@ -1,0 +1,124 @@
+._benefits_carousel() {
+  [data-type=benefits_carousel] {
+    margin: 2vh 0 0 0;
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer:first-child {
+        .program {
+          .benefit {
+            font-weight: bold;
+            border: 1px solid #4997FF;
+            margin-left: 1vh;
+          }
+        }
+      }
+      .layer:nth-child(2) {
+        .program {
+          .benefit {
+            .hidden {
+              display: block;
+            }
+          }
+        }
+      }
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vh;
+        width: 21vw;
+        height: 8vh;
+        .program {
+          position: relative;
+          width: 12vh;
+          height: 5vh;
+          border-radius: 1vh;
+          display: inline;
+          // overflow: hidden;
+        }
+        .benefit {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #C4D2E4;
+          border-radius: 4px;
+          font-size: 1.6vh;
+          text-transform: capitalize;
+          padding: .8vh;
+        }
+        .hidden {
+          display: none;
+        }
+        .star {
+          height: 2vh;
+          width: 2vh;
+          margin-right: .5vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        // .image {
+        //   position: absolute;
+        //   width: 100%;
+        //   height: 100%;
+        //   background-size: contain;
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        // }
+        // .overlay {
+        //   position: absolute;
+        //   width: 100%;
+        //   height: 100%;
+        // }
+      }
+    }
+    .static {
+      pointer-events: none;
+      overflow: hidden;
+      .bg {
+        position: absolute;
+        width: 100vw;
+        height: 24vh;
+      }
+    }
+    .slide {
+      width: 100vw;
+      height: 7vh;
+      box-sizing: border-box;
+      //border: 2px solid #ccc;
+    }
+  }
+  [data-id=social_feed_carousel] {
+    .layers {
+      .layer {
+        height: 5vh;
+      }
+    }
+    .slide {
+      height: 5vh;
+    }
+    .layer:nth-child(1) {
+      .program {
+        .benefit {
+          background: #FFFFFF;
+        }
+      }
+    }
+    .layers {
+      .layer:nth-child(2) {
+        .program {
+          .benefit {
+            .hidden {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

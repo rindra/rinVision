@@ -1,0 +1,118 @@
+._three_things_you_should_know() {
+  [data-type=three_things_you_should_know] {
+    .static {
+       position: absolute;
+       width: 95vw;
+       height: 25vh;
+       background: #ffffff;
+       margin: 0 0 0 1.5vh;
+       border-radius: .5vh;
+      .dots {
+        display: none;
+      }
+      &[data-style="updated"] {
+        width: 100vw;
+        height: auto;
+        background: none;
+        margin: 0;
+        border-radius: 0;
+        .title {
+          display: none;
+        }
+        .dots {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 19vh;
+          .dot {
+            border-radius: 100px;
+            margin-right: 1vh;
+            width: 1vh;
+            height: 1vh;
+            background-color: #CCCCCC;
+          }
+          .blue_dot {
+            background-color: #007CF7;
+          }
+        }
+      }
+    }
+    .layers {
+      position: absolute;
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 20vh;
+        margin: 5vh 0 0 2vh;
+        .program {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 75vw;
+          height: 16vh;
+          color: #ffffff;
+          background: #ffffff;
+          border-radius: 1vh;
+          overflow: hidden;
+          //box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+          border: 1px solid #f2f2f2;
+          box-sizing: border-box;
+        }
+        .program:nth-child(1) {
+          margin: 0;
+        }
+        .action_box {
+          display: flex;
+          align-items: center;
+          margin-left: 2vh;
+        }
+        .program_number {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.8vh;
+          width: 3vh;
+          height: 3vh;
+          color: #FFFFFF;
+          background-color: #F95D90;
+          border-radius: 200px;
+        }
+        .program_description {
+          display: flex;
+          align-items: center;
+          color: #4A4A4A;
+          font-size: 2vh;
+          margin: 0 0 0 2vh;
+          line-height: 2.8vh;
+          width: 60vw;
+        }
+      }
+      &[data-layer="updated"] {
+        .layer {
+          margin: 0;
+        }
+      }
+    }
+    .carousel {
+      position: relative;
+      .box {
+        display: flex;
+        width: max-content;
+        .slide {
+          width: 100vw;
+          height: 25vh;
+          box-sizing: border-box;
+        }
+      }
+      &[data-carousel="updated"] {
+        .box {
+          .slide {
+            height: 20vh;
+          }
+        }
+      }
+    }
+  }
+}

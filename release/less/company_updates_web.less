@@ -1,0 +1,65 @@
+._company_updates_web() {
+  [data-type=company_updates_web] {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    width: 850px;
+    margin-top: 16px;
+    .view {
+      position: relative;
+      bottom: 34px;
+      left: 770px;
+      font-size: 14px;
+      color: #006dff;
+    }
+    .group {
+      display: flex;
+      flex-wrap: wrap;
+      .box {
+        display: flex;
+        margin: 2vh 0 4vh 3vh;
+        .image {
+          height: 100px;
+          width: 150px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          margin-left: 16px;
+          .update_title,
+          .description,
+          .date {
+            margin-bottom: 4px;
+          }
+          .update_title {
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .description {
+            font-size: 18px;
+            color: #1c1d1f;
+          }
+          .date {
+            font-size: 14px;
+            color: #626B7A;
+          }
+          .learn {
+            font-size: 14px;
+            color: #006dff;
+          }
+        }
+      }
+      .box:hover {
+        .description {
+          cursor: pointer;
+          color: #006dff;
+        }
+      }
+    }
+  }
+}

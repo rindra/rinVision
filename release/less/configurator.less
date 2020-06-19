@@ -1,0 +1,233 @@
+._configurator() {
+  [data-module="configurator"] {
+    font-size: 3vh;
+    .button {
+      display: flex;
+      justify-content: center;
+      font-size: 2vh;
+      padding: 1vh 0 1vh 0;
+      width: 46vh;
+      border-radius: 4px;
+      &.blue {
+        color: #ffffff;
+        background: #007AFF;
+      }
+      &.red {
+        color: #ffffff;
+        background: #ff0000;
+      }
+      &.blank {
+        color: #8D8D8D;
+        background: #ffffff;
+        border: 1px solid #d6d6d6;
+      }
+    }
+    .back {
+      position: absolute;
+      top: 3vh;
+      left: 3vh;
+      .button {
+        width: 12vh;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      .version {
+        font-size: 1.5vh;
+        line-height: 2vh;
+        text-align: center;
+      }
+    }
+    .personas {
+      height: 90vh;
+      padding: 0;
+      margin: 0;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+    }
+    .persona {
+      display: flex;
+      align-items: center;
+      height: 9vh;
+      .email {
+        flex: 1;
+        font-size: 2vh;
+        margin: 0 1vh 0 1vh;
+        overflow-x: scroll;
+      }
+      .button {
+        position: relative;
+        font-size: 1.5vh;
+        width: 9vh;
+        margin: 0 1vh 0 0;
+      }
+    }
+    .persona:nth-child(odd) {
+      background-color: #dedede;
+    }
+    .persona:nth-child(even) {
+      background-color: #d4d4d4;
+    }
+    .title {
+      font-size: 2vh;
+    }
+    .progress,
+    .info_box,
+    .version_box,
+    .error_box {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .5);
+      &.on {
+        display: flex;
+      }
+      &.complete {
+        .button {
+          display: flex;
+        }
+      }
+      &.clean {
+        .images {
+          display: none;
+        }
+      }
+      &.why {
+        .images {
+          display: none;
+        }
+        [data-status=why] {
+          display: flex;
+        }
+      }
+      .box {
+        background-color: #ffffff;
+        border-radius: 1vh;
+      }
+      .images {
+        display: flex;
+        //justify-content: space-between;
+        font-size: 1.5vh;
+        margin: 2vh 0 0 2vh;
+      }
+      .images:nth-child(5) {
+        margin: 2vh 0 2vh 2vh;
+      }
+      .sep {
+        flex: 1;
+        border-bottom: 1px dotted #cdcdcd;
+      }
+      .status {
+        margin: 0 2vh 0 0;
+      }
+      .button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46vh;
+        height: 15vh;
+      }
+      .button {
+        display: none;
+        font-size: 2.5vh;
+        padding: 1.5vh 0 1.5vh 0;
+        width: 26vh;
+        border-radius: 4px;
+      }
+      [data-status="why"],
+      [data-status="stream"],
+      [data-status="search"],
+      [data-status="epilogue"],
+      [data-status="carousel"],
+      [data-status="flow"] {
+        display: none;
+      }
+    }
+    .info_box,
+    .error_box {
+      font-size: 2vh;
+      .box {
+        width: 35vh;
+        padding: 2vh 2vh 0 2vh;
+      }
+      .button-box {
+        width: auto;
+      }
+      .label {
+        font-size: 1.5vh;
+        color: #8D8D8D;
+      }
+      .label:nth-child(3) {
+        margin: 2vh 0 0 0;
+      }
+      .button {
+        display: flex;
+      }
+    }
+    .error_box {
+      .description {
+        overflow: scroll;
+      }
+    }
+    .version_box {
+      font-size: 2vh;
+      .box {
+        width: 35vh;
+        padding: 2vh 2vh 0 2vh;
+      }
+      .button-box {
+        width: auto;
+        justify-content: space-between;
+      }
+      .link {
+        cursor: pointer;
+        color: #157efb;
+      }
+      .label {
+        text-align: center;
+        font-size: 1.5vh;
+      }
+      .label_msg {
+        padding-bottom: 2vh;
+        border-bottom: 1px solid #eeeeee;
+      }
+      .label:nth-child(3) {
+        font-size: 2.5vh;
+        margin: 2vh 0 0 0;
+      }
+      .label_version {
+        font-size: 3.5vh;
+      }
+      .button {
+        display: flex;
+        width: 18vh;
+      }
+    }
+    .i_dot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1vh;
+      height: 1vh;
+      border-radius: 100vh;
+      background-color: #cccccc;
+    }
+    [data-i-dot-color="green"] {
+      background-color: #0f0;
+    }
+    [data-i-dot-color="red"] {
+      background-color: #f00;
+    }
+    [data-i-dot-color="blank"] {
+      background-color: #fff;
+    }
+  }
+}

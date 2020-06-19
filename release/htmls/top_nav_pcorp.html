@@ -1,0 +1,164 @@
+<script id=top_nav_pcorp_template type=text/x-handlebars-template>
+
+  {{#if is_mobile}}
+    <div class=bg>
+      <div class=gradient style="background:{{gradient_color}}"></div>
+    </div>
+    <div class=container>
+      <div class=greetings>
+        <div class=avatar_box>
+          {{#if photo}}
+          <div class=avatar style="background-image:url({{photo}})"></div>
+          {{else}}
+          <div class=avatar>{{initials}}</div>
+          {{/if}}
+        </div>
+          <div class=description>
+            <span>Hello </span> <span>{{username}}</span> ,
+            {{#if is_message}}
+              <br>{{message}}
+            {{else}}
+              <br>{{description}}
+            {{/if}}
+         </div>
+      </div>
+
+      {{#if is_points}}
+        {{#if is_points_only}}
+        <div class="activity_points incentive with_points points_only">
+          <div class=left>
+            <div class=box>
+              <div class=label>point balance</div>
+              <div class=title_points>{{date}}</div>
+            </div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=value_total><span class=b>{{points}}</span> <span class=static> pts</span></div>
+            </div>
+          </div>
+        </div>
+        {{else}}
+        <div class="activity_points incentive with_points">
+          <div class=left>
+            <div class=box>
+              <div class=title>your activities</div>
+              <div class=label>progress</div>
+              <div class=value_total><span class=b>${{value}}</span> <span class=static>/${{total}}</span></div>
+            </div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=title>{{date}}</div>
+              <div class=label>point balance</div>
+              <div class=value_total><span class=b>{{points}}</span><span class=static> pts</span></div>
+            </div>
+            <div class=vline></div>
+          </div>
+        </div>
+        {{/if}}
+      {{/if}}
+
+      {{#if is_incentive}}
+      <div class="activity_points incentive">
+        <div class=left>
+          <div class=box>
+            <div class=wallet></div>
+          </div>
+        </div>
+        <div class=middle>
+          <div class=box>
+            <div class=label>{{{label_fsa}}}</div>
+          </div>
+        </div>
+        <div class=right>
+          <div class=box>
+            <div class=left_arrow></div>
+          </div>
+        </div>
+         <div class="learn_topnav_box">
+          <div class="cta_text">{{cta}}</div>
+        </div> 
+      </div>
+      {{/if}}
+    </div>
+
+  {{else}}
+
+  <div class="card_web_wrapper">
+    <div class=bg>
+      <div class=gradient style="background:{{gradient_color}}"></div>
+    </div>
+    <div class=container>
+      <div class=greetings>
+        <div class=avatar_box>
+          {{#if photo}}
+          <div class=avatar style="background-image:url({{photo}})"></div>
+          {{else}}
+          <div class=avatar>{{initials}}</div>
+          {{/if}}
+        </div>
+          <div class=description>
+            <span>Hello </span> <span>{{username}}</span> ,
+            {{#if is_message}}
+              <br>{{message}}
+            {{else}}
+              <br>{{description}}
+            {{/if}}
+         </div>
+      </div>
+      {{#if is_points}}
+        {{#if is_points_only}}
+        <div class="activity_points_web incentive with_points points_only">
+          <div class=left>
+            <div class=box>
+              <div class=label>points balance</div>
+              <div class=title_points>{{date}}</div>
+            </div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=value_total><span class=b>{{points}}</span> <span class=static> pts</span></div>
+            </div>
+          </div>
+        </div>
+        {{else}}
+        <div class="activity_points_web incentive with_points">
+          <div class=left>
+            <div class=box>
+              <div class=title>rewards balance</div>
+              <div class=label>total earned</div>
+              <div class=value_total><span class=b>${{value}}</span> <span class=static>/${{total}}</span></div>
+            </div>
+          </div>
+          <div class=right>
+            <div class=box>
+              <div class=title>{{date}}</div>
+              <div class=label>points balance</div>
+              <div class=value_total><span class=b>{{points}}</span><span class=static> pts</span></div>
+            </div>
+            <div class=vline></div>
+          </div>
+        </div>
+        {{/if}}
+      {{/if}}
+
+      {{#if is_incentive}}
+      <div class="activity_points_web incentive">
+        <div class=left_web>
+          <div class=box>
+            <div class=wallet></div>
+          </div>
+        </div>
+        <div class=middle_web>
+          <div class=box>
+            <div class=label>{{{label_fsa}}}</div>
+          </div>
+        </div>
+        <div class=right_arrow></div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  {{/if}}
+</script>

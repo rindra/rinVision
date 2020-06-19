@@ -1,0 +1,19 @@
+<script id=interesting_reads_cab_template type=text/x-handlebars-template>
+  <div class="group">
+    <div class="layers">
+      {{#each carousel}}
+      <div class="layer" data-name="{{name}}">
+        <div class="top">
+          <div class="image" style="background-image:url({{image}})"></div>
+          <div class="topic">{{title}}</div>
+          <div class="label_info">{{label_fsa}}</div>
+        </div>
+        <div class="description">{{description}}</div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="footer_cab">
+      <div class="cta_cab">{{cta}}</div>
+    </div>
+  </div>
+</script>

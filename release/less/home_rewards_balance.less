@@ -1,0 +1,58 @@
+._home_rewards_balance() {
+  [data-type=home_rewards_balance] {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 10.5vh;
+    .group {
+      height: 10.5vh;
+      .box-icon {
+        flex: .2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .icon {
+        width: 6.5vh;
+        height: 6.5vh;
+        background-image: url(images/stream/rewards_balance.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .caption,
+      .points-box {
+        flex: .5;
+        display: flex;
+        align-items: center;
+        font-size: 2.4vh;
+      }
+      .box {
+        display: flex;
+        //margin: 0 0 0 2vh;
+        .label {
+          font-size: 1.4vh;
+          margin: 0 0 0 1vh;
+        }
+      }
+      .description {
+        flex: .3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0079C2;
+        .cta {
+          width: min-content;
+          text-align: center;
+          font-size: 2.4vh;
+          color: #ffffff;
+        }
+      }
+    }
+    [data-points="0"] {
+      .points-box {
+        display: none;
+      }
+    }
+  }
+}

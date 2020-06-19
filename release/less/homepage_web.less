@@ -1,0 +1,264 @@
+._homepage_web() {
+  [data-module=homepage_web] {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .container_web {
+      position: relative;
+      overflow: auto;
+      height: 100%;
+      width: 100%;
+      max-width: 1440px;
+      font-family: "Lato Regular";
+      header {
+        display: flex;
+        // height: 18vh;
+        height: 148px;
+        width: 100%;
+        box-shadow: 0px 0px 12px 5px #bab9be;
+        .logo_box {
+          width: 500px;
+          .logo {
+            height: 80px;
+            width: 350px;
+            margin-top: 10px;
+            background-image: url(images/home/castlight_logo-horz-blue.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+        .search_and_categories {
+          width: 840px;
+          display: flex;
+          flex-direction: column;
+          // align-items: flex-end;
+          justify-content: space-around;
+          .categories {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 24px;
+            width: 600px;
+            margin: 5px 0 0 240px;
+            font-size: 16px;
+            text-transform: capitalize;
+            .on {
+              font-weight: bold;
+              border-bottom: 2px solid #282C37;
+            }
+            .notifications {
+              width: 16px;
+              height: 30px;
+              background-image: url(images/homepage_web/notifications_black.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .more {
+              display: flex;
+              .dropdown {
+                width: 7px;
+                height: 3px;
+                margin: 8px 0 0 4px;
+                background-image: url(images/homepage_web/more_triangle_black.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+            .category {
+              padding-bottom: 2px;
+            }
+            .category:hover {
+              cursor: pointer;
+            }
+          }
+          .search_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 840px;
+            margin-bottom: 20px;
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            border: 1px solid #dadada;
+            form {
+              display: flex;
+              align-items: center;
+              height: 48px;
+              input {
+                width: 500px;
+                margin-left: 12px;
+                border-radius: 4px;
+                font-size: 16px;
+              }
+              input::placeholder {
+                color: #626b79;
+                font-size: 16px;
+              }
+            }
+            .search_button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 80px;
+              height: 12px;
+              text-transform: uppercase;
+              border-radius: 4px;
+              margin-right: 4px;
+              color: #FFFFFF;
+              background-color: #000000;
+              font-size: 14px;
+              font-weight: bold;
+              padding: 14px;
+            }
+            .search_button:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      aside {
+        position: absolute;
+        top: 105px;
+        width: 500px;
+        z-index: 1;
+        .card:first-child,
+        .card:nth-child(2) {
+          border-bottom: none;
+        }
+        .card {
+          width: 384px;
+          margin-left: 90px;
+          border-bottom: 1px solid #DADADA;
+          border-left: 1px solid #DADADA;
+          border-right: 1px solid #DADADA;
+          .group_web {
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            .title_wrapper {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .title_web {
+                font-weight: bold;
+                font-size: 2.2vh;
+                color: #626B7A;
+              }
+            }
+          }
+          .right_arrow {
+            width: 8px;
+            height: 18px;
+            background-image: url(images/homepage_web/grey_right_arrow_aside.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+        .card:first-child {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+        .card:last-child {
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+        [data-id="profile_top_dashboard_web"] {
+          border-radius: 8px 8px 0 0;
+          .top {
+            border-bottom-left-radius: 45%;
+            border-bottom-right-radius: 45%;
+          }
+        }
+      }
+      main {
+        position: absolute;
+        left: 500px;
+        margin-top: 16px;
+        width: 940px;
+        [data-type="earn_points_web"] {
+          display: none;
+        }
+        .group_web {
+          .title_sep {
+            font-weight: bold;
+            font-size: 2.2vh;
+            color: #626B7A;
+          }
+        }
+      }
+      footer {
+        position: absolute;
+        top: 190vh;
+        width: 100vw;
+      }
+    }
+    ._tmp_images_web();
+    ._home_plan_status_web();
+    ._home_fund_balance_web();
+    ._your_claims_web();
+    ._separators_web();
+    ._daily_activities_web();
+    ._store_credit_web();
+    ._your_care_team_web();
+    ._personalized_for_you_web();
+    ._company_updates_web();
+    ._earn_points_web();
+    ._interesting_reads_web();
+    ._footer_web();
+    ._search_results_tabs_web();
+    ._autosuggest_web();
+    ._top_nav_cab();
+    ._separators();
+    ._web_overrides();
+    ._store_credit_cab();
+    ._home_plan_status_cab();
+  }
+  [data-homepage-web-tab="sr"] {
+    .container_web  {
+      footer {
+        position: absolute;
+        top: 18vh;
+      }
+    }
+  }
+  [data-package="care_guidance"] {
+    .container_web {
+      main {
+        [data-type="earn_points_web"] {
+          display: block;
+        }
+        [data-id="home_daily_activities_sep_web"],
+        [data-type="daily_activities_web"],
+        [data-id="home_company_updates_sep_web"],
+        [data-type="company_updates_web"] {
+          display: none;
+        }
+      }
+      aside {
+        [data-type="store_credit_web"] {
+          display: none;
+        }
+      }
+      footer {
+        position: absolute;
+        top: 165vh;
+        .section.programs {
+          display: none;
+        }
+      }
+    }
+  }
+  [data-package="wellbeing"] {
+    .container_web {
+      footer {
+        .section.health_care {
+          display: none;
+        }
+      }
+    }
+  }
+}

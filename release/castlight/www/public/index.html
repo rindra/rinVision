@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.567, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Flows</title>
+  <link href=style.css rel=stylesheet>
+</head>
+
+<body>
+  <section id=app data-app=sap data-skin=clean>
+    <section id=home data-section=home data-style=dark data-state data-current-page=2>
+  <script id=home-template type=text/x-handlebars-template>
+    <div class=container>
+      <!--<img src=../images/dashboard_alex/0.png>-->
+      <div class=box-input>
+        <input id="search" name="search" placeholder="Search..." type="text" data-list=".box-list">
+        <div class=cancel>clear</div>
+      </div>
+      <div class=list>
+        <div class=box-list>
+          {{#each folders}}
+          <div class=link data-folder={{this.folder}}>{{folder}}</div>
+          {{/each}}
+        </div>
+      </div>
+      <div class=slides>
+      </div>
+    </div>
+  </script>
+  <script id=slide-template type=text/x-handlebars-template>
+    <div class=box>
+      {{#each slides}}
+      <a href=../images/{{folder}}/{{file}} download={{file}}><img src=../images/{{folder}}/{{file}}></a>
+      {{/each}}
+    </div>
+  </script>
+</section>
+
+  </section>
+</body>
+<script src=js/lib/require.min.js data-main=config></script>
+</html>

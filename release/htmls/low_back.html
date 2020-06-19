@@ -1,0 +1,16 @@
+<script id=low_back_template type=text/x-handlebars-template>
+  <div class="container">
+    <div class="image" style="background-image:url({{image}})"></div>
+    <div class="info">{{description}}</div>
+    {{#each carousel}}
+      <div class="top">
+        <div class="slide_image" style="background-image:url({{image}})"></div>
+        <div class="column">
+          <div class="topic">{{title}}</div>
+          <div class="subtitle">{{subtitle}}</div>
+        </div>
+      </div>
+      <div class="description">{{{description}}}</div>
+    {{/each}}
+  </div>
+</script>

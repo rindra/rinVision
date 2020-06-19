@@ -1,0 +1,44 @@
+<section id=onboarding_web class="main" data-module=onboarding_web data-onboarding-web-current-slide=0>
+  <script id=onboarding_web_template type=text/x-handlebars-template>
+    <div class="header">
+      <div class=logo style="background-image:url({{config.skin.logo}})"></div>
+    </div>
+    <div class=layers>
+      <div class=layer data-layer=back></div>
+      <div class=layer data-layer=front></div>
+    </div>
+    <div class=static>
+      <div class="dots_web">
+        {{#each config.skin.onboarding}}
+        <div class="dot_web"></div>
+        {{/each}}
+      </div>
+    </div>
+    <div class=carousel style="background-image:url(images/onboarding/att_onboarding_bg.jpg)">
+      <div class=box>
+        @@include('onboarding_web_hi.html')
+        @@include('onboarding_web_name.html')
+        <!-- @@include('onboarding_doctors.html')
+        @@include('onboarding_goals.html') -->
+        <!-- Removed onboarding_name.html, onboarding_address.html, onboarding_mobile.html onboarding_doctors.html onboarding_goals.html -->
+      </div>
+      <div class="disclaimer">
+        <div class="norton"></div>
+        <div class="info">We get information from your insurance provider and we don’t share it with your employer. Rest assured, your personal data is safe, secure and confidential.</div>
+      </div>
+      <div class="footer">
+        <div class="left_footer">
+          <div class="">Copyright</div>
+          <div class="copyright"></div>
+          <div class=""> 2018 Castlight Health</div>
+        </div>
+        <div class="right_footer">
+          <div class="security">Security</div>
+          <div class="privacy">Privacy</div>
+          <div class="terms">Terms of use</div>
+        </div>
+      </div>
+    </div>
+
+  </script>
+</section>

@@ -1,0 +1,20 @@
+<div class=slide data-slide=name_web data-cta="That's me">
+  {{#each config.skin.onboarding}}
+  {{#equal this this.type "name_web"}}
+  <hgroup>
+    <div class=group>
+      <div class=title>{{title}}</div>
+      <div class=message>{{description}}</div>
+    </div>
+  </hgroup>
+  {{/equal}}
+  {{/each}}
+  <div class=input>
+    <input type=text placeholder="{{config.skin.persona.name}}" />
+  </div>
+  <div class="question">How do you know this?</div>
+  <div class=button_box>
+    <div class="skip">Skip</div>
+    <div class=button data-name=next style="background-color:{{config.skin.button_background_color}}">That's me</div>
+  </div>
+</div>

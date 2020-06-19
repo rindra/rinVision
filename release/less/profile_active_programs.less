@@ -1,0 +1,75 @@
+._profile_active_programs() {
+  [data-type=profile_active_programs] {
+    display: flex;
+    justify-content: center;
+    .group {
+      display: flex;
+      flex-direction: column;
+    }
+    .action_box:last-child {
+      .wrapper {
+        border: none;
+      }
+    }
+    .action_box {
+      display: flex;
+      align-items: center;
+      background-color: white;
+    }
+    .box {
+      display: flex;
+    }
+    .icon {
+      width: 6.5vh;
+      height: 6.5vh;
+      margin: 2vh 1vh 2vh 2vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      flex: .2;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid #ECE7E7;
+      height: 11vh;
+      flex: .8;
+    }
+    .title_action {
+      font-size: 2.5vh;
+      margin-bottom: .5vh;
+    }
+    .star {
+      width: 2vh;
+      height: 2vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: .5vh;
+    }
+    .description,
+    .tasks {
+      color: #717C8E;
+      font-size: 1.8vh;
+    }
+    .tasks {
+      position: relative;
+      bottom: 1.5vh;
+      left: 16vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .cta {
+      margin: 3vh 2vh 3vh 0;
+    }
+    [data-tasks=false] {
+      .tasks {
+        display: none;
+      }
+    }
+  }
+}

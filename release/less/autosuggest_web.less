@@ -1,0 +1,33 @@
+._autosuggest_web() {
+  [data-type=autosuggest_web] {
+    position: absolute;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    top: 12vh;
+    font-family: "Open Sans Semi";
+    font-size: 1.8vh;
+    z-index: 1;
+    .autosuggest {
+      margin: 0 0 0 2vh;
+      .item {
+        margin: 2vh 0 0 0;
+        .trigger {
+          color: #717C8E;
+          text-transform: capitalize;
+        }
+        .copy {
+          color: #000000;
+        }
+      }
+    }
+    .matches {
+      margin: 2vh 0 0 2vh;
+      border-top: 1px solid #ECE7E7;
+      .item {
+        margin: 2vh 0 0 0;
+      }
+    }
+  }
+}

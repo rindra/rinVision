@@ -1,0 +1,14 @@
+<script id=browse_for_care_template type=text/x-handlebars-template>
+  <div class=group>
+    {{#if title}}
+    <div class=title>{{title}}</div>
+    {{/if}}
+    <div class=layers>
+      {{#each carousel}}
+        <div class=program data-slide={{name}}>
+          <div class=program_title>{{title}}</div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</script>

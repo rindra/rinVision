@@ -1,0 +1,64 @@
+._community_interests_slide() {
+  [data-type=community_interests_slide] {
+    .section {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+      img {
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &.personalized_experience {
+        .live_cards_wrapper {
+          display: flex;
+          justify-content: center;
+          .upload_picture_box {
+            display: flex;
+            position: absolute;
+            top: 14vh;
+            width: 92vw;
+            z-index: 1;
+            background: #fff;
+            border-radius: .75vh;
+            box-shadow: 3px 2px 15px 2px #efefef;
+            .avatar_box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              position: relative;
+              bottom: 7vh;
+              width: 92vw;
+              .avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+                width: 11vh;
+                height: 11vh;
+                margin: 2vh;
+                border-radius: 50%;
+                background-size: cover;
+                color: #FFFFFF;
+                background-color: #282C37;
+              }
+              .greetings {
+                font-size: 3vh;
+                font-weight: bold;
+                color: #1D1E20;
+                margin-bottom: 1vh;
+              }
+              .greetings_subtitle {
+                font-size: 2.2vh;
+                color: #626B7A;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

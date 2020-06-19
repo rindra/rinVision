@@ -1,0 +1,56 @@
+[
+  {
+    "file": "greenrhino.png",
+    "name": "green rhino",
+    "place": 4,
+    "steps": 22314
+  },
+  {
+    "file": "roadrunner.png",
+    "name": "road runner",
+    "place": 1,
+    "steps": 92012
+  },
+  {
+    "file": "pinkflower.png",
+    "name": "pink flower",
+    "place": 2,
+    "steps": 53452
+  },
+  {
+    "file": "redcrow.png",
+    "name": "red crow",
+    "place": 3,
+    "steps": 43975
+  },
+  {
+    "file": "cutiecat.png",
+    "name": "cutie cat",
+    "place": 0,
+    "steps": 0
+  },
+  {
+    "file": "fastcar.png",
+    "name": "fast car",
+    "place": 0,
+    "steps": 0
+  },
+  {
+    "file": "panther.png",
+    "name": "panther",
+    "place": 0,
+    "steps": 0
+  },
+  {
+    "file": "redmoto.png",
+    "name": "red moto",
+    "place": 0,
+    "steps": 0
+  },
+  {
+    "file": "turtlerage.png",
+    "name": "turtle rage",
+    "place": 0,
+    "steps": 0
+  }
+]

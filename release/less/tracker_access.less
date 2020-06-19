@@ -1,0 +1,146 @@
+._tracker_access() {
+  [data-module=tracker_access] {
+    .container {
+      background-color: #F0EFF5;
+      font-family: Helvetica;
+      width: 100vw;
+      height: 100vh;
+      &.is_allowed {
+        .allow {
+          color: #E93956;
+        }
+      }
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      font-size: 3vh;
+      background-color: #F5F5F7;
+      padding-top: 6vh;
+      padding-bottom: 2vh;
+      border-bottom: 0.5px solid #BAB9BE;
+    }
+    .do_not_allow {
+      color: #E93956;
+    }
+    .health_access_title {
+      font-weight: bold;
+      margin: 0 5vh;
+    }
+    .allow {
+      color: #D0D0D1;
+      font-weight: bold;
+    }
+    .image_and_description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 28vh;
+    }
+    .image_access {
+      width: 10vh;
+      height: 10vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-bottom: 2vh;
+    }
+    .description_access {
+      font-size: 3vh;
+      font-weight: lighter;
+    }
+    .castlight_request,
+    .castlight_permission,
+    .read_data {
+      color: #6E6D73;
+      font-size: 2vh;
+    }
+    .castlight_request {
+      margin: 0 4vh 2vh 4vh;
+    }
+    .turn_categories_on {
+      display: flex;
+      align-items: center;
+      font-size: 3vh;
+      height: 7vh;
+      color: #E93956;
+      background-color: white;
+      border-bottom: 0.5px solid #BAB9BE;
+      border-top: 0.5px solid #BAB9BE;
+    }
+    .turn_categories_on_info {
+      margin-left: 4vh;
+    }
+    .castlight_permission {
+      margin: 2vh 4vh;
+    }
+    .read_data {
+      text-transform: uppercase;
+      margin: 5vh 0 2vh 4vh;
+    }
+    .data {
+      font-size: 3vh;
+      background-color: white;
+    }
+    .dietary_energy,
+    .steps {
+      height: 7vh;
+      border-bottom: 0.5px solid #BAB9BE;
+    }
+    .dietary_energy {
+      border-top: 0.5px solid #BAB9BE;
+    }
+    .dietary_energy,
+    .steps {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .carrot_image, .fire_image {
+      margin-left: 4vh;
+      width: 4vh;
+      height: 4vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .carrot_image {
+      background-image: url(images/tracker_access/carrot_icon.svg);
+    }
+    .fire_image {
+      background-image: url(images/tracker_access/fire_icon.svg);
+    }
+    .dietary_energy_title {
+      margin-right: 12vh;
+    }
+    .steps_title {
+      margin-right: 24vh;
+    }
+    .toggle {
+      width: 5vh;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      margin: 1vh 4vh 0 0;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+      .off {
+        display: block;
+      }
+      .on {
+        display: none;
+      }
+      &.on {
+        .off {
+          display: none;
+        }
+        .on {
+          display: block;
+        }
+      }
+    }
+  }
+}

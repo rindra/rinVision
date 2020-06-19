@@ -1,0 +1,25 @@
+._full_screen_hidden_card() {
+  [data-type=full_screen_hidden_card] {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    z-index: 9;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    img {
+      width: 100vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .hotspot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}

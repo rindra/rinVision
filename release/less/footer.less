@@ -1,0 +1,126 @@
+._footer() {
+  footer {
+    position: relative;
+    box-shadow: -1px 6px 29px -5px rgba(0, 0, 0, 0.2);
+    .tabs {
+      display: flex;
+      background-color: #ffffff;
+      height: 7vh;
+    }
+    .tab {
+      flex: .25;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box {
+        width: max-content;
+      }
+      &.on {
+        .icon {
+          .on {
+            display: flex;
+          }
+          .off {
+            display: none;
+          }
+        }
+        .label {
+          color: #006DFF;
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+      height: 3vh;
+      .on,
+      .off {
+        display: flex;
+        align-items: center;
+        width: 2.5vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .on {
+        display: none;
+      }
+    }
+    .hack {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3vh;
+      top: .8vh;
+      left: 40vh;
+      width: 1.8vh;
+      height: 1.8vh;
+      border-radius: 3vh;
+      color: #ffffff;
+      background: #E80B44;
+    }
+    .label {
+      font-family: "Roboto Bold";
+      color: #a1a7b0;
+      margin: .5vh 0 0 0;
+      font-size: 1.2vh;
+    }
+    [data-name=home] {
+      .off {
+        background-image: url(images/footer/off_home.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_home.svg);
+      }
+    }
+    [data-name=find_care] {
+      .off {
+        background-image: url(images/footer/off_find_care.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_find_care.svg);
+      }
+    }
+    [data-name=benefits] {
+      .off {
+        background-image: url(images/footer/off_benefits.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_benefits.svg);
+      }
+    }
+    [data-name=notifications] {
+      .off {
+        background-image: url(images/footer/off_notifications.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_notifications.svg);
+      }
+    }
+    [data-name=profile] {
+      .off {
+        background-image: url(images/footer/off_profile.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_profile.svg);
+      }
+    }
+    [data-name=more] {
+      .off {
+        background-image: url(images/footer/off_more.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_more.svg);
+      }
+    }
+    [data-name=community] {
+      .off {
+        background-image: url(images/footer/off_community.svg);
+      }
+      .on {
+        background-image: url(images/footer/on_community.svg);
+      }
+    }
+  }
+}

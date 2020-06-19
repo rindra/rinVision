@@ -1,0 +1,44 @@
+._picker() {
+  .picker {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    backdrop-filter: blur(15px); 
+    border-top: 1px solid #ececec;
+    &.hidden {
+      display: none;
+    }
+    .header {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      height: 10vh;
+      font-size: 2.5vh;
+      box-shadow: -1px 24px 37px -22px rgba(0, 0, 0, 0.1);
+    }
+    .cancel,
+    .done {
+      flex: .2;
+      color: #007AFF;
+    }
+    .title {
+      flex: .6;
+    }
+    .group {
+      height: 19vh;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    .email {
+      display: flex;
+      height: 7vh;
+      justify-content: center;
+      align-items: center;
+      font-size: 2vh;
+      &.on {
+        color: #007AFF;
+      }
+    }
+  }
+}

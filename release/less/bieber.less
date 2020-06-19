@@ -1,0 +1,107 @@
+._bieber() {
+  [data-type=bieber] {
+    main {
+      overflow: hidden;
+    }
+    .box {
+      display: flex;
+      width: max-content;
+    }
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      //      overflow: hidden;
+      //      height: 100vh;
+      //      box-sizing: border-box;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+      //border: 2px solid #ccc;      
+      img {
+        width: 100vw;
+      }
+    }
+    .static {
+      position: absolute;
+      top: 0;
+      height: 10vh;
+    }
+    .top {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      display: flex;
+      width: 100vw;
+      height: 10vh;
+      .left {
+        flex: .2;
+      }
+      .right {
+        flex: .8;
+      }
+    }
+    .bottom {
+      height: 90vh;
+    }
+    .only_for_challenges,
+    .only_for_benefits,
+    .only_for_push,
+    .only_for_email {
+      display: none;
+    }
+  }
+  [data-id=bieber_wwf_start] {
+    .only_for_challenges {
+      display: block;
+      position: absolute;
+      width: 23vh;
+      height: 7vh;
+      top: 89vh;
+      left: 17vh;
+    }
+  }
+  [data-id=bieber_dental_plan_details] {
+    .only_for_benefits {
+      display: block;
+      position: absolute;
+      width: 14vh;
+      height: 14vh;
+      top: 0;
+      left: 0;
+    }
+  }
+  [data-id=bieber_rewards_flow] {
+    main {
+      background-color: #FFFFFF;
+    }
+  }
+  [data-id=interstitial_push_notification_enrich] {
+    .only_for_push {
+      display: block;
+      position: absolute;
+      width: 54vh;
+      height: 12vh;
+      top: 31vh;
+      left: 1vh;
+    }
+  }
+  [data-id=interstitial_email_pediatrician] {
+    .only_for_email {
+      display: block;
+      position: absolute;
+      width: 54vh;
+      height: 12vh;
+      top: 69vh;
+      left: 1vh;
+    }
+  }
+  [data-id=bieber_pcp_details_flow] {
+    .only_for_profile {
+      display: block;
+      position: absolute;
+      width: 100vh;
+      height: 100vh;
+      top: 0vh;
+      left: 0vh;
+    }
+  }
+}

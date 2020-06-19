@@ -1,0 +1,40 @@
+._profile_my_interests() {
+  [data-type=profile_my_interests] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+    }
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2vh 0 0 2vh;
+      border-bottom: 1px solid #E6ECFA;
+      .box {
+        margin-bottom: 2vh;
+        .interest {
+          background-color: #B2D3FF;
+          border-color: #C4D2E4;
+          border-radius: 4px;
+          font-size: 1.8vh;
+          padding: 1.4vh;
+          margin-right: 1.5vh;
+        }
+      }
+    }
+    .description {
+      margin: 2.5vh 0 0 2vh;
+      color: #717C8E;
+      font-size: 1.8vh;
+      width: 45vh;
+      line-height: 2.5vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cta {
+      margin: 2.5vh 2vh;
+    }
+  }
+}

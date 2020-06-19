@@ -1,0 +1,95 @@
+._high_touch() {
+  .high_touch {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: rgba(0, 0, 0, .7);
+    &.on {
+      display: flex;
+    }
+    .blue_box {
+      width: 71vw;
+      border-radius: 1vh 1vh 0 0;
+      margin: 17vh 0 0 0;
+      padding: 3vh 6vh 0 6vh;
+      background-color: #0069e3;
+      > .icon {
+        margin: 4vh 0 0 0;
+      }
+      .icon {
+        width: 3vh;
+        height: 3vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(images/home/bubbles_outlined.svg);
+      }
+      .close_box {
+        display: flex;
+        justify-content: flex-end;
+        .icon {
+          margin: 0 -4vh 0 0vh;
+          background-image: url(images/home/close_black.svg);
+        }
+      }
+      .cta_box {
+        display: flex;
+        justify-content: center;
+        margin: 6vh 0 0 0;
+        .cta {
+          display: flex;
+          align-items: center;
+          background: #ffffff;
+          border-radius: 10vh;
+          padding: 1vh 3vh 1vh 3vh;
+          .dot {
+            width: 1vh;
+            height: 1vh;
+            border-radius: 10vh;
+            background-color: #2ecc71;
+          }
+          .icon {
+            margin: 0 2vh 0 2vh;
+            background-image: url(images/home/phone_blue.svg);
+          }
+          .label_fsa {
+            font-size: 1.5vh;
+            font-weight: 600;
+          }
+        }
+      }
+      .secondary_cta_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6vh 0 0 0;
+        .icon {
+          width: 2vh;
+          height: 2vh;
+          background-image: url(images/home/chat_white.svg);
+        }
+        .caption_fsa {
+          color: #ffffff;
+          font-size: 1.5vh;
+          margin: 0 0 0 1vh;
+        }
+      }
+      .title {
+        margin: 4vh 0 0 0;
+        color: #fff;
+        font-size: 3.5vh;
+      }
+      .description {
+        color: #ffffff;
+        margin: 30vh 0 0 0;
+        font-size: 1.6vh;
+        line-height: 2.25vh;
+        padding: 0 10vh 0 0;
+      }
+    }
+  }
+}

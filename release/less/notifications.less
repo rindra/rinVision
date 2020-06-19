@@ -1,0 +1,106 @@
+._notifications() {
+  [data-type=notifications] {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    .group {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      width: 100vh;
+    }
+    .action_box {
+      display: flex;
+      align-items: center;
+      background-color: #F4F9FF;
+      border-bottom: 1px solid #ECE7E7;
+    }
+    .icon {
+      width: 6.5vh;
+      height: 6.5vh;
+      margin: 0 2vh 7.5vh 2vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      // flex: .2;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80vw;
+      margin: 3vh 0;
+      // flex: .8;
+    }
+    .box {
+      display: flex;
+    }
+    .date {
+      color: #717C8E;
+      font-size: 1.8vh;
+      margin-bottom: 1vh;
+    }
+    .description {
+      font-size: 2.4vh;
+      font-weight: bold;
+      // letter-spacing: 0.03vh;
+      width: 41vh;
+    }
+    .subtitle {
+      display: none;
+    }
+    .cta_button {
+      border: 1px solid #006DFF;
+      border-radius: 4px;
+      color: #006DFF;
+      padding: 1vh 2vh;
+      font-size: 2vh;
+      width: 17vh;
+      text-align: center;
+      letter-spacing: 0.05vh;
+      margin-top: 3vh;
+    }
+    [data-read='read'] {
+      .action_box {
+        background-color: #FFFFFF;
+      }
+      .description {
+        font-weight: normal;
+      }
+    }
+    [data-cta=false] {
+      .cta_button {
+        display: none;
+      }
+      .icon {
+        margin: 0 2vh; 
+      }
+    }
+    [data-arrow=false] {
+      .arrow {
+        display: none;
+      }
+    }
+    [data-arrow=true] {
+      .arrow {
+        width: 1.5vh;
+        height: 2.5vh;
+        margin-left: 1vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  [data-id=notifications_save_money] {
+    .subtitle {
+      display: block;
+      margin-top: 1vh;
+      color: #717C8E;
+      font-size: 1.8vh;
+    }
+  }
+}

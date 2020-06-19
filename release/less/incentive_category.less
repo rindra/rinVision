@@ -1,0 +1,37 @@
+._incentive_category() {
+  [data-type=incentive_category] {
+    margin: 0;
+    z-index: 1;
+    background-color: #fff;
+    .box {
+      display: flex;
+      border-top: .1vh solid #dadada;
+    }
+    .incentive_box,
+    .point_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50vw;
+      height: 6vh;
+      padding-top: 1vh;
+      color: #626B7A;
+      &.active {
+        border-bottom: 3px solid #607785;
+        color: #1d1e20;
+        .balance {
+          font-weight: bold;
+        }
+      }
+    }
+    .label {
+      text-transform: capitalize;
+      font-size: 1.8vh;
+      margin-bottom: 3px;
+    }
+    .balance {
+      font-size: 2vh;
+      text-transform: uppercase;
+    }
+  }
+}

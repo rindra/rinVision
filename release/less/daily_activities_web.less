@@ -1,0 +1,133 @@
+._daily_activities_web() {
+  [data-type=daily_activities_web] {
+    position: relative;
+    width: 850px;
+    height: 43vh;
+    overflow: hidden;
+    margin: 2vh 0 4vh 0;
+    .static,
+    .layers {
+      position: absolute;
+    }
+    .static {
+      display: flex;
+      justify-content: center;
+      width: 850px;
+    }
+    .layers {
+      display: flex;
+      .layer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16vw;
+        height: 36vh;
+        margin-right: 4vh;
+        .program {
+          width: 16vw;
+          height: 35vh;
+          background: #ffffff;
+          border-radius: 8px;
+          border: 1px solid #dadada;
+          overflow: hidden;
+          .image {
+            height: 33vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .title_slide {
+            font-size: 2.5vh;
+            margin: 2vh 0 0 2vh;
+            color: #1c1d1f;
+          }
+          .description {
+            color: #626b79;
+            margin: 1vh 0 0 2vh;
+            font-size: 1.8vh;
+          }
+          .cta {
+            position: absolute;
+            bottom: 5vh;
+            left: 2vh;
+            width: 17vh;
+            font-size: 1.6vh;
+            color: #006dff;
+          }
+          .progress_bar {
+            display: none;
+          }
+        }
+      }
+      .button {
+        padding: .7vh 2vh .7vh 2vh;
+        border: .2vh solid #006dff;
+        border-radius: 2vh;
+        text-align: center;
+        background: #ffffff;
+      }
+      [data-cta='progress'] {
+        .program {
+          .image {
+            background-position: 0;
+            // background-repeat: no-repeat;
+            background-size: cover;
+            .cta {
+              display: none;
+            }
+            .progress_bar {
+              display: block;
+              width: 50vw;
+              height: 18vh;
+              margin-top: 1vh;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+    [data-status='finished'] {
+      .cta {
+        display: none;
+      }
+    }
+    .carousel {
+      position: relative;
+      box-shadow: inset -40px 0 50px 0px white;
+      .box {
+        display: flex;
+        width: min-content;
+      }
+      .slide {
+        width: 100vw;
+        height: 36vh;
+        box-sizing: border-box;
+        .hotspot {
+          width: 16vw;
+          height: 36vh;
+        }
+      }
+    }
+    .dots {
+      position: relative;
+      top: 39vh;
+      display: flex;
+      align-items: center;
+    }
+    .dot {
+      border-radius: 100px;
+      width: 8px;
+      height: 8px;
+      background-color: #c4d2e3;
+      margin: 0 1vh 0 0;
+      &.blue_dot {
+        position: absolute;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #006DFF;
+      }
+    }
+  }
+}

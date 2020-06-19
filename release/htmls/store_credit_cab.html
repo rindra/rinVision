@@ -1,0 +1,19 @@
+<script id=store_credit_cab_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class="group" style="background-color:{{color}}">
+    <div class="container">
+      <div class="dollar" style="background-image:url({{image}})"></div>
+      <div class="info">{{description}}</div>
+      <div class="right_arrow"></div>
+    </div>
+  </div>
+  {{else}}
+  <div class="group_web" style="background-color:{{color}}">
+    <div class="container">
+      <div class="dollar" style="background-image:url({{image}})"></div>
+      <div class="info">{{description}}</div>
+      <div class="right_arrow"></div>
+    </div>
+  </div>
+  {{/if}}
+</script>

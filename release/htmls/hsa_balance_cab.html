@@ -1,0 +1,15 @@
+<script id=hsa_balance_cab_template type=text/x-handlebars-template>
+  {{#if is_mobile}}
+  <div class="group">
+    <div class="image" style="background-image:url({{image}})"></div>
+    <div class="info">{{description}}</div>
+  </div>
+  {{else}}
+  <div class="group_web">
+    <div class="container">
+      <div class="image" style="background-image:url({{image}})"></div>
+      <div class="info"><span>HSA Tip:</span> {{description}}</div>
+    </div>
+  </div>
+  {{/if}}
+</script>

@@ -1,0 +1,46 @@
+._countdown_action() {
+  [data-type=countdown_action] {
+    height: 10vh;
+    margin: 0;
+    .countdown_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2vh;
+      border-top: 1px solid #adadad;
+      .icon {
+        flex: .15;
+        height: 6vh;
+        width: 6vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 2vh 2vh 2vh 0;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: .75;
+        .topic {
+          color: #fff;
+          font-size: 2.2vh;
+          font-weight: bold;
+          margin-bottom: .5vh;
+        }
+        .description {
+          font-size: 2vh;
+          color: #fff;
+        }
+      }
+      .arrow_countdown {
+        flex: .1;
+        background-image: url(images/home/white_right_arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 2.5vh;
+        width: 2vh;
+      }
+    }
+  }
+}

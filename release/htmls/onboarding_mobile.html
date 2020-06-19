@@ -1,0 +1,18 @@
+<div class=slide data-slide=mobile data-cta="Verify">
+  {{#each config.skin.onboarding}}
+  {{#equal this this.type "mobile"}}
+  <hgroup>
+    <div class=group>
+      <div class=title>{{title}}</div>
+      <div class=message>{{description}}</div>
+    </div>
+  </hgroup>
+  {{/equal}}
+  {{/each}}
+  <div class=input>
+    <input type=text placeholder="{{config.skin.persona.cell}}" />
+  </div>
+  <div class=button_box>
+    <div class=button data-name=get_started>Verify</div>
+  </div>
+</div>

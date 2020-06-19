@@ -1,0 +1,133 @@
+._todo_card() {
+  [data-type=todo_card] {
+    display: flex;
+    justify-content: center;
+    .container {
+      width: 95vw;
+      border-radius: .5vh;
+      overflow: hidden;
+      height: 16vh;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #ffffff;
+      &.hidden {
+        display: none;
+      }
+      .top {
+        display: flex;
+      }
+      .icon_box {
+        flex: .2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon,
+        .icon_complete {
+          width: 5vh;
+          height: 5vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .icon_complete {
+          display: none;
+        }
+      }
+      .info {
+        flex: .9;
+        .title {
+          font-family: 'Roboto Bold';
+          color: #2e2f33;
+          height: 0;
+          margin: 3.2vh 0 0 0;
+          font-size: 2.1vh;
+        }
+        .description {
+          font-size: 1.8vh;
+          margin: 2vh 0 0 0;
+          color: #717c8d;
+          line-height: 2.4vh;
+        }
+        .main_description {
+          color: #626b7a;
+          width: 49vh;
+          font-size: 2vh;
+        }
+        .status {
+          font-size: 1.8vh;
+        }
+      }
+      .space {
+        flex: .2;
+      }
+      .bottom {
+        display: flex;
+      }
+      .points_box {
+        flex: .75;
+        display: flex;
+        color: #717c8d;
+        font-size: 1.8vh;
+        margin: 2vh 0 0 0;
+        .icon {
+          width: 2.3vh;
+          height: 2.3vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(images/benefits/star.svg)
+        }
+        span {
+          font-family: 'Roboto Bold';
+        }
+      }
+      .cta {
+        flex: .57;
+        margin: 2vh 1.8vh 0 0;
+        text-align: right;
+      }
+      .item_group {
+        display: flex;
+        width: 49vh;
+        .contribution {
+          color: #626b7a;
+          margin: 1.2vh 0 0 0;
+          font-size: 2.1vh;
+        }
+        .item {
+          flex: 1;
+        }
+      }
+      [data-points="0"] {
+        .points,
+        .icon {
+          display: none;
+        }
+      }
+    }
+    [data-status=complete] {
+      .top {
+        .icon_complete {
+          display: block;
+          background-image: url(images/home/green_check.svg);
+        }
+        .icon {
+          display: none;
+        }
+      }
+      .info {
+        .title {
+          font-family: 'Roboto Regular';
+          text-decoration: line-through;
+        }
+      }
+    }
+    [data-cta=false] {
+      .top {
+        .info {
+          .cta_get_started {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

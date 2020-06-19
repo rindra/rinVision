@@ -1,0 +1,74 @@
+._ways_to_earn_top() {
+  [data-type=ways_to_earn_top] {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    margin-bottom: 24vh;
+    .bg {
+      position: absolute;
+      overflow: hidden;
+      width: 175vh;
+      height: 175vh;
+      top: -156vh;
+      border-radius: 200vh;
+      .gradient {
+        margin: 0 0 0 58vh;
+        width: 105vw;
+        height: 100%;
+        background-color: #B2D3FF;
+      }
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 4vh;
+      width: 100vw;
+      color: #1D1E20;
+      .points_earned {
+        font-size: 5.5vh;
+        .m {
+          font-size: 3vh;
+        }
+      }
+      .points_label,
+      .points_date {
+        font-size: 2vh;
+        text-transform: capitalize;
+        margin-bottom: 4.5vh;
+      }
+      .redeem_points_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #006dff;
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 1vh 2vh;
+        font-family: "Roboto Medium";
+        .cta_text {
+          font-size: 1.8vh;
+          color: #006dff;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .gift_box {
+      position: absolute;
+      top: 8vh;
+      right: 2vh;
+      width: 11vh;
+      height: 11vh;
+      background-image: url(images/home/wallet_new.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      &.gift_wrap {
+        background-image: url(images/home/new_rewards_icon.svg);
+      }
+    }
+  }
+}

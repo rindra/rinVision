@@ -1,0 +1,306 @@
+._homepage_web_style() {
+  .container_web {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: "Lato Regular";
+    overflow: scroll;
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 147px;
+      width: 100%;
+      box-shadow: 0 6px 12px 0 rgba(0,0,0,.14);
+      .logo_box {
+        width: 300px;
+        margin-right: 100px;
+        .logo_web {
+          height: 70px;
+          margin-top: 30px;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .search_and_categories {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        width: 800px;
+        .tabs_web {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 24px;
+          margin: 5px 0 0 0;
+          font-size: 16px;
+          text-transform: capitalize;
+          .tab_web {
+            margin-right: 50px;
+            padding-bottom: 3px;
+          }
+          .tab_web:hover {
+            cursor: pointer;
+          }
+          .tab_web:last-child {
+            margin-right: 0;
+          }
+          .notifications {
+            width: 16px;
+            height: 30px;
+            background-image: url(images/homepage_web/notifications_black.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .more {
+            display: flex;
+            .dropdown {
+              width: 7px;
+              height: 3px;
+              margin: 8px 0 0 4px;
+              background-image: url(images/homepage_web/more_triangle_black.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+        .search_box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 780px;
+          margin-bottom: 10px;
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          border: 1px solid #dadada;
+          form {
+            display: flex;
+            align-items: center;
+            height: 48px;
+            input {
+              width: 500px;
+              margin-left: 12px;
+              border-radius: 4px;
+              font-size: 16px;
+            }
+            input::placeholder {
+              color: #626B7A;
+              font-size: 16px;
+            }
+          }
+          .search_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 12px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            margin-right: 4px;
+            color: #FFFFFF;
+            background-color: #000000;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 14px;
+          }
+          .search_button:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .title_web_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+      .title_web {
+        display: flex;
+        justify-content: flex-start;
+        width: 1200px;
+        font-size: 24px;
+        color: #282C37;
+        text-transform: capitalize;
+      }
+    }
+    .web_content_box {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      aside {
+        position: relative;
+        top: -20px;
+        width: 384px;
+        margin-right: 34px;
+        z-index: 1;
+        .card:first-child,
+        .card:nth-child(2) {
+          border-bottom: none;
+        }
+        .card {
+          width: 384px;
+          margin: 0;
+          border-bottom: 1px solid #DADADA;
+          border-left: 1px solid #DADADA;
+          border-right: 1px solid #DADADA;
+          font-family: "Lato Regular";
+          .group_web_aside {
+            width: 100%;
+            padding: 20px;
+            .title_wrapper {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 15px;
+              .title_web {
+                font-size: 16px;
+                font-weight: bold;
+                color: #626B7A;
+              }
+            }
+            .date {
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 15px;
+              color: #626B7A;
+              font-size: 12px;
+            }
+          }
+          .group_web_aside:hover {
+            cursor: pointer;
+            background-color: #F6F7FA;
+            .right_arrow {
+              background-image: url(images/homepage_web/blue_right_arrow_aside.svg);
+            }
+          }
+          .right_arrow {
+            width: 8px;
+            height: 18px;
+            background-image: url(images/homepage_web/grey_right_arrow_aside.svg);
+            // background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+        .card:first-child {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+        .card:last-child {
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+          overflow: hidden;
+        }
+        [data-id="home_healthcare_separator"] {
+          display: none;
+        }
+        [data-type="titles"] {
+          margin-top: 30px;
+          border: none;
+        }
+        [data-type="program_action"] {
+          justify-content: flex-start;
+        }
+      }
+      main {
+        position: relative;
+        height: auto;
+        width: 782px;
+        background-color: #fff;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .card {
+          font-family: "Lato Regular";
+          margin: 0;
+        }
+        [data-type=separators] {
+          margin-top: 40px;
+        }
+        [data-type=daily_activities_cab] {
+          height: 270px;
+        }
+        [data-type=personalized_for_you_cab] {
+          height: 315px;
+        }
+        [data-type=esi_alert] {
+          margin: 30px 20px 0 0;
+        }
+      }
+    }
+    footer {
+      margin-top: 60px;
+      box-shadow: none;
+      .card {
+        font-family: "Lato Regular";
+        margin: 0;
+      }
+      [data-type=separators] {
+        display: flex;
+        justify-content: center;
+        background-color: #F6F7FA;
+        .group_web {
+          align-items: flex-end;
+          width: 1200px;
+          height: 70px;
+          .section_title {
+            margin-bottom: 0;
+          }
+        }
+      }
+      [data-type=interesting_reads_one_article] {
+        padding-bottom: 30px;
+        background-color: #F6F7FA;
+      }
+    }
+    .footer_web_container {
+      display: flex;
+      justify-content: center;
+      background-color: #282C37;
+      color: #FFFFFF;
+      font-family: "Lato Regular";
+      height: 270px;
+      .sections_wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 1000px;
+        .section {
+          display: flex;
+          flex-direction: column;
+          .section_title {
+            text-transform: uppercase;
+            margin: 30px 0 15px 0;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .label {
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+        .copyright_box {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          bottom: 20px;
+          right: 0;
+          font-size: 14px;
+          color: #626B7A;
+          span {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin: 0 3px;
+            background-image: url(images/homepage_web/copyright_footer.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+}

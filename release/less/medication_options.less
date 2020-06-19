@@ -1,0 +1,73 @@
+._medication_options() {
+  [data-type=medication_options] {
+    display: flex;
+    justify-content: center;
+    .group {
+      flex-direction: column;
+      height: 25vh;
+    }
+    .toggle_1,
+    .toggle_2 {
+      position: relative;
+      top: 4.5vh;
+      left: 2vh;
+      .on {
+        background-image: url(images/medication_options/radio_on.jpg);
+      }
+      .off {
+        background-image: url(images/medication_options/radio_off.jpg);
+      }
+      .on,
+      .off {
+        width: 3vh;
+        height: 3vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .on {
+        display: none;
+      }
+      .off {
+        display: block;
+      }
+      &.on {
+        .off {
+          display: none;
+        }
+        .on {
+          display: block;
+        }
+      }
+    }
+    .generic {
+      display: flex;
+      justify-content: space-between;
+      margin: 1vh 3vh 1vh 7vh;
+    }
+    .box_left,
+    .box_right {
+      display: flex;
+      flex-direction: column;
+    }
+    .box_right {
+      align-items: flex-end;
+    }
+    .type,
+    .price {
+      font-size: 2.2vh;
+      font-weight: bold;
+    }
+    .name,
+    .estimate {
+      font-size: 2vh;
+      color: #717C8E;
+      span {
+        color: #006dff;
+      }
+    }
+    .price {
+      color: #717C8E;
+    }
+  }
+}

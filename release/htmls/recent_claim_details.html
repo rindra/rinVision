@@ -1,0 +1,51 @@
+<script id=recent_claim_details_template type=text/x-handlebars-template>
+  <div class="container_details">
+    <div class="claim_top">
+      <div class="claim_label">{{label_fsa}}</div>
+      <div class="claim_amount">${{points}}</div>
+      <div class="claim_title">{{title}}</div>
+      <div class="claim_details">{{date_updated}} for {{username}}</div>
+      <div class="claim_doctor">{{description}}</div>
+      <div class="claim_details">{{caption_fsa}}</div>
+      <div class="exit_box">
+        <div class="exit"></div>
+      </div>
+    </div>
+    <div class="claim_bottom">
+      <div class="claim_label">{{label_store_credit}}</div>
+      <div class="claim_charge_box">
+        <div class="claim_charge_left">
+        {{#each list}}
+          <div class="claim_charge">{{this}}</div>
+        {{/each}}
+        </div>
+        <div class="claim_charge_right">
+        {{#each list_amounts}}
+          <div class="claim_charge price">${{this}}</div>
+        {{/each}}
+        </div>
+      </div>
+      <div class="claim_charge_box total">
+        <div class="claim_charge">Total</div>
+        <div class="claim_charge">${{total}}</div>
+      </div>
+      <div class="claim_label">{{caption_store_credit}}</div>
+      <div class="claim_charge_box payments">
+        <div class="claim_charge">Paid by <span>{{company}}</span> plan</div>
+        <div class="claim_charge">${{amount_store_credit}}</div>
+      </div>
+      <div class="claim_label">{{label_plan_status}}</div>
+      <div class="claim_charge">${{points}} was applied to your deductible</div>
+      <div class="chat_engage_box">
+        <div class="claim_charge">Have questions?</div>
+        <div class="claim_chat_box">
+          <div class="chat_left">
+            <div class="chat_label">Chat <span><i>Available</i></span></div>
+            <div class="chat_time">Mon - Fri 8:00am - 8:00pm EST</div>
+          </div>
+          <div class="chat_right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>

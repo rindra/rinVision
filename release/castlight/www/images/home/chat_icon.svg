@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="V-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Group">
+                <circle id="Oval" fill="#006DFF" cx="21" cy="21" r="21"></circle>
+                <path d="M9.625,12.3125 L25.875,12.3125 L25.875,25.3125 L18.0546875,25.3125 L14.1953125,28.359375 L12.875,29.4765625 L12.875,25.3125 L9.625,25.3125 L9.625,12.3125 Z M11.25,13.9375 L11.25,23.6875 L14.5,23.6875 L14.5,26.0234375 L17.2421875,23.890625 L17.4453125,23.6875 L24.25,23.6875 L24.25,13.9375 L11.25,13.9375 Z M27.5,15.5625 L32.375,15.5625 L32.375,28.5625 L29.125,28.5625 L29.125,32.7265625 L23.9453125,28.5625 L16.4296875,28.5625 L18.4609375,26.9375 L24.5546875,26.9375 L27.5,29.2734375 L27.5,26.9375 L30.75,26.9375 L30.75,17.1875 L27.5,17.1875 L27.5,15.5625 Z" id="" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

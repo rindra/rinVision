@@ -1,0 +1,30 @@
+<script id=trending_now_cab_template type=text/x-handlebars-template>
+  <div class=static>
+    <div class="dots">
+      {{#each carousel}}
+      <div class="dot"></div>
+      {{/each}}
+      <div class="dot grey_dot"></div>
+    </div>
+  </div>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer>
+      <div class=icon style="background-image:url({{image}})"></div>
+      <div class=wrapper>
+        <div class=description>{{description}}</div>
+        <div class=title_action>{{title}}</div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide>
+        <div class=hotspot data-slide={{name}}></div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</script>

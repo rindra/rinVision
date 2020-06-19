@@ -1,0 +1,26 @@
+<script id=rewards_carousel_template type=text/x-handlebars-template>
+  <div class=layers>
+    {{#each carousel}}
+    <div class=layer data-name="{{name}}">
+      <div class=wrapper>
+        <div class=box>
+          <div class=image style="background-image:url({{image}})"></div>
+          <div class=name>{{title}}</div>
+        </div>
+        <div class=footer>
+          <div class=amount>{{subtitle}}</div>
+          <div class=description>{{description}}</div>
+        </div>
+      </div>
+
+    </div>
+    {{/each}}
+  </div>
+  <div class=carousel>
+    <div class=box>
+      {{#each carousel}}
+      <div class=slide data-slide={{name}}></div>
+      {{/each}}
+    </div>
+  </div>
+</script>

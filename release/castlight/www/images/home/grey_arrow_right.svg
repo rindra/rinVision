@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="15px" viewBox="0 0 9 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Color/Grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.125 0.15625 8 7.03125 8.390625 7.5 8 7.96875 1.125 14.84375 0.1875 13.90625 6.6328125 7.5 0.1875 1.09375"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mocks/Home-page" transform="translate(-329.000000, -564.000000)">
+            <g id="Component/List/Thin-card" transform="translate(16.000000, 543.000000)">
+                <g id="Color/Grey" transform="translate(313.000000, 21.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#A0A9B8" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#626B7A" id="Rectangle">
+                        <g transform="translate(-9.000000, -5.000000)">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
